@@ -2,12 +2,17 @@
 
 ## Summary
 
-The Frameworks system is comprised of multiple FileMaker files which are primarily organized using a specific Script folder/subfolder structure.
+- The Framework system is comprised of multiple FileMaker files which are primarily organized using a specific Script folder/subfolder structure.
+  - Each Framework folder handles a specific group of tasks.
+    - For example, the Layouts Module handles anything related to Layout navigation 
+- Scripts within the Framework have a 3-letter prefix which determines how they should be called
+  - Excluding scripts in ScriptMenu module which are user-facing
 
 ## Script folder categories (organized in this order)
 
 - ### Non-Module folders
   - Schedules
+  - Triggers
   - Import
 - ### Module folders
   - Layout
@@ -20,20 +25,34 @@ The Frameworks system is comprised of multiple FileMaker files which are primari
       - Therefore putting this Non-Module folder first sorts all these scripts on top.
   - Contains no subfolders
   - Scripts contain no logic
-  - Scripts can only call scripts in this file's Regular Module's Public subfolder
+  - Scripts can only call scripts in:
+    - This file's
+      - Regular Module's
+        - Public subfolder
+
+- ### Triggers
+  -  Place for all file-level script triggers
+  -  Contains no subfolders
+  -  Scripts can only call scripts in:
+    - This file's
+      - Regular Module's
+        - Public subfolder
+  - Handles/Diplays errors
  
 - ### Import
-  - Contains subfolders
+  - Contains subfolders (only one level deep)
     - one for each External file 
   - Scripts contain no logic
-  - Scripts can only call scripts in an External file's Regular Module's External subfolder.
+  - Scripts can only call scripts in:
+    - An External file's 
+      - Regular Module's
+        - External subfolder.
 
 ## Module Folders
 
-- Modules are folders within the Script Manager. 
-- Modules handle specific tasks or areas of tasks. 
-- Modules can contain sub-Modules, but only one level deep.
-- Modules contain Structure subfolders, but only one level deep.
+- ### Layout
+- ### Regular
+  - Contains sub-Modules (only one level deep)
 - Structure subfolders are in no particular order within the Module folder.
   - Not all Modules will have all the Structure subfolder types, which are only added as needed.  
 - Modules are transferable between files with minimal connections required.
@@ -43,7 +62,22 @@ The Frameworks system is comprised of multiple FileMaker files which are primari
 - All Module scripts pass errors up to calling scripts, except scripts in the Button, Procedures or Triggers Structure subfolders.
 
 
-
+## Script Prefixes
+- sub
+  - Any script that **must** be called by another script
+    - In the following Module Types
+      - Public
+      - Protected
+      - Private  
+  - Passes errors and doesn't handle/display errors 
+- dep
+- btn
+  - Called by buttons on layouts
+  - Handles/Diplays errors
+- trg
+  - Called by triggers on layouts
+  - Handles/Diplays errors
+- cfg???
 
 
 Structure subfolder types (in Regular Modules):
