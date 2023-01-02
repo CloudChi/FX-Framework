@@ -1,44 +1,48 @@
-# FX-documentation
+# FX Frameworks Scripts Documentation
 
 ## Summary
 
-The Framework system is organized into Modules which handle specific tasks or areas of tasks. 
+The Frameworks system is comprised of multiple FileMaker files which are primarily organized using a specific Script folder/subfolder structure.
 
-## Module Structure
+## Script folder categories (organized in this order)
 
-1. Modules are folders within the Script Manager. 
-2. Modules can contain sub-Modules, but only one level deep.
-3. Modules contain Structure subfolders, but only one level deep.
-4. Structure subfolders are in no particular order within the Module folder.
-Not all Modules will have all the Structure subfolder types, which are only added as needed.  
-5. Modules are transferable between files with minimal connections required.
-6, Modules can be addressed by other Modules and they can address other Modules.
-7. Module scripts use consistently structured JSON for Parameters and Results.
-8. Module scripts can receive errors (in JSON format) from called subscripts.
-9. All Module scripts pass errors up to calling scripts, except scripts in the Button, Procedures or Triggers Structure subfolders.
+- ### Non-Module folders
+  - Schedules
+  - Import
+- ### Module folders
+  - Layout
+  - Regular
+
+## Non-Module Folders
+
+- ### Schedules
+  - Contains no subfolders
+  - Scripts contain no logic
+  - Scripts can only call scripts in this file's Public subfolder of any Regular Modules within the same file
+    - Will be called by the script scheduler within FileMaker Server which has no way to filter or sort scripts.
+      - Putting the Module on top just makes it easier to find the scripts needed.
+      - 
+- ### Import
+  - Contains subfolders
+  - Scripts contain no logic
+  - Scripts can only call scripts in an External file's Regular Module's External subfolder.
+
+## Module Folders
+
+- Modules are folders within the Script Manager. 
+- Modules handle specific tasks or areas of tasks. 
+- Modules can contain sub-Modules, but only one level deep.
+- Modules contain Structure subfolders, but only one level deep.
+- Structure subfolders are in no particular order within the Module folder.
+  - Not all Modules will have all the Structure subfolder types, which are only added as needed.  
+- Modules are transferable between files with minimal connections required.
+- Modules can be addressed by other Modules and they can address other Modules.
+- Module scripts use consistently structured JSON for Parameters and Results.
+- Module scripts can receive errors (in JSON format) from called subscripts.
+- All Module scripts pass errors up to calling scripts, except scripts in the Button, Procedures or Triggers Structure subfolders.
 
 
-## MODULE TYPES
 
-A Module in a file can be one of 3 types:
-
-Schedules (first Module in file)
-Import (second Module in file)
-Regular Modules (no particular order in file)
-Layout Module
-
-
-Schedules
-Scripts in this Module do not contain logic
-Contain no subfolders
-This Module contains any script that will be called by the script scheduler within FileMaker Server which has no way to filter or sort scripts. Putting the Module on top just makes it easier to find the scripts needed.
-Scripts in this Module can only call scripts in the Public subfolder of any Regular Modules within the same file.
-
-
-Import
-Scripts in this Module do not contain logic
-Contain no subfolders
-Scripts in this Module can only call scripts in an External file's Regular Module's External subfolder.
 
 
 Structure subfolder types (in Regular Modules):
