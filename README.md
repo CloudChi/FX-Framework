@@ -5,7 +5,7 @@
 - The Framework system is comprised of multiple FileMaker files which are primarily organized using a specific Script folder/subfolder structure.
   - Each Framework folder handles a specific group of tasks.
     - For example, the Layouts Module handles anything related to Layout navigation 
-- Scripts within the Framework have a 3-letter prefix which determines how they should be called
+- Scripts within the Framework have a 3-letter prefix which determines **how** they should be called
   - Excluding scripts in ScriptMenu module which are user-facing
 
 ## Script folder categories (organized in this order)
@@ -25,6 +25,7 @@
       - Therefore putting this Non-Module folder first sorts all these scripts on top.
   - Contains no subfolders
   - Scripts contain no logic
+  - Scripts are **not** versioned
   - Scripts can only call scripts in:
     - This file's
       - Regular Module's
@@ -33,6 +34,8 @@
 - ### Triggers
   -  Place for all file-level script triggers
   -  Contains no subfolders
+  -  Scripts contain logic
+  -  Scripts are versioned
   -  Scripts can only call scripts in:
     - This file's
       - Regular Module's
@@ -43,6 +46,7 @@
   - Contains subfolders (only one level deep)
     - one for each External file 
   - Scripts contain no logic
+  - Scripts are **not** versioned
   - Scripts can only call scripts in:
     - An External file's 
       - Regular Module's
@@ -69,13 +73,16 @@
       - Public
       - Protected
       - Private  
-  - Passes errors and doesn't handle/display errors 
+  - Passes errors
+  - Doesn't handle/display errors 
 - dep
 - btn
   - Called by buttons on layouts
+  - Doesn't pass errors
   - Handles/Diplays errors
 - trg
   - Called by triggers on layouts
+  - Doesn't pass errors
   - Handles/Diplays errors
 - cfg???
 
@@ -92,25 +99,6 @@ Private
 Dependencies
 Config
 Templates
-
-Scripts in Modules and Structure subfolders all have prefixes that match their purpose (just a guess)
-
-Modules
-Schedules - sch
-Import - imp
-Regular Modules - (no prefix, because all scripts within Structure subfolders listed below)
-
-Structure subfolders
-Buttons - btn
-Procedures - ???
-Triggers - trg
-Export - exp
-Public - pub
-Protected - pro
-Private - pri
-Dependencies - dep
-Config - cfg
-Templates - tem
 
 
 Buttons
