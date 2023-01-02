@@ -16,14 +16,15 @@ The Frameworks system is comprised of multiple FileMaker files which are primari
 ## Non-Module Folders
 
 - ### Schedules
+  - Scripts will be called by the Script Scheduler within FileMaker Server which has no way to filter or sort scripts.
+      - Therefore putting this Non-Module folder first sorts all these scripts on top.
   - Contains no subfolders
   - Scripts contain no logic
-  - Scripts can only call scripts in this file's Public subfolder of any Regular Modules within the same file
-    - Will be called by the script scheduler within FileMaker Server which has no way to filter or sort scripts.
-      - Putting the Module on top just makes it easier to find the scripts needed.
-      - 
+  - Scripts can only call scripts in this file's Regular Module's Public subfolder
+ 
 - ### Import
   - Contains subfolders
+    - one for each External file 
   - Scripts contain no logic
   - Scripts can only call scripts in an External file's Regular Module's External subfolder.
 
