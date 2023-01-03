@@ -12,7 +12,7 @@
 
 - ### Non-Module folders
   - Schedules
-  - Triggers
+  - Triggers (file level)
   - Import
 - ### Module folders
   - Layout
@@ -56,7 +56,7 @@
 
 - ### Layout
 - ### Regular
-  - Contains sub-Modules (only one level deep)
+- Contains sub-Modules (only one level deep)
 - Structure subfolders are in no particular order within the Module folder.
   - Not all Modules will have all the Structure subfolder types, which are only added as needed.  
 - Modules are transferable between files with minimal connections required.
@@ -87,7 +87,7 @@
 - cfg???
 
 
-Structure subfolder types (in Regular Modules):
+## Subfolder types (in Regular Modules):
 
 Buttons
 Procedures
