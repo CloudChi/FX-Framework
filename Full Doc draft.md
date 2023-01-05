@@ -1,22 +1,34 @@
 # FX Frameworks Scripts Documentation
 
+## Genesis
+
+
+
+## Goals
+
+
+
 ## Summary
 
-- The Framework system is comprised of multiple FileMaker files which are primarily organized using a specific Script folder/subfolder structure.
-  - Each Framework folder handles a specific group of tasks.
+- The Framework is a group of FileMaker files that have a backbone of functional Script Organization, extensive Libraries of code, and complimentary Custom Functions.
+- The Framework script organization uses a specific Script folder/subfolder structure.
+  - Each Framework folder, called a Module, handles a specific group of tasks.
     - For example, the Layouts Module handles anything related to Layout navigation 
+  - Certain Modules can be found in almost every file
+    - Like the Layout Module for example
 - Scripts within the Framework have a 3-letter prefix which determines **how** they should be called
   - Excluding scripts in ScriptMenu module which are user-facing
 
 ## Script folder categories (organized in this order)
 
-- ### Non-Module folders
+- ### Non-Module folders, aka Containers
   - Schedules
-  - Triggers (file level)
   - Import
 - ### Module folders
   - Layout
   - Regular
+  - *Triggers (file level?)*
+  - *Config (file level?)*
 
 ## Non-Module Folders
 
@@ -67,24 +79,27 @@
 
 
 ## Script Prefixes
-- sub
+- sub (subscript)
   - Any script that **must** be called by another script
-    - In the following Module Types
+    - In the following subfolder Types
       - Public
       - Protected
-      - Private  
+      - Private
+      - Config
   - Passes errors
   - Doesn't handle/display errors 
-- dep
-- btn
+- dep (dependencies)
+- btn (button)
   - Called by buttons on layouts
   - Doesn't pass errors
   - Handles/Diplays errors
-- trg
+- trg (trigger)
   - Called by triggers on layouts
   - Doesn't pass errors
   - Handles/Diplays errors
-- cfg???
+- dpr ???
+  - scripts in the Deprecated folder
+    - should *not* be called by any scripts
 
 
 ## Subfolder types (in Regular Modules):
@@ -99,6 +114,7 @@ Private
 Dependencies
 Config
 Templates
+Deprecated
 
 
 Buttons
@@ -156,6 +172,7 @@ The advantage to this, is if you copy this Module from one file to another, you 
 Config
 Scripts/Modules in this subfolder can contain logic
 Can contain consumer-coded sub-Modules
+  The only subfolder that can contain Modules
 Can contain simple scripts that only return a JSONObject of hardcoded values.
 Scripts or Modules in this folder can be modified by consumers (not just Framework developers)
 
@@ -163,4 +180,6 @@ Templates
 Scripts in this subfolder are specific to this module
 Scripts in this subfolder can also work in conjunction with scripts in Config folder
 Commonly, there is a Protected style script that calls additional versioned Private scripts
-<<.  Should we have Protected and Private folder contained within?   >>
+
+Deprecated
+
