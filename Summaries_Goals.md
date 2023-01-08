@@ -15,35 +15,33 @@
   - Mobile device
   - API interface (allowing script calls and returning results)
 
-### FileMaker, like any programming language, has its strenths and weeknesses:
+### FileMaker Strengths
+- Code element naming updates
+  - For example, if you change the name of a field in a table it will propagate throughout the system
+- Frictionless interaction between layers
+  - Because of code element naming updates above, no need to, for example, rename a field in the UI or Business Logic layer if you change the name in the data layer
+- Rapid development
+  - Path from prototyping to deployment is very fast
+- Flexibility of deployment method
+  - Even within same code base, can have different configurations for different interfaces
+    - For example, data entry screens for iOS devices alongside reporting screens visible on the web for remote sales staff 
 
-- #### Strengths
-  - Code element naming updates
-    - For example, if you change the name of a field in a table it will propagate throughout the system
-  - Frictionless interaction between layers
-    - Because of code element naming updates above, no need to, for example, rename a field in the UI or Business Logic layer if you change the name in the data layer
-  - Rapid development
-    - Path from prototyping to deployment is very fast
-  - Flexibility of deployment method
-    - Even within same code base, can have different configurations for different interfaces
-      - For example, data entry screens for iOS devices alongside reporting screens visible on the web for remote sales staff 
-
-- #### Weaknesses
-  - Error handling and passing
-    - Although errors can be trapped, there is no common way of exiting script upon an error and maintaining that error
-    - Errors can be quickly lost, if not coded for specifically
-    - Passing errors up through the script stack is not built in
-  - Variable data types
-    - Variables can be cast as a type, but typing is not natively enforced
-  - Parameter / Result data types
-    - Can be passed using JSON element types, but these types are not connected to internal FileMaker variable types 
-  - Code Documentation
-    - Comments can be added to fields, scripts, custom functions and calculations, but cannot be extracted as documentation
-    - Comments are not directly linked to code, so they can get out of sync unless manually maintained
-  - Code searching / treeview
-    - FileMaker *IDE* does not support searching for code elements across codebase, nor support treeview branching
-  - Unit testing 
-    - Native Unit Testing functions or methodologies are not present in FileMaker and have to be built and maintained separately
+### FileMaker Weaknesses
+- Error handling and passing
+  - Although errors can be trapped, there is no common way of exiting script upon an error and maintaining that error
+  - Errors can be quickly lost, if not coded for specifically
+  - Passing errors up through the script stack is not built in
+- Variable data types
+  - Variables can be cast as a type, but typing is not natively enforced
+- Parameter / Result data types
+  - Can be passed using JSON element types, but these types are not connected to internal FileMaker variable types 
+- Code Documentation
+  - Comments can be added to fields, scripts, custom functions and calculations, but cannot be extracted as documentation
+  - Comments are not directly linked to code, so they can get out of sync unless manually maintained
+- Code searching / treeview
+  - FileMaker *IDE* does not support searching for code elements across codebase, nor support treeview branching
+- Unit testing 
+  - Native Unit Testing functions or methodologies are not present in FileMaker and have to be built and maintained separately
 
 ## Goals
 
