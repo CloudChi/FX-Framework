@@ -2,13 +2,13 @@
 
 ## Genesis
 
-### FileMaker is a programming language that incorporates:
+### FileMaker is a programming language that incorporates
 
   - Data layer back end
   - Business logic mid layer
   - UI/UX front end
  
-### FileMaker can be set up to work on:
+### FileMaker can be set up to work on
  
   - Client app
   - Browser
@@ -68,5 +68,15 @@
 -  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display the error to the user.
 
 ### Libraries of code
+- The Framework contains multiple libraries for core coding activities
+  - Navigating to layouts
+  - Doing Finds
+  - Creating new records
+  - Setting fields
+  - Sending emails 
+  - Transactions for data entry
+  - Displaying errors
+  - Commenting and documenting code
 
 ### Custom Functions
+- 
