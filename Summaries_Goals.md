@@ -2,6 +2,18 @@
 
 ## Genesis
 
+- FileMaker is a programming language that incorporates:
+  - Data layer back end
+  - Business logic mid layer
+  - UI/UX front end
+- FileMaker can be set up to work on:
+  - Client app
+  - Browser
+  - Mobile device
+  - API interface (allowing script calls and returning results)
+
+Like any programming language it has its strenths and weeknessess.
+
 - FileMaker sucks at error handling
   - Most FileMaker scripting practices do not support capturing all errors, maintaining the error state long enough to pass up to calling script
 - FileMaker can use JSON for parameters and results, which supports variable data types, but has no native way of converting these JSON variable types to FileMaker data types
@@ -21,6 +33,8 @@
 ## Summary
 
 - The Framework is a group of FileMaker files that have a backbone of functional script organization, extensive libraries of code, and complimentary custom Functions.
+
+### Script Organization
 - The Framework script organization uses a specific Script folder/subfolder structure.
   - Each Framework folder, called a Module, handles a specific group of tasks.
     - For example, the Layouts Module handles anything related to Layout navigation 
@@ -30,3 +44,7 @@
   - Excluding scripts in ScriptMenu module which are user-facing
 - Script stack will pass parameters down and results or errors up using a consistent JSONObject structure
 -  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display the error to the user.
+
+### Libraries of code
+
+### Custom Functions
