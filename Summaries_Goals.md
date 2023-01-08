@@ -3,6 +3,13 @@
 ## Genesis
 
 - FileMaker sucks at error handling
+  - Most FileMaker scripting practices do not support capturing all errors, maintaining the error state long enough to pass up to calling script
+- FileMaker can use JSON for parameters and results, which supports variable data types, but has no native way of converting these JSON variable types to FileMaker data types
+- FileMaker has no native method for documenting scripts
+  - If there is documentation, there is no way of knowing if it is up-to-date
+  - There is no way to access it without having access to read a script (unlike a "man" call to a UNIX funtion)
+- FileMaker has no native method for searching through existing code for every place a certain layout or script is called
+- FileMaker has no methodology for Unit Testing, so refactored code cannot easily be tested 
 
 
 ## Goals
