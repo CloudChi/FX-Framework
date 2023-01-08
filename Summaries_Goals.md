@@ -18,10 +18,15 @@
 ### FileMaker, like any programming language, has its strenths and weeknesses:
 
 - #### Strengths
-  - Frictionless interaction between layers
   - Code element naming updates
+    - for example if you change the name of a field in a table it will propagate throughout the system
+  - Frictionless interaction between layers
+    - Because of code element naming updates above, no need to, for example, rename a field in the UI or Business Logic layer if you change the name in the data layer
   - Rapid development
+    - Path from prototyping to deployment is very fast
   - Flexibility of deployment method
+    - Even within same code base, can have different configurations for different interfaces
+      - For example, data entry screens for iOS devices alongside reporting screens visible on the web for remote sales staff 
 
 - #### Weaknesses
   - Error handling and passing
