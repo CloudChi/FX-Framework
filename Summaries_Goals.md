@@ -47,13 +47,16 @@
 
 ## Goals
 
-1) Modularity
-2) Interchangeability / Portability 
-3) Fault-tolerant
+- Modularity
+- Interchangeability / Portability 
+- Fault-tolerant
 
-## Summary
+## FX Framework System Design
 
-- The Framework is a group of FileMaker files that have a backbone of functional script organization, extensive libraries of code, and complimentary custom Functions.
+- The Framework is a group of FileMaker files that have a backbone of:
+  - Functional script organization
+  - Extensive libraries of code
+  - Complimentary custom Functions
 
 ### Script Organization
 - The Framework script organization uses a specific Script folder/subfolder structure.
