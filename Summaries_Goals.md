@@ -2,21 +2,30 @@
 
 ## Genesis
 
-- FileMaker is a programming language that incorporates:
+### FileMaker is a programming language that incorporates:
+
   - Data layer back end
   - Business logic mid layer
   - UI/UX front end
-- FileMaker can be set up to work on:
+ 
+### FileMaker can be set up to work on:
+ 
   - Client app
   - Browser
   - Mobile device
   - API interface (allowing script calls and returning results)
 
-Like any programming language it has its strenths and weeknessess.
+### FileMaker, like any programming language, has its strenths and weeknesses:
 
-- FileMaker sucks at error handling
+#### Strengths
+
+#### Weaknesses
+
+##### Limited error handling
   - Most FileMaker scripting practices do not support capturing all errors, maintaining the error state long enough to pass up to calling script
-- FileMaker can use JSON for parameters and results, which supports variable data types, but has no native way of converting these JSON variable types to FileMaker data types
+- FileMaker can use JSON for parameters and results, which supports variable data types, but has no native way of converting these JSON variable types to 
+
+##### FileMaker data types
 - FileMaker has no native method for documenting scripts
   - If there is documentation, there is no way of knowing if it is up-to-date
   - There is no way to access it without having access to read a script (unlike a "man" call to a UNIX funtion)
