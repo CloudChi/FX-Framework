@@ -19,7 +19,7 @@
 
 - #### Strengths
   - Code element naming updates
-    - for example if you change the name of a field in a table it will propagate throughout the system
+    - For example, if you change the name of a field in a table it will propagate throughout the system
   - Frictionless interaction between layers
     - Because of code element naming updates above, no need to, for example, rename a field in the UI or Business Logic layer if you change the name in the data layer
   - Rapid development
@@ -30,7 +30,9 @@
 
 - #### Weaknesses
   - Error handling and passing
-    - asdf
+    - Although errors can be trapped, there is no common way of exiting script upon an error and maintaining that error
+    - Errors can be quickly lost, if not coded for specifically
+    - Passing errors up through the script stack is not built in
   - Variable data types
     - Variables can be cast as a type, but typing is not natively enforced
   - Parameter / Result data types
