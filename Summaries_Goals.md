@@ -30,6 +30,7 @@
 
 - #### Weaknesses
   - Error handling and passing
+    - 
   - Variable data types
     - Variables can be cast as a type, but typing is not natively enforced
   - Parameter / Result data types
@@ -38,21 +39,9 @@
     - Comments can be added to fields, scripts, custom functions and calculations, but cannot be extracted as documentation
     - Comments are not directly linked to code, so they can get out of sync unless manually maintained
   - Code searching / treeview
-    - FileMaker *IDE* does not support searching for code elements across codebase, nor suport treeview branching
+    - FileMaker *IDE* does not support searching for code elements across codebase, nor support treeview branching
   - Unit testing 
-    - 
-
-##### Limited error handling
-  - Most FileMaker scripting practices do not support capturing all errors, maintaining the error state long enough to pass up to calling script
-- FileMaker can use JSON for parameters and results, which supports variable data types, but has no native way of converting these JSON variable types to 
-
-##### FileMaker data types
-- FileMaker has no native method for documenting scripts
-  - If there is documentation, there is no way of knowing if it is up-to-date
-  - There is no way to access it without having access to read a script (unlike a "man" call to a UNIX funtion)
-- FileMaker has no native method for searching through existing code for every place a certain layout or script is called
-- FileMaker has no methodology for Unit Testing, so refactored code cannot easily be tested 
-
+    - Native Unit Testing functions or methodologies are not present in FileMaker and have to be built and maintained separately
 
 ## Goals
 
