@@ -54,7 +54,7 @@
   - Portability is a sliding scale with the FX Framework requiring minimal changes when ported
   - Two areas that require file/module specificity are:
     - table references
-      - handled in the Framework by abstracting calls to fields and tables
+      - handled in the Framework by centralizing calls to external fields and tables
     - Custom Functions
       -  handled by including module name in Custom Function name
 
