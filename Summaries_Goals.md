@@ -41,6 +41,7 @@
 - Unit testing 
   - Unit Testing functions and methodologies are not natively present in FileMaker and have to be built and maintained separately
 
+
 ## Goals
 
 ### Modularity
@@ -59,6 +60,7 @@
 
 ### Fault-tolerant
   - If an FX Framework file or Module is missing, the system will be able to handle it and report any errors generated
+
 
 ## FX Framework System Design
 
