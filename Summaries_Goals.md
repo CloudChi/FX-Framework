@@ -45,7 +45,7 @@
 
 ### Modularity
   - Modules can be ripped out a replaced with minimal repointing necessary
-  - Modules can be convertted to Add-Ons fairly easily
+  - Modules can be converted to Add-Ons fairly easily
 
 ### Interchangeability / Portability 
   - Greatest strategic threat to an installed FileMaker solution is inability to update code without unintended consequences
