@@ -1,4 +1,4 @@
-# FX Frameworks Scripts Documentation
+# FX Frameworks Documentation
 
 ## Genesis
 
