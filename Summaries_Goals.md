@@ -95,3 +95,7 @@
 - Designed to simplify and support FX Framework methodologies
 - JSON parsing/building functions for parameter building and script return parsing
 - Error generating and handling functions
+
+
+<img width="1251" alt="Documentation Style" src="https://user-images.githubusercontent.com/82461678/211236456-57c990e3-cbd5-422f-a22f-3fdd3741e64d.png">
+
