@@ -39,9 +39,9 @@
   - Comments can be added to fields, scripts, custom functions and calculations, but cannot be extracted as documentation
   - Comments are not directly linked to code, so they can get out of sync unless manually maintained
 - Code searching / treeview
-  - FileMaker *IDE* does not support searching for code elements across codebase, nor support treeview branching
+  - FileMaker development environment does not support searching for code elements across codebase, nor support treeview branching
 - Unit testing 
-  - Native Unit Testing functions or methodologies are not present in FileMaker and have to be built and maintained separately
+  - Unit Testing functions and methodologies are not natively present in FileMaker and have to be built and maintained separately
 
 ## Goals
 
@@ -51,10 +51,10 @@
 
 ## FX Framework System Design
 
-- The Framework is a group of FileMaker files that have a backbone of:
+- The FX Framework is a group of FileMaker files that have a backbone of:
   - Functional script organization
   - Extensive libraries of code
-  - Complimentary custom Functions
+  - Complimentary Custom Functions
 
 ### Script Organization
 - The Framework script organization uses a specific Script folder/subfolder structure.
@@ -78,5 +78,8 @@
   - Displaying errors
   - Commenting and documenting code
 
-### Custom Functions
+### Libraries of Custom Functions
+- Designed to simplify and support FX Framework methodologies
+- JSON parsing/building functions for parameter building and script return parsing
+- Error generating and handling functions
 - 
