@@ -36,8 +36,8 @@
 - Code Documentation
   - Comments can be added to fields, scripts, custom functions and calculations, but cannot be extracted as documentation
   - Comments are not directly linked to code, so they can get out of sync unless manually maintained
-- Code searching / treeview
-  - FileMaker development environment does not support searching for code elements across codebase, nor support treeview branching
+- Code searching / tree view
+  - FileMaker development environment does not support searching for code elements across codebase, nor support tree view branching
 - Unit testing 
   - Unit Testing functions and methodologies are not natively present in FileMaker and have to be built and maintained separately
 
