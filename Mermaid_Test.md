@@ -2,5 +2,5 @@
 
 ```mermaid
 flowchart LR
-  A[Mammals]
+  A[Mammals]-->B[[Fred]]
 ```
