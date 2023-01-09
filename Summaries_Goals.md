@@ -3,13 +3,11 @@
 ## Genesis
 
 ### FileMaker is a programming language that incorporates
-
   - Data layer back end
   - Business logic mid layer
   - UI/UX front end
  
 ### FileMaker can be set up to work on
- 
   - Client app
   - Browser
   - Mobile device
@@ -45,10 +43,11 @@
 
 ## Goals
 
-- Modularity
+### Modularity
   - Modules can be ripped out a replaced with minimal repointing necessary
   - Modules can be convertted to Add-Ons fairly easily
-- Interchangeability / Portability 
+
+### Interchangeability / Portability 
   - Greatest strategic threat to an installed FileMaker solution is inability to update code without unintended consequences
   - Importing replacement modules will only require a few repoints in an expected location
   - Portability is a sliding scale with the FX Framework requiring minimal changes when ported
@@ -57,7 +56,8 @@
       - handled in the Framework by abstracting calls to fields and tables
     - Custom Functions
       -  handled by including module name in Custom Function name
-- Fault-tolerant
+
+### Fault-tolerant
   - If an FX Framework file or Module is missing, the system will be able to handle it and report any errors generated
 
 ## FX Framework System Design
@@ -93,4 +93,3 @@
 - Designed to simplify and support FX Framework methodologies
 - JSON parsing/building functions for parameter building and script return parsing
 - Error generating and handling functions
-- 
