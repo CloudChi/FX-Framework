@@ -3,13 +3,13 @@
 ```mermaid
 flowchart TB
   subgraph Example FX Framework file
-  subgraph Schedules
+  subgraph Schedules - Container
   end
-  subgraph Import
+  subgraph Import - Container
   end
-  subgraph Triggers - file-level
+  subgraph Triggers - Container
   end  
-  subgraph Layouts
+  subgraph Layouts Module
   subgraph Error Layout
   end
   subgraph Email Layouts
@@ -17,14 +17,14 @@ flowchart TB
   subgraph Order Layouts
   end
   end
-  subgraph Regular A
+  subgraph Module A
   end
-  subgraph Regular B
+  subgraph Module B
   end
-  subgraph Regular C
+  subgraph Module C
   end
   end
-  subgraph Communication File
+  subgraph Utility File
   subgraph Import Container
   direction TB
   subgraph File - Errors
