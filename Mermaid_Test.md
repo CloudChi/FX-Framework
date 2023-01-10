@@ -3,7 +3,15 @@
 ```mermaid
 flowchart TB
   subgraph Communication File
+  subgraph Import Container
+  direction TB
+  subgraph File - Errors
+  end
+  subgraph File - Set Fields
+  end
+  end
   subgraph Email Module
+  direction TB
   A[Buttons]
   B[Triggers]
   C[Export]
