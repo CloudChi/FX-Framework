@@ -40,9 +40,13 @@
   - FileMaker development environment does not support searching for code elements across codebase, nor support tree view branching
 - Unit testing 
   - Unit Testing functions and methodologies are not natively present in FileMaker and have to be built and maintained separately
+- Updating and patching deployed systems
+  - Most FileMaker systems contain too many dependencies to rapidly update without breaking a ton of connections
 
 
 ## Goals
+
+The overall goal of the FX Framework is to build on FileMaker's strengths and lessen or eliminate the weaknesses.
 
 ### Modularity
   - Modules can be ripped out a replaced with minimal repointing necessary
@@ -95,7 +99,3 @@
 - Designed to simplify and support FX Framework methodologies
 - JSON parsing/building functions for parameter building and script return parsing
 - Error generating and handling functions
-
-
-<img width="1251" alt="Documentation Style" src="https://user-images.githubusercontent.com/82461678/211236456-57c990e3-cbd5-422f-a22f-3fdd3741e64d.png">
-
