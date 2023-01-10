@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TB
-  subgraph FX Framework file
+  subgraph Example FX Framework file
   subgraph Schedules
   end
   subgraph Import
