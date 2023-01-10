@@ -95,7 +95,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Displaying errors
   - Commenting and documenting code
 - As much as practicable, code that can be centralized to one location, is centralized.
-  - This makes it simplier to debug issues, becuase there are fewer places to check. 
+  - This makes it simplier to debug issues, because there are fewer places to check. 
 
 ### Libraries of Custom Functions
 - Designed to simplify and support FX Framework methodologies
