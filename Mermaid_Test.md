@@ -2,6 +2,28 @@
 
 ```mermaid
 flowchart TB
+  subgraph FX Framework file
+  subgraph Schedules
+  end
+  subgraph Import
+  end
+  subgraph Triggers - file-level
+  end  
+  subgraph Layouts
+  subgraph Error Layout
+  end
+  subgraph Email Layouts
+  end
+  subgraph Order Layouts
+  end
+  end
+  subgraph Regular A
+  end
+  subgraph Regular B
+  end
+  subgraph Regular C
+  end
+  end
   subgraph Communication File
   subgraph Import Container
   direction TB
