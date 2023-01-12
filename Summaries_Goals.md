@@ -49,8 +49,9 @@
 The overall goal of the FX Framework is to build on FileMaker's strengths and lessen or eliminate the weaknesses.
 
 ### Modularity
-  - Modules can be ripped out a replaced with minimal repointing necessary
+  - Modules can be removed and replaced/updated with minimal breakage that will be contained in very specific, easy-to-fix areas
   - Modules can be converted to Add-Ons fairly easily
+    - Which will further eliminate many of the remaining breakage points
 
 ### Interchangeability / Portability 
   - Greatest strategic threat to an installed FileMaker solution is inability to update code without unintended consequences
@@ -66,20 +67,20 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
 
 ## FX Framework System Design
 
-- The FX Framework is a group of FileMaker files that have a backbone of:
-  - Functional script organization
+- The FX Framework is a system of FileMaker practices and structures that provide stable functionality for devlopers to leverage. Modules have a backbone of:
+  - Functional script organization and naming
   - Extensive libraries of code
   - Complimentary Custom Functions
 
 ### Script Organization
-- The Framework script organization uses a specific Script folder/subfolder structure.
+- The Framework script organization uses a specific script folder/subfolder structure.
   - Each Framework folder, called a Module, handles a specific group of tasks.
     - For example, the Layouts Module handles anything related to Layout navigation 
   - Certain Modules can be found in almost every file
-    - Like the Layout Module for example
+    - Like the Triggers Module for example
 - Scripts within the Framework have a 3-letter prefix which determines **how** they should be called
   - Excluding scripts in ScriptMenu module which are user-facing
-- Script stack will pass parameters down and results or errors up using a consistent JSONObject structure
+- Script stack will pass parameters down and results or errors up using consistent JSON structures
 -  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display the error to the user.
 
 ### Libraries of code
