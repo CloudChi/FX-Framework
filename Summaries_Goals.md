@@ -56,14 +56,12 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Greatest strategic threat to an installed FileMaker solution is inability to update code without unintended consequences
   - Importing replacement modules will only require a few repoints in an expected location
   - Portability is a sliding scale with the FX Framework requiring minimal changes when ported
-  - Two areas that require file/module specificity are:
-    - table references
-      - handled in the Framework by centralizing calls to external fields and tables
-    - Custom Functions
-      -  handled by including module name in Custom Function name
 
 ### Fault-tolerant
-  - If an FX Framework file or Module is missing, the system will be able to handle it and report any errors generated
+  - If an FX Framework (file or) Module is missing, the system will be able to handle it and report any errors generated
+  - <<other kinds of faults>>
+  - Be able to work with missing module, not just report an error that it was missing.
+    - For example, if a jet plane loses an engine, you need a few things to happen, the pilot is alerted to the situation, but more importantly the plane can continue to fly, albeit in a limited way. The worst case would be the pilot is not alerted and the plane cannot fly.
 
 
 ## FX Framework System Design
