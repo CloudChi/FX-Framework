@@ -74,18 +74,18 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Complimentary Custom Functions
 
 ### Script Organization / Naming
-- The Framework uses Modules which is a method of script organization using specific script folder/subfolder structure.
+- The Framework uses Modules which is a method of script organization using a specific script folder/subfolder structure.
   - Modules provide a specific set of tools and functionality to the developer
     - For example, the Layouts Module handles anything related to Layout navigation 
   - Certain Modules can be found in almost every file
     - Like the Triggers Module for example
   - Modules contain subfolders which correspond to organizational paradigms
-    - Modules ty[ically contain subfolders one level deep
-      - Except the Layouts Module which h
-- Scripts within the Framework have a 3-letter prefix which determines **how** they should be called
+    - Modules typically contain subfolders one level deep
+      - Except the Layouts Module which itself contains Layout Modules for each layout in the file
+- Scripts within every Module have a 3-letter prefix which determines **how** they should be called
   - Excluding scripts in ScriptMenu module which are user-facing
-- Script stack will pass parameters down and results or errors up using consistent JSON structures
--  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display the error to the user.
+- The script call stack will pass parameters down and results or errors up using consistent JSON structures
+-  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display any returned error to the user.
 
 ### Libraries of code
 - The Framework contains multiple libraries for core coding activities
