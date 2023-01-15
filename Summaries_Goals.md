@@ -101,6 +101,11 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - This makes it simplier to debug issues, because there are fewer places to check. 
 
 ### Libraries of Custom Functions
-- Designed to simplify and support FX Framework methodologies
-- JSON parsing/building functions for parameter building and script return parsing
-- Error generating and handling functions
+- Custom Functions in the FX Framework have a specify naming convention:
+  - Broad Functionality
+  - Module (if part of a module)
+  - Specific task 
+- Designed to simplify and support FX Framework methodologies. For example:
+  - JSON parsing/building functions for parameter building and script return parsing
+  - Error generating and handling functions
+- Since Custom Functions exist on the file level, any Custom Function associated with a specify module will be named accordingly
