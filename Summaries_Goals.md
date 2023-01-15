@@ -67,12 +67,12 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
 
 ## FX Framework System Design
 
-- The FX Framework is a system of FileMaker practices and structures that provide stable functionality for devlopers to leverage. Modules have a backbone of:
+- The FX Framework is a system of FileMaker practices that provide stable functionality for developers to leverage. Modules have a backbone of:
   - Functional script organization and naming
   - Extensive libraries of code
   - Complimentary Custom Functions
 
-### Script Organization
+### Script Organization / Naming
 - The Framework script organization uses a specific script folder/subfolder structure.
   - Each Framework folder, called a Module, handles a specific group of tasks.
     - For example, the Layouts Module handles anything related to Layout navigation 
