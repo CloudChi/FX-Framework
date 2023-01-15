@@ -65,6 +65,11 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
       - For example, if a jet plane loses an engine, the pilot is alerted to the situation, but more importantly the plane can continue to fly, albeit in a limited and temporary way.
 
 
+## Philosophies / Principles
+
+
+
+
 ## FX Framework System Design
 
 - The FX Framework is a system of FileMaker practices that provide stable functionality for developers to leverage. 
@@ -84,6 +89,10 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
       - Except the Layouts Module which itself contains Layout Modules for each layout in the file
 - Scripts within every Module have a 3-letter prefix which determines **how** they should be called
   - Excluding scripts in ScriptMenu module which are user-facing
+  - Script prefixes meaning:
+    - btn > Button
+    - trg > Trigger
+    - sub > Subscript 
 - The script call stack will pass parameters down and results or errors up using consistent JSON structures
 -  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display any returned error to the user.
 
