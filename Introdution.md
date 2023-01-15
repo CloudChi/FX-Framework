@@ -93,6 +93,8 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
     - btn > Button
     - trg > Trigger
     - sub > Subscript 
+    - dpr > Deprecated (is this true?)
+    - (BLANK) > Scripts Menu (since they need to be human readable and not too many words)
 - The script call stack will pass parameters down and results or errors up using consistent JSON structures
 -  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display any returned error to the user.
 
