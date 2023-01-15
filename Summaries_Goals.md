@@ -59,10 +59,10 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Portability is a sliding scale with the FX Framework requiring minimal changes when ported
 
 ### Fault-tolerant
-  - If an FX Framework (file or) Module is missing, the system will be able to handle it and report any errors generated
-  - <<other kinds of faults>>
-  - Be able to work with missing module, not just report an error that it was missing.
-    - For example, if a jet plane loses an engine, you need a few things to happen, the pilot is alerted to the situation, but more importantly the plane can continue to fly, albeit in a limited way. The worst case would be the pilot is not alerted and the plane cannot fly.
+  - If an FX Framework Module is missing, the system will be able to:
+    - Report a meaningful error about the missing module
+    - Continue to function with the missing module, even in a limited way 
+      - For example, if a jet plane loses an engine, the pilot is alerted to the situation, but more importantly the plane can continue to fly, albeit in a limited and temporary way.
 
 
 ## FX Framework System Design
