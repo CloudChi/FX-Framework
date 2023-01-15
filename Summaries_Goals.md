@@ -73,8 +73,8 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Complimentary Custom Functions
 
 ### Script Organization / Naming
-- The Framework script organization uses a specific script folder/subfolder structure.
-  - Each Framework folder, called a Module, handles a specific group of tasks.
+- The Framework script organization uses a specific script folder/subfolder structure called Modules
+  - Modules provide a specific set of tools and functionality to the developer
     - For example, the Layouts Module handles anything related to Layout navigation 
   - Certain Modules can be found in almost every file
     - Like the Triggers Module for example
