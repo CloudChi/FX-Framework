@@ -8,8 +8,14 @@ flowchart TB
       end
       subgraph Script B
       end
+      subgraph Script C
+      end      
     end
     subgraph Export
+      subgraph Module B script A
+      end
+      subgraph Module B script B
+      end
     end
   end
   
