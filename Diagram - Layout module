@@ -1,5 +1,3 @@
-# Mermaid Test file
-
 ```mermaid
 flowchart TB
   subgraph Example FX Framework file
