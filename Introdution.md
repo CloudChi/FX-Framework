@@ -67,8 +67,6 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
 
 ## Philosophies / Principles
 
-### 
-
 ### JSON Parameters / Data Structures
   - JSON parsing, typing, constructing are all natively supported in new versions of FileMaker
     - Previously to this, no consistently supported options
@@ -83,6 +81,30 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
         - Cluttered up Data Viewer when debugging
     - JSON is default standard for web APIs
       - this increases likelyhood of any given developer being familiar
+
+### Error-Handling
+  - If Errors are consistent and informative, it leads to better code, because users can avoid common mistakes
+  - Correct way is hard, wrong way is easy
+  - Lower tolerance for wrong
+
+### Version / Updating
+  - Standard code very hard to update and experiment with versioning
+  - If you can update code without breaking things, you can iterate over and over
+  - Coding with any Framework is a balance between freedom and advantages
+    - What do you give up versus what do you get
+    - For example, if you have to provide parameters in JSON, that is a limitation, but the advantage is a subscript might have a JSON parsing routine to parse out parameters easily
+
+### Dependencies
+  - Managing Dependencies
+  - Predictable
+  - Possible ???
+  - Scalable
+  - Concept of exponential growth of dependencies
+    - How quickly dependencies grow
+    - Identify then fix
+    - Limited breakage
+    - Prevent resolving incorrectly
+      - FileMaker Themes and Styles are example of this ???
 
 
 ## FX Framework System Design
