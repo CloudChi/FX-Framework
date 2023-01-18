@@ -80,7 +80,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
         - Might not be assigned / cleared correctly
         - Cluttered up Data Viewer when debugging
     - JSON is default standard for web APIs
-      - this increases likelyhood of any given developer being familiar
+      - this increases likelihood of any given developer being familiar
 
 ### Error-Handling
   - If Errors are consistent and informative, it leads to better code, because users can avoid common mistakes
@@ -146,7 +146,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Displaying errors
   - Commenting and documenting code
 - As much as practicable, code that can be centralized to one location, is centralized.
-  - This makes it simplier to debug issues, because there are fewer places to check. 
+  - This makes it simpler to debug issues, because there are fewer places to check. 
 
 ### Libraries of Custom Functions
 - Custom Functions in the FX Framework have a specify naming convention:
