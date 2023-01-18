@@ -1,20 +1,20 @@
 # Dependencies Comparison
 
 ```mermaid
-graph LR
-  subgraph Example FX Framework file
-  subgraph Schedules - Container
+flowchart TB
+  subgraph Module A
+    subgraph Private
+      subgraph Script A
+      end
+      subgraph Script B
+      end
+    end
+    subgraph Export
+    end
   end
-  subgraph Import - Container
-  end
-  subgraph Triggers - Container
-  end  
-  subgraph Layouts Module
-  subgraph Error Layout
-  end
-  subgraph Email Layouts
-  end
-  subgraph Order Layouts
+  
+  subgraph Module B
+  subgraph Stu
   end
   end
 ```
