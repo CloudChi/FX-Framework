@@ -11,16 +11,22 @@ flowchart TB
       subgraph Script C
       end      
     end
-    subgraph Export
-      subgraph Module B script A
+    subgraph Import
+      subgraph Module B
+        subgraph script A
+        end
+        subgraph script B
+        end
       end
-      subgraph Module B script B
+      subgraph Module C
+        subgraph script C
+        end
       end
     end
   end
   
   subgraph Module B
-  subgraph Stu
+  subgraph Import
   end
   end
 ```
