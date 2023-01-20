@@ -26,33 +26,34 @@
 
 - Buttons
   - Do not contain logic
-  - Call scripts within this Module's Public or Protected subfolders.
-  - Handle any error they encounter and display it to the user.
-  - ONLY scripts that a button on the layout should call.
+  - Call scripts in Public or Protected subfolders
+  - Display errors to the user
+  - Only called by buttons on layouts
 
 - Scripts Menu
-  - D not contain logic
-  - Call scripts within this Module's Public or Protected subfolders.
-  - Handle any error they encounter and display it to the user.
-  - ONLY scripts that a non-button procedure should call. For example, Menu Items in a Custom Menu.
+  - Do not contain logic
+  - Call scripts in Public or Protected subfolders
+  - Display errors to the user
+  - Only called from Scripts Menu
+    - Therefore should be human-readable and clearly named 
 
 
 - Triggers
-  - Scripts in this subfolder can contain logic
-  - Scripts call scripts within this Module's Public or Protected subfolders.
-  - Scripts handle any error they encounter and display it to the user.
-  - Script Trigger should ONLY call scripts in this subfolder.
-  - Scripts in this subfolder can be versioned (independently of the Private scripts' versioning)
-  - Scripts return "False" if an error occurred (and maybe set an $ERROR global variable?)
-  - Scripts return JSONObject if they succeed
+  - Can contain logic
+  - Call scripts in Public or Protected subfolders
+  - Display errors to the user
+  - Only called by Script Triggers
+  - Can be versioned (independently of the Private scripts' versioning)
+  - Return "False" if an error occurs
+  - Return JSONObject if they succeed
 
 - Export
-  - Scripts in this subfolder do not contain logic
-  - Scripts call scripts within this Module's Public or Protected subfolders.
-  - Scripts in this Module can only be called by scripts in an External file's Import Module
+  - Do not contain logic
+  - Call scripts in Public or Protected subfolders
+  - Only called by scripts in an External file's Import Module
 
 - Public
-  - Scripts in this subfolder do not contain logic
+  - Do not contain logic
   - Contains any script that is addressable from INSIDE or OUTSIDE the Module
   - Scripts within this subfolder call specifically-versioned scripts within the Private subfolder
 
