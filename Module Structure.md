@@ -1,8 +1,28 @@
 # FX Framework - Script Organization
 
 ## Overview
-- Each FX Framework file has 3 types of Script folders
+- Each FX Framework file can have up to 5 types of Script folders
   - File-level folders
+    - Schedules folder 
+    - Import folder
+    - Trigger folder
+    - Layouts
+    - Regular Modules
+
+  - Regular Module folders 
+    - Buttons
+    - Procedures
+    - Triggers
+    - Export
+    - Public
+    - Protected
+    - Private
+    - Dependencies
+    - Config
+    - Templates
+    - Deprecated 
+
+
     - Schedules folder
       - Scripts which are called by the FileMaker Server
         - The Server has no way to filter scripts in a file, therefore this folder is on top to make finding these scripts easier on FileMaker Server   
@@ -15,6 +35,3 @@
         - OnWindowOpen
         - OnWindowClose
         - OnFileAVPlayerChange    
-  - Module folders 
-
-
