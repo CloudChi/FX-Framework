@@ -3,8 +3,8 @@
 ## Folder Overview
 Each FX Framework file can have up to 5 types of Script folders
 
-  - File-level folders
-    - Schedules folder 
+- File-level folders
+	- Schedules folder 
     - Import folder
     - Trigger folder
     - Layouts
