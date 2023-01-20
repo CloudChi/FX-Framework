@@ -1,7 +1,8 @@
 # FX Framework - Script Organization
 
-## Overview
-- Each FX Framework file can have up to 5 types of Script folders
+## Folder Overview
+Each FX Framework file can have up to 5 types of Script folders
+
   - File-level folders
     - Schedules folder 
     - Import folder
@@ -22,6 +23,7 @@
     - Templates
     - Deprecated 
 
+## Folder Detail
 
     - Schedules folder
       - Scripts which are called by the FileMaker Server
