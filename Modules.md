@@ -68,22 +68,20 @@
   - Do the majority of the work (how do we say this???)
   - Versioned as needed
     - Allows developers to test new code
-    - Revert to old code by just calling a newer or older version from scripts within the Public or Protected subfolders
-  - Call scripts in Public or Protected subfolders
-    - Instead of calling other scripts in Private subfolder 
+    - Revert to old code by just calling a newer or older version from Public or Protected subfolders
   - Any script in this subfolder that needs to reference a script outside this Module calls a script in the Dependencies subfolder which calls an external script using that Module's Public scripts
   - Callable only from Public or Protected subfolders
 
 - Dependencies
   - Do not contain logic
   - Call scripts in another Module's Public subfolder
-    - If you copy this Module from one file to another, you only have to repoint these scripts.
+    - If you copy this Module from one file to another, you only have to repoint these scripts
 
 - Config
   - Can contain logic
   - Can contain consumer-coded sub-Modules
     - Only subfolder that can contain Modules
-  - Can contain simple scripts that only return a JSONObject of hardcoded values.
+  - Can contain simple scripts that only return a JSONObject of hardcoded values
   - Can be modified by consumers (not just Framework developers)
 
 - Templates
