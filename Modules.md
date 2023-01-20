@@ -54,14 +54,14 @@
 
 - Public
   - Only contain logic for version choosing
-  - Contains any script that is addressable from INSIDE or OUTSIDE the Module
-  - Scripts within this subfolder call specifically-versioned scripts within the Private subfolder
+  - Callable from inside or outside the Module
+  - Call specifically-versioned scripts within the Private subfolder 
 
 - Protected
   - Only contain logic for version choosing
-  - Contains any script that is addressable from INSIDE the Module
-  - Scripts within this subfolder call specifically-versioned scripts within the Private subfolder
-  - Typically script will start as Protected, and get promoted to the Public subfolder if access to it is needed outside the Module
+  - Callable only from inside the Module
+  - Call specifically-versioned scripts within the Private subfolder
+  - May get promoted to the Public subfolder if access is needed outside the Module
 
 - Private
   - Can contain logic
