@@ -54,24 +54,25 @@
 
 - Public
   - Contain logic for versions
-  - Call scripts in Private subfolder
+  - Call versioned scripts in Private subfolder
   - Callable from inside or outside the Module
 
 - Protected
   - Contain logic for versions
-  - Call scripts in Private subfolder
+  - Call versioned scripts in Private subfolder
   - Callable only from inside the Module
-  - Promoted to Public subfolder if access is needed outside Module
+    - Promoted to Public subfolder if access is needed outside Module
 
 - Private
   - Can contain logic
   - Do the majority of the work (how do we say this???)
-  - Versioned as changes are needed
+  - Versioned as needed
     - Allows developers to test new code
     - Revert to old code by just calling a newer or older version from scripts within the Public or Protected subfolders
-  - Any script in this subfolder that needs to reference a script within this Module calls a Protected script
+  - Call scripts in Public or Protected subfolders
+    - Instead of calling other scripts in Private subfolder 
   - Any script in this subfolder that needs to reference a script outside this Module calls a script in the Dependencies subfolder which calls an external script using that Module's Public scripts
-  - Only addressed by scripts in this Module's Public and Protected subfolders
+  - Callable only from Public or Protected subfolders
 
 - Dependencies
   - Do not contain logic
@@ -81,14 +82,15 @@
 - Config
   - Can contain logic
   - Can contain consumer-coded sub-Modules
-  - The only subfolder that can contain Modules
+    - Only subfolder that can contain Modules
   - Can contain simple scripts that only return a JSONObject of hardcoded values.
-  - Scripts or Modules in this folder can be modified by consumers (not just Framework developers)
+  - Can be modified by consumers (not just Framework developers)
 
 - Templates
-  - Scripts in this subfolder are specific to this module
-  - Scripts in this subfolder can also work in conjunction with scripts in Config folder
+  - Specific to this module
+  - Work in conjunction with scripts in Config folder
   - Commonly, there is a Protected style script that calls additional versioned Private scripts
 
 - Deprecated
-  - XXX
+  - No longer being used 
+  - Kept here temporarily instead of deleted, in case they need to be referenced
