@@ -1,15 +1,15 @@
 # Modules
 - Modules are script folders
-- Modules contain specifically-named subfolders
+- Modules contain subfolders
 - Each subfolder type serves a specific purpose
 - Some Modules contain sub-Modules, but never more than one layer deep
-- A Module exposes certain tools to the developer
+- A Module presents certain tools to the developer
 
 ## Module Subfolder Structure
 
 - Module
   - Buttons
-  - Procedures
+  - Scripts Menu
   - Triggers
   - Export
   - Public
@@ -21,6 +21,7 @@
   - Deprecated 
 
 ## Subfolder Details
+- Scripts in these folders have the following characteristics
 
 - Buttons
   - Scripts in this subfolder do not contain logic
@@ -28,7 +29,7 @@
   - Scripts handle any error they encounter and display it to the user.
   - Scripts in this subfolder are the ONLY scripts that a button on the layout should call.
 
-- Procedures
+- Scripts Menu
   - Scripts in this subfolder do not contain logic
   - Scripts call scripts within this Module's Public or Protected subfolders.
   - Scripts handle any error they encounter and display it to the user.
