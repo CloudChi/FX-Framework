@@ -35,7 +35,7 @@
   - Call scripts in Public or Protected subfolders
   - Display errors to the user
   - Only called from Scripts Menu
-    - Therefore should be human-readable and clearly named 
+    - Should be human-readable and clearly named 
 
 
 - Triggers
@@ -43,7 +43,7 @@
   - Call scripts in Public or Protected subfolders
   - Display errors to the user
   - Only called by Script Triggers
-  - Can be versioned (independently of the Private scripts' versioning)
+  - Can be versioned
   - Return "False" if an error occurs
   - Return JSONObject if they succeed
 
@@ -53,19 +53,19 @@
   - Only called by scripts in an External file's Import Module
 
 - Public
-  - Only contain logic for version choosing
+  - Contain logic for versions
+  - Call scripts in Private subfolder
   - Callable from inside or outside the Module
-  - Call specifically-versioned scripts within the Private subfolder 
 
 - Protected
-  - Only contain logic for version choosing
+  - Contain logic for versions
+  - Call scripts in Private subfolder
   - Callable only from inside the Module
-  - Call specifically-versioned scripts within the Private subfolder
-  - May get promoted to the Public subfolder if access is needed outside the Module
+  - Promoted to Public subfolder if access is needed outside Module
 
 - Private
   - Can contain logic
-  - Do the majority of the work
+  - Do the majority of the work (how do we say this???)
   - Versioned as changes are needed
     - Allows developers to test new code
     - Revert to old code by just calling a newer or older version from scripts within the Public or Protected subfolders
