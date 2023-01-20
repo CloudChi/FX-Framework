@@ -53,32 +53,33 @@
   - Only called by scripts in an External file's Import Module
 
 - Public
-  - Do not contain logic
+  - Only contain logic for version choosing
   - Contains any script that is addressable from INSIDE or OUTSIDE the Module
   - Scripts within this subfolder call specifically-versioned scripts within the Private subfolder
 
 - Protected
-  - Scripts in this subfolder do not contain logic
+  - Only contain logic for version choosing
   - Contains any script that is addressable from INSIDE the Module
   - Scripts within this subfolder call specifically-versioned scripts within the Private subfolder
-  - Typically a script will start as Protected, and will get promoted to the Public subfolder if access to it is needed outside the Module.
+  - Typically script will start as Protected, and get promoted to the Public subfolder if access to it is needed outside the Module
 
 - Private
-  - Scripts in this folder can contain logic
-  - These scripts do the majority of the work
-  - Scripts are versioned as changes are needed
-  - Versioning allows developers to test new code and revert to old code by just calling a newer or older version from scripts within the Public or Protected subfolders
+  - Can contain logic
+  - Do the majority of the work
+  - Versioned as changes are needed
+    - Allows developers to test new code
+    - Revert to old code by just calling a newer or older version from scripts within the Public or Protected subfolders
   - Any script in this subfolder that needs to reference a script within this Module calls a Protected script
   - Any script in this subfolder that needs to reference a script outside this Module calls a script in the Dependencies subfolder which calls an external script using that Module's Public scripts
-  - The scripts in this subfolder should ONLY be addressed by scripts in this Module's Public and Protected subfolders
+  - Only addressed by scripts in this Module's Public and Protected subfolders
 
 - Dependencies
-  - Scripts in this subfolder do not contain logic
-  - The scripts in this subfolder ONLY call scripts in another Module's Public subfolder
-  - The advantage to this, is if you copy this Module from one file to another, you only have to repoint these scripts.
+  - Do not contain logic
+  - Call scripts in another Module's Public subfolder
+    - If you copy this Module from one file to another, you only have to repoint these scripts.
 
 - Config
-  - Scripts/Modules in this subfolder can contain logic
+  - Can contain logic
   - Can contain consumer-coded sub-Modules
   - The only subfolder that can contain Modules
   - Can contain simple scripts that only return a JSONObject of hardcoded values.
