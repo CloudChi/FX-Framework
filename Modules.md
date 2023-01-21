@@ -68,8 +68,8 @@
   - Do the majority of the work (how do we say this???)
   - Versioned as needed
     - Allows developers to test new code
-    - Revert to old code by just calling a newer or older version from Public or Protected subfolders
-  - Any script in this subfolder that needs to reference a script outside this Module calls a script in the Dependencies subfolder which calls an external script using that Module's Public scripts
+    - Revert to old code by just calling older version from Public or Protected subfolders
+  - Call external scripts via Dependencies subfolder
   - Callable only from Public or Protected subfolders
 
 - Dependencies
