@@ -70,8 +70,7 @@
     - Allows developers to test new code
     - Revert to old code by just calling older version
   - Call external scripts via Dependencies subfolder
-  - Callable only from Public or Protected subfolders
-    - Any  
+  - Callable either from Public or Protected subfolders, not both
 
 - Dependencies
   - Do not contain logic
