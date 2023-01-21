@@ -68,14 +68,15 @@
   - Do the majority of the work (how do we say this???)
   - Versioned as needed
     - Allows developers to test new code
-    - Revert to old code by just calling older version from Public or Protected subfolders
+    - Revert to old code by just calling older version
   - Call external scripts via Dependencies subfolder
   - Callable only from Public or Protected subfolders
+    - Any  
 
 - Dependencies
   - Do not contain logic
   - Call scripts in another Module's Public subfolder
-    - If you copy this Module from one file to another, you only have to repoint these scripts
+    - Modules copied to another file need to repoint these scripts
 
 - Config
   - Can contain logic
