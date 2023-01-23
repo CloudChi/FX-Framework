@@ -43,6 +43,10 @@
 ### Module Folders
 
 - Layouts
+  - A Module of individual Layout Modules
+  - Each layout Module handles things specific to that layout
 - Regular
+  - These are the standard Module folder that provide specific functionality
+  - There can be any number of these
 
 ## Custom Functions
