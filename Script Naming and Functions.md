@@ -31,5 +31,17 @@
       - Called by Scripts Menu > Menu Items
       - They need to be human readable, so therefore no Prefix
       -  - Display errors
-- The script call stack will pass parameters down and results or errors up using consistent JSON structures
--  Any top level script initiated by a user (Button, Trigger, Script Menu scripts) will all display any returned error to the user.
+
+## Script Functions
+
+- All Scripts use JSONObjects or JSONArrays to:
+  - Pass parameters down
+  - Pass results back up
+  - Or pass any errors up
+- Any subscript will pass JSON back and forth but will NOT display results or errors to the user
+- Any top level script WILL display any returned result or error to the user. 
+  - These include the following script types:
+    - Button
+    - Trigger
+    - Script Menu
+
