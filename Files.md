@@ -1,5 +1,9 @@
 # Files
 
+## Script Organization
+- 
+- Each file in the FX Framework follows the same Script folder structure methodologies
+
 ## Non-Module folders, aka Containers
   - Schedules
   - Import
