@@ -34,6 +34,9 @@
 
 ## Script Functions
 
+- All scripts are responsible for handling and passing back:
+  - Any errors they encounter
+  - Any results they generate
 - All Scripts use JSONObjects or JSONArrays to:
   - Pass parameters down
   - Pass results back up
