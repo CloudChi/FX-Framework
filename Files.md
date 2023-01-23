@@ -1,16 +1,15 @@
 # Files
 
 ## Script Organization
-- 
-- Each file in the FX Framework follows the same Script folder structure methodologies
 
-## Non-Module folders, aka Containers
-  - Schedules
-  - Import
-  - Triggers
-### Module folders
-  - Layout
-  - Regular
+- There are two types of script folders in the FX Framework:
+  - Non-Module folders, aka Containers
+    - Schedules
+    - Import
+    - Triggers
+  - Module folders
+    - Layout
+    - Regular
 
 ## Non-Module Folders
 
@@ -50,3 +49,5 @@
 
 - ### Layout
 - ### Regular
+
+## Custom Functions
