@@ -1,9 +1,13 @@
 # Files
 
+- An FX Framework file consists of a few elements:
+  - Scripts organized in a certain way
+  - Custom Functions 
+
 ## Script Organization
 
 - There are two types of script folders in the FX Framework:
-  - Non-Module folders, (aka Containers???)
+  - Container folders (aka Non-Module)
     - Schedules
     - Import
     - Triggers
@@ -11,7 +15,7 @@
     - Layouts
     - Regular
 
-## Container Folders
+### Container Folders
 
 - Schedules
   - Called by the Script Scheduler within FileMaker Server which has no way to filter or sort scripts.
@@ -29,16 +33,16 @@
   - Call scripts in and external file's > Regular Module's > External subfolders
 
 - Triggers
-  -  File-level script triggers
-  -  Contains no subfolders
-  -  Can contain logic
-  -  Can be versioned
-  -  Call scripts in this file's > Regular Module's > Public subfolders
-  - Handles/Diplays errors
+  - File-level script triggers
+  - Contains no subfolders (Is this true???)
+  - Can contain logic
+  - Can be versioned
+  - Call scripts in this file's > Regular Module's > Public subfolders
+  - Diplays errors
 
-## Module Folders
+### Module Folders
 
-- ### Layout
-- ### Regular
+- Layouts
+- Regular
 
 ## Custom Functions
