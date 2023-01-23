@@ -50,3 +50,6 @@
   - There can be any number of these
 
 ## Custom Functions
+
+- Custom Functions are named with a certain convention to indicate where and how they are used
+  - They are 
