@@ -3,7 +3,7 @@
 ## Script Organization
 
 - There are two types of script folders in the FX Framework:
-  - Non-Module folders, aka Containers
+  - Non-Module folders, (aka Containers???)
     - Schedules
     - Import
     - Triggers
