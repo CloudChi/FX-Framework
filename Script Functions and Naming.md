@@ -25,7 +25,7 @@
   - Script prefix definitions:
     - btn
       - Called by Buttons on Layouts
-      - Display errors
+      - Displays errors
     - trg
       - Called by Script Triggers
       - Returns False if errors
@@ -34,8 +34,8 @@
     - sub
       - Called as subscripts
       - Never called as top level 
-      - Pass back results or errrors in JSON format
-      - Do not display errors
+      - Passes back results or errrors in JSON format
+      - Does not display errors
       - Can be found in various Module subfolders (unlike other prefixes)
         - Private
         - Protected
@@ -49,4 +49,4 @@
     - (BLANK)
       - Called by Scripts Menu > Menu Items
       - They need to be human readable, so therefore no Prefix
-      -  - Display errors
+      - Displays errors
