@@ -1,6 +1,6 @@
 # Script Functions and Naming
 
-## Script Functions
+## Script Functions (Is Functions the right word???)
 
 - All scripts are responsible for handling and passing back:
   - Any errors they encounter
