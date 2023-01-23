@@ -1,14 +1,12 @@
 # Files
 
-
-- ### Non-Module folders, aka Containers
+## Non-Module folders, aka Containers
   - Schedules
   - Import
-- ### Module folders
+  - Triggers
+### Module folders
   - Layout
   - Regular
-  - *Triggers (file level?)*
-  - *Config (file level?)*
 
 ## Non-Module Folders
 
@@ -22,6 +20,16 @@
     - This file's
       - Regular Module's
         - Public subfolder
+ 
+- ### Import
+  - Contains subfolders (only one level deep)
+    - one for each External file 
+  - Scripts contain no logic
+  - Scripts are **not** versioned
+  - Scripts can only call scripts in:
+    - An External file's 
+      - Regular Module's
+        - External subfolder.
 
 - ### Triggers
   -  Place for all file-level script triggers
@@ -33,16 +41,6 @@
       - Regular Module's
         - Public subfolder
   - Handles/Diplays errors
- 
-- ### Import
-  - Contains subfolders (only one level deep)
-    - one for each External file 
-  - Scripts contain no logic
-  - Scripts are **not** versioned
-  - Scripts can only call scripts in:
-    - An External file's 
-      - Regular Module's
-        - External subfolder.
 
 ## Module Folders
 
