@@ -1,4 +1,4 @@
-# Script Naming and Functions
+# Script Functions and Naming
 
 ## Script Functions
 
