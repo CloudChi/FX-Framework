@@ -56,6 +56,7 @@
   - Contain logic for versions
   - Call versioned scripts in Private subfolder
   - Callable from inside or outside the Module
+    - Promoted to Export subfolder if access is needed outside File 
 
 - Protected
   - Contain logic for versions
@@ -86,8 +87,11 @@
 
 - Templates
   - Specific to this module
-  - Work in conjunction with scripts in Config folder
-  - Commonly, there is a Protected style script that calls additional versioned Private scripts
+  - May work in conjunction with scripts in Config folder
+    - How do we explain this???
+  - Commonly, there are two duplicateable scripts included in this subFolder 
+    - Button script 
+    - Private script
 
 - Deprecated
   - No longer being used 
