@@ -51,5 +51,14 @@
 
 ## Custom Functions
 
-- Custom Functions are named with a certain convention to indicate where and how they are used
-  - They are 
+- Avoid duplication of code
+- If error encountered return "?"
+  - Which is expected behavior for FileMaker Custom Functions 
+- Named with "Fx." prefix to differentiate from:
+  - FileMakers included Custom Functions
+  - Custom Functions that may have been added
+    - For example, 
+- Named in TitleCase so they support type ahead in calculation window
+  - 
+- with a certain convention to indicate where and how they are used
+- They are 
