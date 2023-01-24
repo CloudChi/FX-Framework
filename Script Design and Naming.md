@@ -42,10 +42,13 @@
         - Public
         - Export
         - Dependencies
-        - Import (Is this a subfolder or a file level folder???)
+      - Can be found in various file Component folders (unlike other prefixes)
+        - Schedules
+        - Import
+        - Triggers (file level)
     - dpr > Deprecated (is this true?)
       - These scripts should NEVER be called by any other script
-      - Not of any specific type, otherwise
+      - Can be any type previously
     - (BLANK)
       - Called by Scripts Menu > Menu Items
       - They need to be human readable, so therefore no Prefix
