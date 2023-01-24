@@ -46,8 +46,8 @@
         - Schedules
         - Import
         - Triggers (file level)
-    - dpr > Deprecated (is this true?)
-      - These scripts should NEVER be called by any other script
+    - dpr
+      - Deprecated, so should NEVER be called by any other script
       - Can be any type previously
     - (BLANK)
       - Called by Scripts Menu > Menu Items
