@@ -6,7 +6,7 @@
 - All Scripts use JSONObjects to:
   - Accept parameters
   - Return results, or any errors
-  - Except Trigger scripts – which return True of False to Proceed with or Cancel calling trigger
+  - Except Trigger scripts – which return True of False (to Proceed with or Cancel calling trigger, respectively)
 - Scripts are divided into two basic types:
   - Subscripts
     - Will NOT display results or errors to the user
