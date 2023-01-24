@@ -2,7 +2,6 @@
 - Modules are script folders
 - Modules contain subfolders
 - Each subfolder type serves a specific purpose
-- Some Modules contain sub-Modules, but never more than one layer deep
 - A Module presents certain tools to the developer
 
 ## Module Subfolder Structure
@@ -52,7 +51,7 @@
 - Export
   - Do not contain logic
   - Not versioned
-  - Call scripts in Public or Protected subfolders
+  - Call scripts in Public subfolder
   - Only called by scripts in an External file's Import Module
 
 - Public
@@ -60,7 +59,6 @@
   - Not versioned
   - Call versioned scripts in Private subfolder
   - Callable from inside or outside the Module
-    - Promoted to Export subfolder if access is needed outside File 
 
 - Protected
   - Contain logic for versions
@@ -75,8 +73,10 @@
   - Versioned
     - Allows developers to test new code
     - Revert to old code by just calling older version
-  - Call external scripts via Dependencies subfolder
+  - Calls scripts inside Module via Public or Protected subfolders
+  - Calls scripts outside Module via Dependencies subfolder 
   - Callable either from Public or Protected subfolders, not both
+    - There is a single endpoint for each call to a Private script
 
 - Dependencies
   - Do not contain logic
@@ -89,16 +89,12 @@
   - Can contain consumer-coded sub-Modules
     - Only subfolder that can contain Modules
   - Can contain simple scripts that only return a JSONObject of hardcoded values
-  - Can be modified by consumers (not just Framework developers)
+  - Can be modified by consumers (not just original developer)
 
 - Templates
   - Specific to this module
   - Not versioned
   - May work in conjunction with scripts in Config folder
-    - How do we explain this???
-  - Commonly, there are two duplicateable scripts included in this subFolder 
-    - Button script 
-    - Private script
 
 - Deprecated
   - No longer being used 
