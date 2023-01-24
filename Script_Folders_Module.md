@@ -4,6 +4,23 @@
 - Each subfolder type serves a specific purpose
 - A Module presents certain tools to the developer
 
+## Two Types of Modules
+- Standard
+  - These are the standard Module folder that provide specific functionality
+  - There can be any number of these
+- Grouped Module
+  - Contain:
+    - Individual Sub-Modules
+    - Shared Dependencies folder
+      - Removes Dependencies folders inside each Sub-Module
+  - Example of this is Layouts module which looks like this:
+    - Layouts
+      - Dependencies
+      - Layout A
+      - Layout B
+      - Layout C
+  - Sub-Modules can use Dependencies of Parent Module
+
 ## Module Subfolder Structure
 
 - Module
