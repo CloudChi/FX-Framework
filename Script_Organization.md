@@ -21,7 +21,7 @@
         - Handles being called from any Context
         - Returns error if not in right Context   
   - Non-Subscripts 
-    - Often display any returned error to the user
+    - Often display any returned errors
     - Types:
       - Schedule
       - Export
