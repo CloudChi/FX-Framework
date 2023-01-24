@@ -11,12 +11,16 @@
   - Subscripts
     - Generally do not display results or errors to the user
     - Types:
-      - Schedule
-      - Export
-      - Import
       - Public
       - Protected
       - Private
+    - Context Independent
+      - Context is defined as
+        - Mode (Browse, Find, etc)
+        - Layout and Table
+      - Either:
+        - Handles being called from any Context
+        - Returns error if not in right context   
   - Non-Subscripts 
     - Often display any returned error to the user
     - Types:
@@ -26,3 +30,4 @@
       - Button
       - Trigger
       - Script Menu
+    - Carbon copies of each other 
