@@ -9,10 +9,20 @@
   - Except Trigger scripts – which return True or False (to Proceed with or Cancel calling trigger, respectively)
 - Scripts are divided into two basic types:
   - Subscripts
-    - Will NOT display results or errors to the user
+    - Generally do not display results or errors to the user
+    - Types:
+      - Schedule
+      - Export
+      - Import
+      - Public
+      - Protected
+      - Private
   - Non-Subscripts 
-    - WILL display any returned result or error to the user
-    - These include the following script types:
+    - Often display any returned error to the user
+    - Types:
+      - Schedule
+      - Export
+      - Import
       - Button
       - Trigger
       - Script Menu
