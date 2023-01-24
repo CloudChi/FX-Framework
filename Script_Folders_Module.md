@@ -1,6 +1,6 @@
 # Script Folders - Module
 - Modules are script folders
-- Modules contain subfolders
+- Modules can contain subfolders and/or Sub-Modules
 - Each subfolder type serves a specific purpose
 - A Module presents certain tools to the developer
 
@@ -20,8 +20,6 @@
   - Deprecated 
 
 ## Subfolder Details
-
-### Scripts in these folders have the following characteristics
 
 - Buttons
   - Do not contain logic
