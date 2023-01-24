@@ -12,8 +12,8 @@
     - Import
     - Triggers
   - Module folders
-    - Layouts
-    - Modules
+    - Modules 
+    - Grouped Modules
 
 ### Non-Module Folders
 
@@ -23,28 +23,36 @@
   - Contains no subfolders
   - Contain no logic
   - NOT versioned
-  - Call scripts in this file's > Module's > Public subfolders
+  - Call scripts in this file's Public subfolders
  
 - Import
-  - Contains subfolders (only one level deep)
+  - Contains subfolders
     - one for each External file 
   - Contain no logic
   - NOT versioned
-  - Call scripts in and external file's > Module's > External subfolders
+  - Call scripts in an external file's External subfolders
 
 - Triggers
   - File-level script triggers
   - Contains no subfolders (Is this true???)
   - Can contain logic
   - Can be versioned
-  - Call scripts in this file's > Module's > Public subfolders
   - Often diplays errors
+  - Returns True or False, so Script Trigger can proceed or is cancelled
 
 ### Module Folders
 
-- Layouts
-  - A Module of individual Layout Modules
-  - Each layout Module handles things specific to that layout
 - Modules
   - These are the standard Module folder that provide specific functionality
   - There can be any number of these
+- Grouped Modules
+  - Contain:
+    - Individual subModules
+    - Shared Dependencies folder
+      - Removes Dependencies folders inside each subModule
+  - Example of this is Layouts module which looks like this:
+    - Layouts
+      - Dependencies
+      - Layout A
+      - Layout B
+      - Layout C
