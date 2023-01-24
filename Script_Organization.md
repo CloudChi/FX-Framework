@@ -15,12 +15,11 @@
       - Protected
       - Private
     - Context Independent
-      - Context is defined as
-        - Mode (Browse, Find, etc)
-        - Layout and Table
+      - Mode (Browse, Find, etc)
+      - Layout / Tables / Fields
       - Either:
         - Handles being called from any Context
-        - Returns error if not in right context   
+        - Returns error if not in right Context   
   - Non-Subscripts 
     - Often display any returned error to the user
     - Types:
