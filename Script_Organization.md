@@ -32,7 +32,7 @@
     - Carbon copies of each other 
 
 
-
+-------------------------------------------------------------------
 
 
 - There are two types of script folders in the FX Framework:
