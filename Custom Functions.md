@@ -27,4 +27,6 @@
     - Module Name
     - subModule(s)
     - Function / Use
-  - For example: "Fx.Email.Smtp.Verify"
+    - For example: "Fx.Email.Smtp.Verify"
+  - When moving a module from one file to another
+    - Move any Custom Funtion that starts with "Fx.Module..."
