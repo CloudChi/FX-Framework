@@ -13,7 +13,7 @@
 ## Naming
 
 - "Fx." prefix to differentiate from:
-  - FileMakers included Functions
+  - FileMaker's included Functions
   - Plugin Functions
     - Troi File plugin adds "TrFile_" Functions, like "TrFile_CopyFile"
 - TitleCase so they support type-ahead in calculation window
