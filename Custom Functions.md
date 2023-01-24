@@ -24,4 +24,4 @@
     - Module Name
     - subModule(s)
     - Function / Use
-  - For example: "Fx.Email.SMTPSettings.Verify"
+  - For example: "Fx.Email.SmtpSettings.Verify"
