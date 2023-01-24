@@ -1,14 +1,4 @@
 # Script Folders - Non-Module
-- There are two types of script folders in the FX Framework:
-  - Non-Module folders
-    - Schedules
-    - Import
-    - Triggers
-  - Module folders
-    - Modules 
-    - Grouped Modules
-
-### Non-Module Folders
 
 - Schedules
   - Called by the Script Scheduler within FileMaker Server which has no way to filter or sort scripts.
@@ -32,22 +22,3 @@
   - Can be versioned
   - Often diplays errors
   - Returns True or False, so Script Trigger can proceed or is cancelled
-
-### Module Folders
-
-- Modules
-  - These are the standard Module folder that provide specific functionality
-  - There can be any number of these
-- Grouped Modules
-  - Contain:
-    - Individual Sub-Modules
-    - Shared Dependencies folder
-      - Removes Dependencies folders inside each Sub-Module
-  - Example of this is Layouts module which looks like this:
-    - Layouts
-      - Dependencies
-      - Layout A
-      - Layout B
-      - Layout C
-  - Sub-Modules can use Dependencies of Parent Module
-
