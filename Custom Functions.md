@@ -4,13 +4,16 @@
 
 - Avoid duplication of code
 - Constantly refine specific calculations
-- If error encountered return "?"
-  - This is expected behavior for FileMaker's built in Custom Functions 
+- If error occurs:
+  - Currently returns error(s) as Array of Strings
+    - Which additional Custom Functions can parse to Error JSONObject 
+  - In the future, may return "?"
+    - This is expected behavior for FileMaker's built in Functions 
 
 ## Naming
 
 - "Fx." prefix to differentiate from:
-  - FileMakers included Custom Functions
+  - FileMakers included Functions
   - Custom Functions that may have been added as part of a Plugin
     - Troi File plugin adds "TrFile_"... Custom Functions, like "TrFile_CopyFile"
 - TitleCase so they support type-ahead in calculation window
