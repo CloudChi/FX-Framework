@@ -1,6 +1,6 @@
 # Script Naming
 
-- Script names start with a 3-letter prefix which determines **how** they should be called
+- Script names start with a 3-letter prefix which determines **HOW** they should be called
   - Script prefix definitions:
     - sched > Schedule
       - Called by FileMaker server
@@ -13,8 +13,8 @@
       - Displays errors
     - trg > Trigger
       - Called by Script Triggers
-      - Returns False if errors
-      - Returns JSON if no error 
+      - Returns "False" if errors
+      - Returns "True" if no error 
         - (Why is this, since it should be top level???)
     - sub > Subscript
       - Called as a subscript
