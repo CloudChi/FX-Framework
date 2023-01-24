@@ -1,6 +1,6 @@
-# Script Design and Naming
+# Script Organization and Naming
 
-## Script Design
+## Script Organization
 
 - All scripts are responsible for handling and passing back:
   - Any errors they encounter
