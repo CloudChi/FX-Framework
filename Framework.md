@@ -4,7 +4,7 @@
   - Scripts organized in a certain way
   - Custom Functions 
 
-## Script Organization
+## Script Organization and Naming
 
 - There are two types of script folders in the FX Framework:
   - Non-Module folders
