@@ -2,15 +2,21 @@
 
 - Script names start with a 3-letter prefix which determines **how** they should be called
   - Script prefix definitions:
-    - btn
+    - sched > Schedule
+      - Called by FileMaker server
+    - exp > Export
+      - XXX
+    - imp > Import
+      - YYY    
+    - btn > Button
       - Called by Buttons on Layouts
       - Displays errors
-    - trg
+    - trg > Trigger
       - Called by Script Triggers
       - Returns False if errors
       - Returns JSON if no error 
         - (Why is this, since it should be top level???)
-    - sub
+    - sub > Subscript
       - Called as a subscript
       - Never called as top level 
       - Passes back results or errors in JSON format
@@ -25,10 +31,10 @@
         - Schedules
         - Import
         - Triggers (file level)
-    - dpr
+    - dpr > Deprecated
       - Deprecated, so should NEVER be called by any other script
       - Can be any type previously
-    - (BLANK)
+    - (BLANK) > Procedures
       - Called by Scripts Menu > Menu Items
       - They need to be human readable, so therefore no Prefix
       - Displays errors
