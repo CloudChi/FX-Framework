@@ -1,4 +1,4 @@
-# Modules
+# Script Folders - Modules
 - Modules are script folders
 - Modules contain subfolders
 - Each subfolder type serves a specific purpose
