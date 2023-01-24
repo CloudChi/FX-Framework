@@ -6,7 +6,7 @@
 - Constantly refine specific calculations
 - If error occurs:
   - Currently returns error(s) as Array of Strings
-    - Which additional Custom Functions can parse to Error JSONObject 
+    - Additional Custom Functions can parse to Error JSONObject 
   - In the future, may return "?"
     - This is expected behavior for FileMaker's built in Functions 
 
