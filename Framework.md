@@ -1,7 +1,7 @@
 # Framework
 
 - An FX Framework file consists of a few elements:
-  - [Script Organization(Script_Organization.md)
+  - [Script Organization](Script_Organization.md)
   - [Script Naming](Script_Naming.md)
   - [Custom Functions](Custom_Functions.md)
 
