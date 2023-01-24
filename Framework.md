@@ -1,4 +1,4 @@
-# Files
+# Framework
 
 - An FX Framework file consists of a few elements:
   - Scripts organized in a certain way
