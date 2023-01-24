@@ -32,7 +32,7 @@
       - Returns JSON if no error 
         - (Why is this, since it should be top level???)
     - sub
-      - Called as subscripts
+      - Called as a subscript
       - Never called as top level 
       - Passes back results or errrors in JSON format
       - Does not display errors
