@@ -1,4 +1,4 @@
-# Script Organization
+# Script Functions and Types
 
 - All scripts are responsible for capturing and returning:
   - Any errors they encounter
