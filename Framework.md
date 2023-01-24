@@ -2,7 +2,7 @@
 
 - An FX Framework file consists of a few elements:
   - Scripts organized in a certain way
-  - Custom Functions 
+  - Custom Functions [link](google.com)
 
 ## Script Organization and Naming
 
