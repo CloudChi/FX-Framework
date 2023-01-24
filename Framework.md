@@ -47,12 +47,13 @@
   - There can be any number of these
 - Grouped Modules
   - Contain:
-    - Individual subModules
+    - Individual Sub-Modules
     - Shared Dependencies folder
-      - Removes Dependencies folders inside each subModule
+      - Removes Dependencies folders inside each Sub-Module
   - Example of this is Layouts module which looks like this:
     - Layouts
       - Dependencies
       - Layout A
       - Layout B
       - Layout C
+  - Sub-Modules can use Dependencies of Parent Module
