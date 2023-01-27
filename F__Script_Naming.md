@@ -2,10 +2,10 @@
   - sched > Schedule
     - Called by FileMaker server
     - Compatible with running on Server 
-    - For example, no elements requiring user actions
+      - For example, no elements requiring user actions
   - exp > Export
     - Called from another file's Import folder scripts
-    - Versus Protected subscripts which are called from any of the same file's Modules scripts
+      - Versus Protected subscripts which are called from any of the same file's Modules scripts
   - imp > Import
     - XXX 
   - btn > Button
