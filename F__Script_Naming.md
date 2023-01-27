@@ -27,7 +27,7 @@
         - Public
         - Export
         - Dependencies
-      - Can be found in various file Component folders (unlike other prefixes)
+      - Can be found in various Non-Module folders (unlike other prefixes)
         - Schedules
         - Import
         - Triggers (file level)
