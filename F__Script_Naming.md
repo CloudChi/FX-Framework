@@ -1,41 +1,36 @@
-# Script Naming
-
-<<WHAT DOES (FXP) suffix mean?>>
-
-- Script names start with a 3-letter prefix which determines **HOW** they should be called
-  - Script prefix definitions:
-    - sched > Schedule
-      - Called by FileMaker server
-      - Compatible with running on Server 
-        - For example, no elements requiring user actions
-    - exp > Export
-      - Called from another file's Import folder scripts
-        - Versus Protected subscripts which are called from any of the same file's Modules scripts
-    - imp > Import
-      -    
-    - btn > Button
-      - Called by Buttons on Layouts
-      - Displays errors
-    - trg > Trigger
-      - Called by Script Triggers
-      - Returns "False" if errors
-      - Returns "True" if no error
-    - sub > Subscript
-      - Called as a subscript
-      - Never called as top level 
-      - Passes back results or errors in JSON format
-      - May not display errors
-      - Can be found in various Module subfolders (unlike other prefixes)
-        - Private
-        - Protected
-        - Public
-        - Export
-        - Dependencies
-    - dpr > Deprecated
-      - Deprecated, so should NEVER be called by any other script
-      - Can be any type previously
-        - For example: "dpr: sub: set all fields v3"
-    - (BLANK) > Procedures
-      - Called by Scripts Menu > Menu Items
-      - They need to be human readable, so therefore no Prefix
-      - Displays errors
+- Script names start with a 3-letter prefix which determines **HOW** they should be called:
+  - sched > Schedule
+    - Called by FileMaker server
+    - Compatible with running on Server 
+    - For example, no elements requiring user actions
+  - exp > Export
+    - Called from another file's Import folder scripts
+    - Versus Protected subscripts which are called from any of the same file's Modules scripts
+  - imp > Import
+    -  
+  - btn > Button
+    - Called by Buttons on Layouts
+    - Displays errors
+  - trg > Trigger
+    - Called by Script Triggers
+    - Returns "False" if errors
+    - Returns "True" if no error
+  - sub > Subscript
+    - Called as a subscript
+    - Never called as top level 
+    - Passes back results or errors in JSON format
+    - May not display errors
+    - Can be found in various Module subfolders (unlike other prefixes)
+    - Private
+    - Protected
+    - Public
+    - Export
+    - Dependencies
+  - dpr > Deprecated
+    - Deprecated, so should NEVER be called by any other script
+    - Can be any type previously
+    - For example: "dpr: sub: set all fields v3"
+  - (BLANK) > Procedures
+    - Called by Scripts Menu > Menu Items
+    - They need to be human readable, so therefore no Prefix
+    - Displays errors
