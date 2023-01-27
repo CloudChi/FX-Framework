@@ -22,6 +22,7 @@
         - Returns error if not in right Context   
   - Non-Subscripts 
     - Often display any returned errors
+    - Within a given Type they are often copies of each other
     - Types:
       - Schedule
       - Export
@@ -29,4 +30,4 @@
       - Button
       - Trigger
       - Script Menu
-    - Carbon copies of each other
+  
