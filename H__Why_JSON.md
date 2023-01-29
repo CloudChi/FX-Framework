@@ -1,5 +1,6 @@
 # Why use JSON for Parameters, Results and data structures
 
+
 ## JSON Parameters / Data Structures
   - JSON parsing, typing, constructing are all natively supported in new versions of FileMaker
     - Previously to this, no consistently supported options
