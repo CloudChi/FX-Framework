@@ -2,10 +2,11 @@
 
 
 ## JSON
-- JSON parsing, typing, constructing are all natively supported in new versions of FileMaker
-- Previously to this, no consistently supported options
+- JSON setting, getting, and typing are all natively supported in FileMaker
+  - Previously to this, no consistently supported options
 - JSON is default standard for web APIs
-  - this increases likelihood of any given developer being familiar
+  - Broader range of developers are familiar
+  - Easier to call and receive data from APIs external to FileMaker
 
 ## XML
 - Can function similarly to JSON
@@ -13,12 +14,18 @@
 - More actual text to express the same data as JSON, therefore less human readable
 
 ## Global Variables
-- Prevented excessive creation of fields
+- Pro: Prevented excessive creation of fields
 - Might not be assigned / cleared correctly
 - Cluttered up Data Viewer when debugging
+- Unless strict naming convention, origin might be unclear
+  - $$Type is unclear
+  - $$Type_Customer is more clear 
 
 ## Let function
 - Variables only exist inside function
+- No real way to step through calculation and see data 
 
 ## Global Fields
 - Data fields get intermingled with business function fields
+- No native way to represent data structures without duplicating data table with table of global fields
+- Realistically limited to relationship starting points or simple data entry start screens
