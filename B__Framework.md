@@ -7,5 +7,3 @@
   - [Script Naming](F__Script_Naming.md)
   - [Custom Functions](G__Custom_Functions.md)
   - [Why use JSON?](H__Why_JSON.md)
-
-H__Why_JSON.md
