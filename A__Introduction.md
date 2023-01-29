@@ -68,7 +68,6 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
 ## Philosophies / Principles
 
 
-
 ### Error-Handling
   - If Errors are consistent and informative, it leads to better code, because users can avoid common mistakes
   - Correct way is hard, wrong way is easy
@@ -84,7 +83,6 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
 ### Dependencies
   - Managing Dependencies
   - Predictable
-  - Possible ???
   - Scalable
   - Concept of exponential growth of dependencies
     - How quickly dependencies grow
