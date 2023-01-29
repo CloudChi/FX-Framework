@@ -7,7 +7,8 @@
     - Called from another file's Import folder scripts
       - Versus Protected subscripts which are called from any of the same file's Modules scripts
   - imp > Import
-    - XXX 
+    - Calls scripts in another files Export folder
+    - All Modules/scripts in external files are accessed in this one point
   - btn > Button
     - Called by Buttons on Layouts
     - Displays errors
