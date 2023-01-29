@@ -10,6 +10,8 @@
 - Scripts are divided into two basic types:
   - Subscripts
     - Generally do not display results or errors to the user
+      - Errors can be displayed if user needs to make decision or provide data in middle of call stack
+        - For example, placing an order for a Customer on Credit Hold, Salesperson can decide to let this one order go through
     - Types:
       - Public
       - Protected
