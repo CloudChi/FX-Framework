@@ -23,7 +23,7 @@
     - Never called as top level 
     - Passes back results or errors in JSON format
     - May not display errors
-    - Can be found in various Module subfolders (unlike other prefixes)
+    - Found in various Module subfolders (unlike other prefixes)
       - Export
       - Protected
       - Public
