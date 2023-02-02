@@ -7,27 +7,23 @@
 - JSON is default standard for web APIs
   - Broader range of developers are familiar
   - Easier to call and receive data from APIs external to FileMaker
-
-## XML
-- Can function similarly to JSON
-- No native functions
-- More actual text to express the same data as JSON, therefore less human readable
-
-  - XML = 108 characters
-  
-```
-"<xml>"
- 	"<old_master_id>Inactive</old_master_id>"
- 	"<oldMasterStatus>123456</oldMasterStatus>"
- "</xml>"
-```
-  - JSON = 64 characters
-
+- JSON more human readable and fewer characters (64 characters)
 ```
 {
 	"oldMasterStatus" : "Inactive",
 	"old_master_id" : "123456"
 }
+```
+
+## XML
+- Can function similarly to JSON
+- No native functions
+- XML less human readable and more characters(108 characters)
+```
+"<xml>"
+ 	"<old_master_id>Inactive</old_master_id>"
+ 	"<oldMasterStatus>123456</oldMasterStatus>"
+ "</xml>"
 ```
 
 ## Global Variables
