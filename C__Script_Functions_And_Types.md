@@ -17,7 +17,7 @@
       - Protected
       - Private
       - Config
-      - Sometimes Template
+      - Template (sometimes)
     - Context Independent
       - Mode (Browse, Find, etc)
       - Layout / Tables / Fields
@@ -34,5 +34,5 @@
       - Button
       - Trigger
       - Procedures
-      - Sometimes Template
+      - Template (sometimes)
   
