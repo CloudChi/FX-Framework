@@ -45,6 +45,7 @@
   - Not versioned
   - Display errors to the user
   - Only called by buttons on layouts
+    - [Example](Screenshot_Buttons.png)
 
 - Procedures
   - Do not contain logic
