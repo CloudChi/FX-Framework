@@ -19,6 +19,8 @@
 - TitleCase so they support type-ahead in calculation window
   - "Fx.DoSomethingCool" can be entered by typing "fdsc"
     - "Fx.do_something_cool" cannot
+  - Acronyms must also be title case
+    - "Fx.Json.Transform" not "Fx.JSON.Transform"
   - Type Ahead Concept
   ![Type Ahead Concept](Screenshot_CF_TypeAhead.png)
   - Type Ahead fails
