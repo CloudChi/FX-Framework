@@ -116,3 +116,6 @@
 - Deprecated
   - No longer being used 
   - Kept here temporarily instead of deleted, in case they need to be referenced
+  - May be of any previous script type:
+    - dpr: btn: my script (module)
+    - dpr: sub: my script (module) 
