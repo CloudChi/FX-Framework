@@ -52,7 +52,7 @@
   - Display errors to the user
   - Only called from Scripts Menu
     - Should be human-readable and clearly named 
-
+    - [Example](Screenshot_Procedures.png)
 
 - Triggers
   - Can contain logic
