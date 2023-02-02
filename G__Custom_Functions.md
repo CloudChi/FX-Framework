@@ -20,8 +20,8 @@
   - "Fx.DoSomethingCool" can be entered by typing "fdsc"
     - "Fx.do_something_cool" cannot
   - ![Type Ahead Concept](Screenshot_CF_TypeAhead.png)
-  - [Type Ahead Fails](Screenshot_CF_TypeAhead_Fails.png)
-  - [Type Ahead Works](Screenshot_CF_TypeAhead_Works.png)
+  - ![Type Ahead Fails](Screenshot_CF_TypeAhead_Fails.png)
+  - ![Type Ahead Works](Screenshot_CF_TypeAhead_Works.png)
 - Standardized Format
   - Clearly linked to Modules
   - User can guess how they would be used by reading name alone
