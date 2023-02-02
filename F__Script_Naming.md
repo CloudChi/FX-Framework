@@ -24,11 +24,12 @@
     - Passes back results or errors in JSON format
     - May not display errors
     - Can be found in various Module subfolders (unlike other prefixes)
-    - Private
-    - Protected
-    - Public
-    - Export
-    - Dependencies
+      - Export
+      - Protected
+      - Public
+      - Private
+      - Config
+      - Dependencies
   - dpr > Deprecated
     - Deprecated, so should NEVER be called by any other script
     - Can be any type previously
