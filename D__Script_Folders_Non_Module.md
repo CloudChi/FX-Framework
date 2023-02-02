@@ -1,6 +1,6 @@
 # Script Folders - Non-Module
 
-- Schedules
+- ## Schedules
   - Called by the Script Scheduler within FileMaker Server which has no way to filter or sort scripts.
       - Therefore putting this Non-Module folder first sorts all these scripts on top
   - Contains no subfolders
@@ -8,7 +8,7 @@
   - NOT versioned
   - Call scripts in this file's Public subfolders
  
-- Import
+- ## Import
   - Contains subfolders
     - one for each External file 
   - Contain no logic
@@ -20,7 +20,7 @@
       - File C Import
       - File D Import 
 
-- Triggers
+- ## Triggers
   - File-level script triggers
   - Contains no subfolders (Is this true???)
   - Can contain logic
