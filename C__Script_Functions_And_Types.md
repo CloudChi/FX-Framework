@@ -16,6 +16,8 @@
       - Public
       - Protected
       - Private
+      - Config
+      - Sometimes Template
     - Context Independent
       - Mode (Browse, Find, etc)
       - Layout / Tables / Fields
@@ -31,5 +33,6 @@
       - Import
       - Button
       - Trigger
-      - Script Menu
+      - Procedures
+      - Sometimes Template
   
