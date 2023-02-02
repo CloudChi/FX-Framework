@@ -18,7 +18,7 @@
 ## XML
 - Can function similarly to JSON
 - No native functions
-- XML less human readable and more characters(108 characters)
+- XML less human readable and more characters (108 characters)
 ```
 "<xml>"
  	"<old_master_id>Inactive</old_master_id>"
