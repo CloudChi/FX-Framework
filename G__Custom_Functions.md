@@ -35,7 +35,9 @@
     - Module Name
     - subModule(s)
     - Function / Use
-    - For example: "Fx.Email.Smtp.Verify"
+    - For example:
+      - Fx.Framework.ErrorHandle.Parameter
+      - Fx.Framework.ErrorHandle.Result
   - When moving a module from one file to another
     - Move any Custom Funtion that starts with "Fx.Module..."
     - For example if moving the "Framework" Module to a new file
