@@ -45,7 +45,7 @@
   - Not versioned
   - Display errors to the user
   - Only called by buttons on layouts
-    - [Example](Screenshot_Buttons.png)
+    - ![Buttons](Screenshot_Buttons.png)
 
 - Procedures
   - Do not contain logic
@@ -54,7 +54,7 @@
   - Display errors to the user
   - Only called from Scripts Menu
     - Should be human-readable and clearly named 
-    - [Example](Screenshot_Procedures.png)
+    - ![Scripts Menu](Screenshot_Procedures.png)
 
 - Triggers
   - Can contain logic
