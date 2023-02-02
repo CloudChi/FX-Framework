@@ -4,6 +4,7 @@
 ## JSON
 - JSON setting, getting, and typing are all natively supported in FileMaker
   - Previously to this, no consistently supported options
+   ![JSON_Functionst](Screenshot_JSON_Functions.png)
 - JSON is default standard for web APIs
   - Broader range of developers are familiar
   - Easier to call and receive data from APIs external to FileMaker
