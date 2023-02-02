@@ -25,7 +25,7 @@
 
 - Module
   - Buttons
-  - Scripts Menu
+  - Procedures
   - Triggers
   - Export
   - Public
@@ -45,7 +45,7 @@
   - Display errors to the user
   - Only called by buttons on layouts
 
-- Scripts Menu
+- Procedures
   - Do not contain logic
   - Call scripts in Public or Protected subfolders
   - Not versioned
