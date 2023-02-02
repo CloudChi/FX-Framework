@@ -1,3 +1,5 @@
+# Script Naming
+
 - Script names start with a 3-letter prefix which determines **HOW** they should be called:
   - sched > Schedule
     - Called by FileMaker server
