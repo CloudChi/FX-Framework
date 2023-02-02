@@ -12,7 +12,9 @@
 - Can function similarly to JSON
 - No native functions
 - More actual text to express the same data as JSON, therefore less human readable
+
   - XML = 108 characters
+  
 ```
 "<xml>"
  	"<old_master_id>Inactive</old_master_id>"
@@ -20,6 +22,7 @@
  "</xml>"
 ```
   - JSON = 64 characters
+
 ```
 {
 	"oldMasterStatus" : "Inactive",
