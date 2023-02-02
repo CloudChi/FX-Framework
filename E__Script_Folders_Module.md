@@ -3,6 +3,7 @@
 - Modules can contain subfolders and/or Sub-Modules
 - Each subfolder type serves a specific purpose
 - A Module presents certain tools to the developer
+- <<What is the (fxp) suffix for???>>
 
 ## Two Types of Modules
 - Standard
