@@ -14,6 +14,11 @@
   - Contain no logic
   - NOT versioned
   - Call scripts in an external file's External subfolders
+  - For example the Import folder in File A:
+    - Import
+      - File B Import
+      - File C Import
+      - File D Import 
 
 - Triggers
   - File-level script triggers
