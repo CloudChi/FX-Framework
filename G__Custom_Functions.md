@@ -38,6 +38,6 @@
     - For example: "Fx.Email.Smtp.Verify"
   - When moving a module from one file to another
     - Move any Custom Funtion that starts with "Fx.Module..."
-    - For example if moving the "Framework" Module
-      - Also move the Custom Functions that start with "Fx.Framework..."
+    - For example if moving the "Framework" Module to a new file
+      - Move the Custom Functions that start with "Fx.Framework..." to the new file as well
        ![CF_Modules](Screenshot_CF_Modules.png)
