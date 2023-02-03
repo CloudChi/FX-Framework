@@ -45,4 +45,5 @@
 ## Global Fields
 - Data fields get intermingled with business function fields
 - No native way to represent data structures without duplicating data table with table of global fields
+![Global Fields](Screenshot_GlobalFields.png)
 - Realistically limited to relationship starting points or simple data entry start screens
