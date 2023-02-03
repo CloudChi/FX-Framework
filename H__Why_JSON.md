@@ -39,6 +39,8 @@
 ## Let function
 - Variables only exist inside function
 - No real way to step through calculation and see data 
+![Let Function code](Screenshot_LetFunction1.png)
+![Let Function variables](Screenshot_LetFunction2.png)
 
 ## Global Fields
 - Data fields get intermingled with business function fields
