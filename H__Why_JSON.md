@@ -34,6 +34,7 @@
 - Unless strict naming convention, origin might be unclear
   - $$Type is unclear
   - $$Type_Customer is more clear 
+![Global Variables](Screenshot_GlobalVariables.png)
 
 ## Let function
 - Variables only exist inside function
