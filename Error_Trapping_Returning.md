@@ -45,7 +45,7 @@ graph LR
     D -- Short Circuits --> C
     C -- Short Circuits --> B
     B -- Short Circuits --> A
-    A -- Displays --> G(Error Dialog to User)
+    A -- Parses JSONObject Error then Displays --> G(Error Dialog to User)
 ```
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
