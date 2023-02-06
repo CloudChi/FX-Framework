@@ -25,7 +25,7 @@ graph LR
     B -- Calls --> C[Subscript 2] 
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
-    E --> F{Packages error in JSONObject w/ scriptname}
+    E --> F{JSONObject Error Package}
     F --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
