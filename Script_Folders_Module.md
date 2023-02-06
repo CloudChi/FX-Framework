@@ -123,4 +123,4 @@
     - dpr: btn: my script (module)
     - dpr: sub: my script (module) 
 
-[Back](D__Script_Folders_Non_Module.md) - [Next](F__Script_Naming.md)
+[Back](Script_Folders_Non_Module.md) - [Next](Script_Naming.md)
