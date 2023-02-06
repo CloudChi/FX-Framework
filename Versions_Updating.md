@@ -2,7 +2,7 @@
 
 ## Common Versioning and Updating
 
-- Developers have to update every location the updated script is called from
+- Developers have to update every location the script is called from
   - If they miss a location, the system might behave differently there
   - If they need to roll back after a bug was discovered they have to reverse the process correctly 
 - As files grow in size and complexity and as a script gets used more and more, this gets more difficult
