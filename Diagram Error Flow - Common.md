@@ -27,7 +27,8 @@ In Frameworks coding practices:
 - Packaged in JSONObject
   - Including script name
 - Short circuits any calling scripts
-  - which add their script name to error stack
+  - Which add their script name to error stack
+  - Pass error to their calling script 
 - Displays a meaningful error to the user
   - showing human-readable and actionable error text
   - showing full path of error through scripts
