@@ -48,4 +48,4 @@
 ![Global Fields](Screenshot_GlobalFields.png)
 - Realistically limited to relationship starting points or simple data entry start screens
 
-[Back](G__Custom_Functions.md) - Next
+[Back](Custom_Functions.md) - Next
