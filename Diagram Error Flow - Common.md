@@ -1,3 +1,5 @@
+# Error Trapping and Returning
+
 ## Common Coding
 
 In common coding practices, if an error is thrown by a subscript it is **NOT** caught and therefore doesn't shortcircuit any calling scripts
