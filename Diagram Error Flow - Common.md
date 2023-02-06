@@ -1,6 +1,6 @@
 ## Common Coding
 
-In common coding practices, if an error is thrown by a subscript it is not caught and therefore doesn't shortcircuit any calling scripts
+In common coding practices, if an error is thrown by a subscript it is **NOT** caught and therefore doesn't shortcircuit any calling scripts
 
 ```mermaid
 graph LR
