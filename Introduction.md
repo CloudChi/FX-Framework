@@ -72,6 +72,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - If Errors are consistent and informative, it leads to better code, because users can avoid common mistakes
   - Correct way is hard, wrong way is easy
   - Lower tolerance for wrong
+  - [Error Trapping and Returning](Error_Trapping_Returning.md)
 
 ### Version / Updating
   - Standard code very hard to update and experiment with versioning
