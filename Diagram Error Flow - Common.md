@@ -1,6 +1,6 @@
 ## Common Coding
 
-If an error is thrown by a subscript
+In common coding practices, if an error is thrown by a subscript it is not caught and therefore doesn't shortcircuit any calling scripts
 
 ```mermaid
 graph LR
@@ -8,12 +8,14 @@ graph LR
     B -- Calls --> C[Subscript 2] 
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
-    E -.Fails to Return.-> D
+    E -.Fails to return error.-> D
     D -- Returns --> C
     C -- Returns --> B
     B -- Returns --> A
 ```
 ## Frameworks Coding
+
+In Frameworks coding practices, if an error is thrown by a subscript it is caught, shortcircuits any calling scripts and displays a meaning error to the user.
 
 ```mermaid
 graph LR
