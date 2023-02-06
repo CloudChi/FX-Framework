@@ -11,8 +11,11 @@
 
 ```mermaid
 graph LR
-    A[/User Action/] -- Calls --> B[Subscript 1] 
-    B -- Calls --> C[Subscript 2] 
+    A[Script 1] -- Calls --> C[Subscript 2] 
+    B[Script 1] 
+    C[Script 1] 
+    D[Script 1] 
+    E[Script 1] 
 ```
 ## Frameworks Versioning and Updating
 
