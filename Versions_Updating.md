@@ -1,21 +1,23 @@
 # Versions and Updating
 
-## Common Coding
+## Common Versioning and Updating
 
-In common coding practices:
-- Error thrown by subscript
-- **NOT** caught
-- Therefore doesn't shortcircuit any calling scripts
-  - Which may have unexpected outcomes
+In common coding practices, to update a script to a new version:
+- Developers have to update every location the updated script is called from
+  - If they miss a location, the system might behave differently there
+  - If they need to roll back after a bug was discovered they have to reverse the process correctly 
+  - As files grow in size and complexity and as a script gets used more and more, this gets more difficult
+  - If versioning gets too complicated, developers just move onto creating a new script and using it in any new place they code. 
+    - Therefore, the script versions become like an archeological dig and an historical marker
 
 ```mermaid
 graph LR
     A[/User Action/] -- Calls --> B[Subscript 1] 
     B -- Calls --> C[Subscript 2] 
 ```
-## Frameworks Coding
+## Frameworks Versioning and Updating
 
-In Frameworks coding practices:
+In Frameworks coding practices, to update a script to a new version:
 - Error is thrown by a subscript
 - **IS** caught
 - Packaged in JSONObject
