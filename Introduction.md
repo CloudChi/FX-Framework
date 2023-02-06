@@ -80,6 +80,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - Coding with any Framework is a balance between freedom and advantages
     - What do you give up versus what do you get
     - For example, if you have to provide parameters in JSON, that is a limitation, but the advantage is a subscript might have a JSON parsing routine to parse out parameters easily
+    - [Versions and Updating](Versions_Updating.md)
 
 ### Dependencies
   - Managing Dependencies
