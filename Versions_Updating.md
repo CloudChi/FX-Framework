@@ -10,6 +10,7 @@
   - If versioning gets too complicated, developers just move onto creating a new script and using it in any new place they code. 
     - Therefore, the script versions become like an archeological dig and an historical marker
 
+Start
 ```mermaid
 graph LR
   A[Script 1] -- Calls --> F[Subscript V1] 
@@ -19,6 +20,7 @@ graph LR
   E[Script 5] -- Calls --> F
 ```
 
+Destination
 ```mermaid
 graph LR
   A[Script 1] -. Transition To .-> G[Subscript V2] 
