@@ -29,3 +29,5 @@
   - Returns True or False, so Script Trigger can proceed or is cancelled
 
 [Back](Script_Functions_And_Types.md) - [Next](Script_Folders_Module.md)
+
+[TOC](TOC.md)
