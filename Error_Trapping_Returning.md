@@ -3,10 +3,10 @@
 ## Common Coding
 
 In common coding practices:
-- Error thrown by subscript
-- **NOT** caught
-- Therefore doesn't shortcircuit any calling scripts
-  - Which may have unexpected outcomes
+- Subscript has an error
+- Error is **NOT** passed to calling script
+- Calling script proceeds as if subscript performed as expected
+  - This can have unintended consequences
 
 ```mermaid
 graph LR
@@ -22,9 +22,8 @@ graph LR
 ## Frameworks Coding
 
 In Frameworks coding practices:
-- Error is thrown by a subscript
-- **IS** caught
-- Returned as JSONObject error package
+- Subscript has an error
+- Error passed to calling script as JSONObject error package
   - Includes script name
   - Human-readable error
   - FileMaker error code
