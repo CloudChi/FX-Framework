@@ -47,7 +47,7 @@ graph LR
 
 ```mermaid
 graph LR
-  A[Script 1] -- Calls --> F[Public script] -- Transition To --> G[Private script V2]
+  A[Script 1] -- Calls --> F[Public script] -. Transition To .-> G[Private script V2]
   B[Script 2] -- Calls --> F
   C[Script 3] -- Calls --> F
   D[Script 4] -- Calls --> F
