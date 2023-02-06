@@ -12,6 +12,13 @@ B[Module A - Script 2] -- Calls --> F[Module B - Script 1]
 C[Module A - Script 3] -- Calls --> G[Module B - Script 1]
 ```
 
+```mermaid
+graph LR
+A[Module A - Script 1] -. Transition To .-> E[Module C - Script 1] 
+B[Module A - Script 2] -. Transition To .-> F[Module C - Script 1]
+C[Module A - Script 3] -. Transition To .-> G[Module C - Script 1]
+```
+
 ## Frameworks Dependencies
 
 - References to Module B - Script 1 can **ONLY** be found in the Dependencies folder in Module A
