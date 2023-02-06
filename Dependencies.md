@@ -8,7 +8,7 @@
 ```mermaid
 graph LR
 A[Module A - Script 1] -- Calls --> E[Module B - Script 1] 
-B[Module A - Script 2] -- Calls --> E[Module B - Script 1]
+B[Module A - Script 2] -- Calls --> F[Module B - Script 1]
 C[Module A - Script 3] -- Calls --> G[Module B - Script 1]
 ```
 
