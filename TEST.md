@@ -22,15 +22,16 @@ graph LR
 
 - Error is thrown by a subscript
 - **IS** caught
-- Packaged in JSONObject
+- Error information packaged in JSONObject
   - Including script name
 - Short circuits any calling scripts
-  - Which add their script name to error stack
+  - Which add their script name to JSONObject Error Package
   - Pass error to their calling script 
-- Displays a meaningful error to the user
-  - showing human-readable and actionable error text
-  - showing full path of error through scripts
+- Top script parses JSONObject Error Package into
+  - Human-readable and actionable error text
+  - Full path of error through scripts
     - not just script that threw error
+  - Displays to user
 
 ```mermaid
 graph LR
