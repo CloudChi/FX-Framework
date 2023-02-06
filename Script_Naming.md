@@ -39,4 +39,4 @@
     - They need to be human readable, so therefore no Prefix
     - Displays errors
 
-[Back](E__Script_Folders_Module.md) - [Next](G__Custom_Functions.md)
+[Back](Script_Folders_Module.md) - [Next](Custom_Functions.md)
