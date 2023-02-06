@@ -23,7 +23,7 @@ graph LR
     B -- Calls --> C[Subscript 2] 
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
-    E -- Returns --> D
+    E -- Returns error --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
     B -- Short Circuits --> A
