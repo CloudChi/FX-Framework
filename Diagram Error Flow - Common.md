@@ -6,6 +6,7 @@ In common coding practices:
 - Error thrown by subscript
 - **NOT** caught
 - Therefore doesn't shortcircuit any calling scripts
+  - Which may have unexpected outcomes
 
 ```mermaid
 graph LR
