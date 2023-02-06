@@ -31,6 +31,13 @@ B[Module A - Script 2] -- Calls --> F
 C[Module A - Script 3] -- Calls --> F
 ```
 
+```mermaid
+graph LR
+A[Module A - Script 1] -- Calls --> F[Module A - Dependencies] -. Transition To .-> G[Module C - Script 1]
+B[Module A - Script 2] -- Calls --> F
+C[Module A - Script 3] -- Calls --> F
+```
+
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
 [TOC](TOC.md)
