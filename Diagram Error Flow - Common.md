@@ -23,8 +23,14 @@ graph LR
 In Frameworks coding practices:
 - Error is thrown by a subscript
 - **IS** caught
+- Packaged in JSONObject
+  - Including script name
 - Short circuits any calling scripts
-- Displays a meaningful error to the user.
+  - which add their script name to error stack
+- Displays a meaningful error to the user
+  - showing human-readable and actionable error text
+  - showing full path of error through scripts
+    - not just script that threw error
 
 ```mermaid
 graph LR
