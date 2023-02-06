@@ -40,7 +40,7 @@ graph LR
     B -- Calls --> C[Subscript 2] 
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
-    E --> F{JSONObject Error Package}
+    E --> F[JSONObject Error Package]
     F --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
