@@ -47,10 +47,10 @@ graph LR
 ```mermaid
 graph LR
   A[Script 1] -- Calls --> F[Public script] -- Transition To --> G[Private script V2]
-    B[Script 2] -- Calls --> F
-    C[Script 3] -- Calls --> F
-    D[Script 4] -- Calls --> F
-    E[Script 5] -- Calls --> F
+  B[Script 2] -- Calls --> F
+  C[Script 3] -- Calls --> F
+  D[Script 4] -- Calls --> F
+  E[Script 5] -- Calls --> F
 ```
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
