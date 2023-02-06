@@ -40,3 +40,5 @@
     - Displays errors
 
 [Back](Script_Folders_Module.md) - [Next](Custom_Functions.md)
+
+[TOC](TOC.md)
