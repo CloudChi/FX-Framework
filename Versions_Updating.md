@@ -20,11 +20,11 @@ graph LR
 
 ```mermaid
 graph LR
-    A[Script 1] -. Transition To. -> G[Subscript V2] 
-    B[Script 2] -. Transition To. -> G 
-    C[Script 3] -. Transition To. -> G 
-    D[Script 4] -. Transition To. -> G 
-    E[Script 5] -. Transition To. -> G 
+    A[Script 1] -. Transition To .-> G[Subscript V2] 
+    B[Script 2] -. Transition To .-> G 
+    C[Script 3] -. Transition To .-> G 
+    D[Script 4] -. Transition To .-> G 
+    E[Script 5] -. Transition To .-> G 
 ```
 ## Frameworks Versioning and Updating
 
