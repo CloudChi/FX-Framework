@@ -19,7 +19,7 @@ C[Module A - Script 3] -- Calls --> G[Module B - Script 1]
 
 ```mermaid
 graph LR
-A[Module A - Script 1] -- Calls --> F[Module B - Script 1] 
+A[Module A - Script 1] -- Calls --> F[Module A - Dependencies] -- Calls --> G[Module B - Script 1]
 B[Module A - Script 2] -- Calls --> F
 C[Module A - Script 3] -- Calls --> F
 ```
