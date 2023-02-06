@@ -1,5 +1,7 @@
 ## Common Coding
 
+If an error is thrown by a subscript
+
 ```mermaid
 graph LR
     A[/User Action/] -- Calls --> B[Subscript 1] 
