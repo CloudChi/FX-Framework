@@ -3,8 +3,9 @@
 ## Common Coding
 
 In common coding practices:
-- Error is thrown by a subscript
-- **NOT** caught and therefore doesn't shortcircuit any calling scripts
+- Error thrown by subscript
+- **NOT** caught
+- Therefore doesn't shortcircuit any calling scripts
 
 ```mermaid
 graph LR
@@ -20,7 +21,10 @@ graph LR
 ## Frameworks Coding
 
 In Frameworks coding practices:
-- Error is thrown by a subscript it **IS** caught, short circuits any calling scripts, and displays a meaningful error to the user.
+- Error is thrown by a subscript
+- **IS** caught
+- Short circuits any calling scripts
+- Displays a meaningful error to the user.
 
 ```mermaid
 graph LR
