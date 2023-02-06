@@ -3,7 +3,8 @@
 ## Common Coding
 
 In common coding practices:
-- Error is thrown by a subscript it is **NOT** caught and therefore doesn't shortcircuit any calling scripts
+- Error is thrown by a subscript
+- **NOT** caught and therefore doesn't shortcircuit any calling scripts
 
 ```mermaid
 graph LR
