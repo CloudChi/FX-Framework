@@ -91,7 +91,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
     - Identify then fix
     - Limited breakage
     - Prevent resolving incorrectly
-      - FileMaker Themes and Styles are example of this ???
+  - [Dependencies](Dependencies.md)
 
 [Back](TOC.md) - [Next](Script_Functions_And_Types.md)
 
