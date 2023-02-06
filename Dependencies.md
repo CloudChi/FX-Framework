@@ -14,7 +14,7 @@ C[Module A - Script 3] -- Calls --> G[Module B - Script 1]
 
 ## Frameworks Dependencies
 
-- References to Module B - Script 1 can be found in one place in Module A
+- References to Module B - Script 1 can **ONLY** be found in the Dependencies folder in Module A
 - If Module A is moved only this reference has to be repointed
 
 ```mermaid
