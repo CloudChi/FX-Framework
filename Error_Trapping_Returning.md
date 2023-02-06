@@ -5,7 +5,7 @@
 In common coding practices:
 - Subscript has an error
 - Error is **NOT** passed to calling script
-- Calling script proceeds as if subscript performed as expected
+- Calling scripts proceed normally
   - This can have unintended consequences
 
 ```mermaid
@@ -24,14 +24,8 @@ graph LR
 In Frameworks coding practices:
 - Subscript has an error
 - Error passed to calling script as JSONObject error package
-- Short circuits any calling scripts
-  - Which add their script name to JSONObject
-  - Then pass JSONObject to their calling script 
-- Top script calls error display script which:
-  - parses JSONObject error package
-  - displays human-readable and actionable error text
-  - including full path of error through scripts
-    - not just script that had error
+- Calling scripts short circuit
+- Top script displays human-readable and actionable error text
 
 ```mermaid
 graph LR
