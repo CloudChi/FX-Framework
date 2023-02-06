@@ -15,7 +15,7 @@ graph LR
 ```
 ## Frameworks Coding
 
-In Frameworks coding practices, if an error is thrown by a subscript it is caught, shortcircuits any calling scripts, and displays a meaning error to the user.
+In Frameworks coding practices, if an error is thrown by a subscript it is caught, short circuits any calling scripts, and displays a meaning error to the user.
 
 ```mermaid
 graph LR
@@ -24,8 +24,8 @@ graph LR
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
     E -- Returns --> D
-    D -- Returns --> C
-    C -- Returns --> B
-    B -- Returns --> A
+    D -- Short Circuits --> C
+    C -- Short Circuits --> B
+    B -- Short Circuits --> A
     A -- Displays --> F(Error Dialog to User)
 ```
