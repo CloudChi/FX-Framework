@@ -24,12 +24,15 @@ graph LR
 In Frameworks coding practices:
 - Error is thrown by a subscript
 - **IS** caught
-- Packaged in JSONObject
-  - Including script name
+- Returned as JSONObject Error Package (aka JEP)
+  - Includes script name
+  - Human-readable error
+  - FileMaker error code
 - Short circuits any calling scripts
-  - Which add their script name to error stack
-  - Pass error to their calling script 
-- Displays a meaningful error to the user
+  - Which add their script name to JEP
+  - Pass JEP to their calling script 
+- Top script calls JEP parsing rountine
+- Then calls a routine which displays:
   - showing human-readable and actionable error text
   - showing full path of error through scripts
     - not just script that threw error
@@ -48,6 +51,20 @@ graph LR
     A -- Parses --> G[JSONObject Error Package w/full path]
     G -- Displays --> H(Error Dialog to User)    
 ```
+
+```mermaid
+graph LR
+    A[/User Action/] -- Calls --> B[Subscript 1] 
+    B -- Calls --> C[Subscript 2] 
+    C -- Calls --> D[Subscript 3] 
+    D -- Throws --> E{{Error}}
+    E -- Builds JSONObject Error Package --> D
+    D -- Short Circuits --> C
+    C -- Short Circuits --> B
+    B -- Short Circuits --> A
+    A -- Parses JSONObject Error Package w/full path --> H(Displays Error Dialog to User)    
+```
+
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
 [TOC](TOC.md)
