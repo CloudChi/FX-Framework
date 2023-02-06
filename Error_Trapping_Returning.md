@@ -35,7 +35,7 @@ graph LR
     D -- Short Circuits --> C
     C -- Short Circuits --> B
     B -- Short Circuits --> A
-    A --> H(Displays Error Dialog to User)    
+    A --> H(Displays Error)    
 ```
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
