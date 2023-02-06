@@ -24,9 +24,6 @@ graph LR
 In Frameworks coding practices:
 - Subscript has an error
 - Error passed to calling script as JSONObject error package
-  - Includes script name
-  - Human-readable error
-  - FileMaker error code
 - Short circuits any calling scripts
   - Which add their script name to JSONObject
   - Then pass JSONObject to their calling script 
