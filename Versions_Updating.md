@@ -1,6 +1,6 @@
 # Versions and Updating
 
-## Common Versioning and Updating
+## Common
 
 - There is no concept of a Private script, so any script can be called from anywhere
 - Developers have to update every location a script is called from
@@ -27,7 +27,7 @@ graph LR
   D[Script 4] -. Transition To .-> G 
   E[Script 5] -. Transition To .-> G 
 ```
-## Frameworks Versioning and Updating
+## Frameworks
 
 - Private scripts exist and can be versioned
 - Private scripts are only ever called by one other script (either Public or Private)
