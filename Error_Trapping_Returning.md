@@ -1,8 +1,7 @@
 # Error Trapping and Returning
 
-## Common Coding
+## Common
 
-In common coding practices:
 - Subscript has an error
 - Error is **NOT** passed to calling script
 - Calling scripts proceed normally
@@ -19,9 +18,8 @@ graph LR
     C -- Returns --> B
     B -- Returns --> A
 ```
-## Frameworks Coding
+## Frameworks
 
-In Frameworks coding practices:
 - Subscript has an error
 - Error passed to calling script as JSONObject error package
 - Calling scripts short circuit
