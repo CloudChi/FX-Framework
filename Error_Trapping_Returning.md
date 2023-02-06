@@ -35,22 +35,7 @@ In Frameworks coding practices:
   - parses JSONObject error package
   - displays human-readable and actionable error text
   - including full path of error through scripts
-    - not just script that threw error
-
-```mermaid
-graph LR
-    A[/User Action/] -- Calls --> B[Subscript 1] 
-    B -- Calls --> C[Subscript 2] 
-    C -- Calls --> D[Subscript 3] 
-    D -- Throws --> E{{Error}}
-    E -- Builds --> F[JSONObject Error Package]
-    F --> D
-    D -- Short Circuits --> C
-    C -- Short Circuits --> B
-    B -- Short Circuits --> A
-    A -- Parses --> G[JSONObject Error Package w/full path]
-    G -- Displays --> H(Error Dialog to User)    
-```
+    - not just script that had error
 
 ```mermaid
 graph LR
