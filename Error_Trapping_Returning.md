@@ -40,12 +40,12 @@ graph LR
     B -- Calls --> C[Subscript 2] 
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
-    E -Builds-> F[JSONObject Error Package]
+    E -- Builds --> F[JSONObject Error Package]
     F --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
     B -- Short Circuits --> A
-    A -- Parses JSONObject Error then Displays --> G(Error Dialog to User)
+    
 ```
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
