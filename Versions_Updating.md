@@ -2,7 +2,8 @@
 
 ## Common Versioning and Updating
 
-- Developers have to update every location the script is called from
+- There is no concept of a Private script, so any script can be called from anywhere
+- Developers have to update every location a script is called from
   - If they miss a location, the system might behave differently there
   - If they need to roll back after a bug was discovered they have to reverse the process correctly 
 - As files grow in size and complexity and as a script gets used more and more, this gets more and more difficult
@@ -28,7 +29,7 @@ E[Script 5] -. Transition To .-> G
 ```
 ## Frameworks Versioning and Updating
 
-- Developers have to update every location the script is called from
+- Developers only have to update the call to Private scripts in one place
   - If they miss a location, the system might behave differently there
   - If they need to roll back after a bug was discovered they have to reverse the process correctly 
 - As files grow in size and complexity and as a script gets used more and more, this gets more and more difficult
