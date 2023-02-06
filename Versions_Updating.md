@@ -30,7 +30,7 @@ graph LR
 ## Frameworks Versioning and Updating
 
 - Private scripts exist and can be versioned
-- Private scripts are only ever called by one other script
+- Private scripts are only ever called by one other script (either Public or Private)
   - Therefore to switch versions, developers only have to switch one call
   - If they need to roll back after a bug was discovered they only have to reverse one call
 - As files grow in size and complexity and as a script gets used more and more, repointing it is still a one script change.
