@@ -26,7 +26,7 @@ graph LR
   - Including script name
 - Short circuits any calling scripts
   - Which add their script name to JSONObject Error Package
-  - Pass error to their calling script 
+  - Pass JSONObject Error Package to their calling script 
 - Top script parses JSONObject Error Package into
   - Human-readable and actionable error text
   - Full path of error through scripts
