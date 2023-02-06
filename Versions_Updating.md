@@ -29,12 +29,12 @@ E[Script 5] -. Transition To .-> G
 ```
 ## Frameworks Versioning and Updating
 
-- Developers only have to update the call to Private scripts in one place
-  - If they miss a location, the system might behave differently there
-  - If they need to roll back after a bug was discovered they have to reverse the process correctly 
-- As files grow in size and complexity and as a script gets used more and more, this gets more and more difficult
-  - If versioning gets too complicated, developers just move onto creating a new script and using it in any new place they code. 
-    - Therefore, the script versions become like an archeological dig and an historical marker
+- Private scripts exist and can be versioned
+- Private scripts are only ever called by one other script
+  - Therefore to switch versions, developers only have to switch one call
+  - If they need to roll back after a bug was discovered they only have to reverse one call
+- As files grow in size and complexity and as a script gets used more and more, repointing it is still a one script change.
+  - Therefore, there is an incentive to update scripts and experiment with solutions
 
 ```mermaid
 graph LR
