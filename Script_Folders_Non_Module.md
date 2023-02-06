@@ -28,4 +28,4 @@
   - Often diplays errors
   - Returns True or False, so Script Trigger can proceed or is cancelled
 
-[Back](C__Script_Functions_And_Types.md) - [Next](E__Script_Folders_Module.md)
+[Back](Script_Functions_And_Types.md) - [Next](Script_Folders_Module.md)
