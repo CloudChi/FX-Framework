@@ -45,7 +45,8 @@ graph LR
     D -- Short Circuits --> C
     C -- Short Circuits --> B
     B -- Short Circuits --> A
-    
+    A -- Parses --> G[JSONObject Error Package w/full path]
+    G -- Displays --> H(Error Dialog to User)    
 ```
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
