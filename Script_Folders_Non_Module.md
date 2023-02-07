@@ -20,7 +20,7 @@
       - File C Import
       - File D Import 
 
-- ## Triggers
+- ## File Triggers
   - File-level script triggers
   - Contains no subfolders (Is this true???)
   - Can contain logic
