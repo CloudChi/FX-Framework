@@ -22,7 +22,7 @@
 
 - ## File Triggers
   - File-level script triggers
-  - Contains no subfolders (Is this true???)
+  - Can contain subfolders
   - Can contain logic
   - Can be versioned
   - Often diplays errors
