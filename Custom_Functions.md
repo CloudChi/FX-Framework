@@ -12,13 +12,13 @@
 
 ## Naming
 
-- "Fx." prefix to differentiate from:
+- "Fx." prefix is company convention to differentiate from:
   - FileMaker's included Functions
   - Plugin Functions
     - Troi File plugin adds "TrFile_" Functions, like "TrFile_CopyFile"
 - TitleCase so they support type-ahead in calculation window
-  - "Fx.DoSomethingCool" can be entered by typing "fdsc"
-    - "Fx.do_something_cool" cannot
+  - "Fx.DoSomething.Cool" can be entered by typing "fdsc"
+    - "Fx.DoSomething.cool" cannot
   - Acronyms must also be title case
     - "Fx.Json.Transform" not "Fx.JSON.Transform"
   - Type Ahead Concept
