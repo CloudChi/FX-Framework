@@ -31,7 +31,7 @@
 - Global Variables issues generally:
   - Every process can modify them
   - Every process has access to them
-  - They are not garbage collected (cleaned up)
+  - They are not garbage collected by the system (cleaned up)
     - Until they are manually cleaned up, they consume memory
     - In contrast, local variables are cleaned up at the end of their calling process, releasing memory
   - Issues in practice:
