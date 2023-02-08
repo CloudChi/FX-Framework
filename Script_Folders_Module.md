@@ -45,7 +45,7 @@
   - Do not contain logic
   - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
-  - Display errors to the user
+  - Often displays errors to the user
   - Only called by buttons on layouts
     ![Buttons](Screenshot_Buttons.png)
 
@@ -53,7 +53,7 @@
   - Do not contain logic
   - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
-  - Display errors to the user
+  - Often displays errors to the user
   - Only called from Scripts Menu
     - Should be human-readable and clearly named 
     ![Scripts Menu](Screenshot_Procedures.png)
@@ -61,11 +61,12 @@
 - Triggers
   - Can contain logic
   - Call scripts in Public, Protected, or Dependencies subfolders
-  - Display errors to the user
-  - Only called by Script Triggers
+  - Often displays errors to the user
+  - Only called by Object and Layout Script Triggers
+    - Not File Script Triggers 
   - Can be versioned
   - Return "False" if an error occurs
-  - Return JSONObject if they succeed
+  - Return "True" if they succeed
 
 - Export
   - Do not contain logic
