@@ -106,7 +106,7 @@
 - Config
   - Can contain logic
   - Can contain consumer-coded sub-Modules
-    - Only subfolder that can contain Modules
+    - One of the few subfolders that can contain Modules
   - Can be modified by consumers (not just original developer)
   - Can contain simple scripts that only return a JSONObject of hardcoded values
   ![Config Hardcoded Setup](Screenshot_Config1.png)
