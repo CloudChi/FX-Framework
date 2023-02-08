@@ -1,9 +1,10 @@
 # Script Folders - Module
 - Modules are script folders
 - Modules can contain subfolders and/or Sub-Modules
+- Modules present certain tools to the developer
 - Each subfolder type serves a specific purpose
-- A Module presents certain tools to the developer
-- <<What is the (fxp) suffix for???>>
+- Each subfolder has a suffix which matches the suffix of its parent module
+  - This is to differentiate the subfolders which would otherwise all have the same name
 
 ## Two Types of Modules
 - Standard
