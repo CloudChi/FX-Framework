@@ -13,9 +13,10 @@
     - All Modules/scripts in external files are accessed in this one point
   - btn > Button
     - Called by Buttons on Layouts
-    - Displays errors
+    - Typically displays errors
   - trg > Trigger
     - Called by Script Triggers
+    - Typically displays errors
     - Returns "False" if errors
     - Returns "True" if no error
   - sub > Subscript
@@ -37,7 +38,7 @@
   - (BLANK) > Procedures
     - Called by Scripts Menu > Menu Items
     - They need to be human readable, so therefore no Prefix
-    - Displays errors
+    - Typically displays errors
 
 [Back](Script_Folders_Module.md) - [Next](Custom_Functions.md)
 
