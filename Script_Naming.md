@@ -14,15 +14,18 @@
   - btn > Button
     - Called by Buttons on Layouts
     - Typically displays errors
+    - Accepts parameters in JSON format
   - trg > Trigger
     - Called by Script Triggers
     - Typically displays errors
+    - Accepts parameters in JSON format
     - Returns "False" if errors
     - Returns "True" if no error
   - sub > Subscript
     - Called as a subscript
     - Never called as top level 
-    - Passes back results or errors in JSON format
+    - Accepts parameters in JSON format
+    - Returns results or errors in JSON format
     - May not display errors
     - Found in various Module subfolders (unlike other prefixes)
       - Export
@@ -42,6 +45,7 @@
     - Called by Scripts Menu > Menu Items
     - They need to be human readable, so therefore no Prefix
     - Typically displays errors
+    - Accepts parameters in JSON format
 
 [Back](Script_Folders_Module.md) - [Next](Custom_Functions.md)
 
