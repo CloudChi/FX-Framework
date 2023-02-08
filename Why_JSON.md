@@ -28,12 +28,22 @@
 ```
 
 ## Global Variables
-- Pro: Prevented excessive creation of fields
-- Might not be assigned / cleared correctly
-- Cluttered up Data Viewer when debugging
-- Unless strict naming convention, origin might be unclear
-  - $$Type is unclear
-  - $$Type_Customer is more clear 
+- Global Variables issues generally:
+  - Every process can modify them
+  - Every process has access to them
+  - They are not garbage collected by the system (cleaned up)
+    - Until they are manually cleaned up, they consume memory
+    - In contrast, local variables are cleaned up at the end of their calling process, releasing memory
+  - Issues in practice:
+    - Was global variable value set for this process, or just not cleaned up from previous process?
+    - If you reset global variable for current process do you need to store previous value?
+    - Did you reset global variable to value saved when you began current process?
+       - Was this truly necessary? 
+- Global Variable issues in FileMaker specifically:
+  - Cluttered up Data Viewer when debugging
+  - Unless strict naming convention, origin might be unclear
+    - $$Type is unclear
+    - $$Type_Customer is more clear 
 ![Global Variables](Screenshot_GlobalVariables.png)
 
 ## Let function
@@ -43,10 +53,11 @@
 ![Let Function variables](Screenshot_LetFunction2.png)
 
 ## Global Fields
+- ALL the disadvantages of Global Variables with additional negatives
 - Data fields get intermingled with business function fields
+- Only useful as relationship starting points or simple data entry start screens
 - No native way to represent data structures without duplicating data fields with global fields
 ![Global Fields](Screenshot_GlobalFields.png)
-- Realistically limited to relationship starting points or simple data entry start screens
 
 [Back](Custom_Functions.md) - Next
 
