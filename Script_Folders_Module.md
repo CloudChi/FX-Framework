@@ -88,8 +88,8 @@
     - Promoted to Public subfolder if access is needed outside Module
 
 - Private
-  - Can contain logic
-  - Do the majority of the work (how do we say this???)
+  - Contain most of the logic
+    - Since they are the engine of the FX Framework 
   - Versioned
     - Allows developers to test new code
     - Revert to old code by just calling older version
@@ -102,7 +102,7 @@
   - Do not contain logic
   - Not versioned
   - Call scripts in another Module's Public subfolder
-    - Modules copied to another file need to repoint these scripts
+    - Modules copied to another file only need to repoint these scripts
 
 - Config
   - Can contain logic
