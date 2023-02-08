@@ -35,7 +35,7 @@
     - Deprecated, so should NEVER be called by any other script
     - Can be any type previously
     - For example: "dpr: sub: set all fields v3"
-  - (BLANK) > Procedures
+  - (No Prefix) > Procedures
     - Called by Scripts Menu > Menu Items
     - They need to be human readable, so therefore no Prefix
     - Typically displays errors
