@@ -30,6 +30,7 @@
          
   - ## Non-Subscripts 
     - Often display any returned errors
+    - Accept parameters in JSON format
     - Within a given Type they are often copies of each other
     - Types:
       - Schedule
