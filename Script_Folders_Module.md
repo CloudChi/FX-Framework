@@ -43,7 +43,7 @@
 
 - Buttons
   - Do not contain logic
-  - Call scripts in Public or Protected subfolders
+  - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
   - Display errors to the user
   - Only called by buttons on layouts
@@ -51,7 +51,7 @@
 
 - Procedures
   - Do not contain logic
-  - Call scripts in Public or Protected subfolders
+  - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
   - Display errors to the user
   - Only called from Scripts Menu
@@ -60,7 +60,7 @@
 
 - Triggers
   - Can contain logic
-  - Call scripts in Public or Protected subfolders
+  - Call scripts in Public, Protected, or Dependencies subfolders
   - Display errors to the user
   - Only called by Script Triggers
   - Can be versioned
@@ -105,6 +105,7 @@
 
 - Config
   - Can contain logic
+  - Call scripts in Public, Protected, or Dependencies subfolders
   - Can contain consumer-coded sub-Modules
     - One of the few subfolders that can contain Modules
   - Can be modified by consumers (not just original developer)
