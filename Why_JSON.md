@@ -55,7 +55,7 @@
 ## Global Fields
 - ALL the disadvantages of Global Variables with additional negatives
 - Data fields get intermingled with business function fields
-- Useful only as relationship starting points or simple data entry start screens
+- Only useful as relationship starting points or simple data entry start screens
 - No native way to represent data structures without duplicating data fields with global fields
 ![Global Fields](Screenshot_GlobalFields.png)
 
