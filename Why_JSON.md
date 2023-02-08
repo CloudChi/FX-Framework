@@ -53,6 +53,7 @@
 ![Let Function variables](Screenshot_LetFunction2.png)
 
 ## Global Fields
+- All the disadvantages of Global Variables with additional negatives
 - Data fields get intermingled with business function fields
 - No native way to represent data structures without duplicating data fields with global fields
 ![Global Fields](Screenshot_GlobalFields.png)
