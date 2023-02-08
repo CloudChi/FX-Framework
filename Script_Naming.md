@@ -32,7 +32,10 @@
       - Config
       - Dependencies
   - dpr > Deprecated
-    - Deprecated, so should NEVER be called by any other script
+    - Should not be called by any NEW scripts
+      - Should eventually be replaced by newer script
+    - May still be called by existing scripts
+      - When modifying existing scripts try to replace any calls to deprecated scripts
     - Can be any type previously
     - For example: "dpr: sub: set all fields v3"
   - (No Prefix) > Procedures
