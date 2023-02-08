@@ -47,10 +47,9 @@
 ![Global Variables](Screenshot_GlobalVariables.png)
 
 ## Let function
-- Variables only exist inside function
-![Let Function code](Screenshot_LetFunction1.png)
-- No real way to step through calculation and see data 
-![Let Function variables](Screenshot_LetFunction2.png)
+- Slightly complex coding, but could be wrapped in Custom Function
+![Let Setup](Screenshot_Let_Setup.png)
+![Let Running](Screenshot_Let_Running.png)
 
 ## Global Fields
 - ALL the disadvantages of Global Variables with additional negatives
