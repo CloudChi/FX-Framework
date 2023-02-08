@@ -35,7 +35,7 @@
     - Should not be called by any NEW scripts
     - May still be called by EXISTING scripts
       - When modifying existing scripts try to replace any calls to deprecated scripts
-      - Eventually replace deprecated scripts in everywhere
+      - Eventually replace deprecated scripts everywhere
     - Can be any type previously
     - For example: "dpr: sub: set all fields v3"
   - (No Prefix) > Procedures
