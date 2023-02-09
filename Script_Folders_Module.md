@@ -48,9 +48,10 @@
 
 ```mermaid
 graph LR
-  A[Button on top of Customer List screen] -- dialog to select Customer first, then passes Customer ID --> F[sub.SalesOrder.Create accepts Customer ID param] 
-  B[Subscript EDI order process] -- Calls w Customer ID --> F
-  C[Subscript Duplicate Sales Order] -- Calls w Customer ID --> F
+  A[/Create Sales Order button on Customer List Header/] --> B[Confirm selected Customer is correct] 
+  B -- Calls w Customer ID--> E[sub.SalesOrder.Create accepts Customer ID param] 
+  C[Subscript EDI order process] -- Calls w Customer ID --> E
+  D[Subscript Duplicate Sales Order] -- Calls w Customer ID --> E
 ```
 
   - Call scripts in Public, Protected, or Dependencies subfolders
