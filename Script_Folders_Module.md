@@ -48,7 +48,7 @@
 
 ```mermaid
 graph LR
-  A[Button on Customer detail screen] -- Calls --> F[sub.SalesOrder.Create – takes Customer ID] 
+  A[Button on Customer detail screen] -- Calls --> F[sub.SalesOrder.Create takes Customer ID] 
   B[Subscript EDI order process] -- Calls --> F
   C[Subscript Duplicate Sales Order] -- Calls --> F
 ```
