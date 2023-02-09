@@ -44,6 +44,14 @@
 - Buttons
   - Can contain logic
     - Typically for context or user factors
+
+```mermaid
+graph LR
+  A[Script 1] -- Calls --> F[Subscript V1] 
+  B[Script 2] -- Calls --> F
+  C[Script 3] -- Calls --> F
+```
+
   - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
   - Typically displays errors to the user
