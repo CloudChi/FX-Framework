@@ -42,14 +42,15 @@
 ## Subfolder Details
 
 - Buttons
-  - Can contain logic
-    - Typically for context or user factors
+  - Can contain logic based on context or user input
+    - Too specific to push into subscript
+    - Prevents unintended consequence of having this logic in subscript where context not controlled
 
 ```mermaid
 graph LR
-  A[Script 1] -- Calls --> F[Subscript V1] 
-  B[Script 2] -- Calls --> F
-  C[Script 3] -- Calls --> F
+  A[Button on Customer detail screen] -- Calls --> F[sub.SalesOrder.Create – takes Customer ID] 
+  B[Subscript EDI order process] -- Calls --> F
+  C[Subscript Duplicate Sales Order] -- Calls --> F
 ```
 
   - Call scripts in Public, Protected, or Dependencies subfolders
