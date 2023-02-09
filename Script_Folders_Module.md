@@ -42,8 +42,20 @@
 ## Subfolder Details
 
 - Buttons
-  - Can contain logic
-    - Typically for context or user factors
+  - Can contain logic based on context or user input
+    - Too specific to push into subscript
+    - Prevents unintended consequence of having this logic in subscript where context not controlled
+
+```mermaid
+graph LR
+  A[/Button - Create Sales Order on Customer List Header/] --> B[Confirm selected Customer is correct] 
+  B -- Calls w Customer ID--> G[sub.SalesOrder.Create accepts Customer ID param] 
+  C[Subscript - EDI order process] -- Calls w Customer ID --> G
+  D[Subscript - Duplicate Sales Order] -- Calls w Customer ID --> G
+  E[/Button - Create Sales Order on Customer Detail/] --> F[Choose Customer or Master Customer] 
+  F -- Calls w Customer ID--> G[sub.SalesOrder.Create accepts Customer ID param] 
+```
+
   - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
   - Typically displays errors to the user
