@@ -42,7 +42,8 @@
 ## Subfolder Details
 
 - Buttons
-  - Do not contain logic
+  - Can contain logic
+    - Typically for context or user factors
   - Call scripts in Public, Protected, or Dependencies subfolders
   - Not versioned
   - Typically displays errors to the user
