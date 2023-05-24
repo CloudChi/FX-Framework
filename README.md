@@ -1,6 +1,6 @@
 # FX-documentation
 
-Documentation for FX Framedwork system including diagrams and screenshots – updated as the Team reviews it and makes comments.
+Documentation for FX Framework system including diagrams and screenshots – updated as the Team reviews it and makes comments.
 
 Please start with Table of Contents "TOC.md" file.
 
