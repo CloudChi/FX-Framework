@@ -22,11 +22,11 @@
   - Acronyms must also be title case
     - "Fx.Json.Transform" not "Fx.JSON.Transform"
   - Type Ahead Concept
-  ![Type Ahead Concept](Screenshot_CF_TypeAhead.png)
+  ![Type Ahead Concept](Screenshots/Screenshot_CF_TypeAhead.png)
   - Type Ahead fails
-  ![Type Ahead Fails](Screenshot_CF_TypeAhead_Fails.png)
+  ![Type Ahead Fails](Screenshots/Screenshot_CF_TypeAhead_Fails.png)
   - Type Ahead succeeds
-  ![Type Ahead Works](Screenshot_CF_TypeAhead_Works.png)
+  ![Type Ahead Works](Screenshots/Screenshot_CF_TypeAhead_Works.png)
 - Standardized Format
   - Clearly linked to Modules
   - User can guess how they would be used by reading name alone
@@ -42,7 +42,7 @@
     - Move any Custom Funtion that starts with "Fx.Module..."
     - For example if moving the "Framework" Module to a new file
       - Move the Custom Functions that start with "Fx.Framework..." to the new file as well
-       ![CF_Modules](Screenshot_CF_Modules.png)
+       ![CF_Modules](Screenshots/Screenshot_CF_Modules.png)
        
 [Back](Script_Naming.md) - [Next](Why_JSON.md)
 

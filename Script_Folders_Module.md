@@ -5,7 +5,7 @@
 - Each subfolder type serves a specific purpose
 - Each subfolder has a suffix which matches the suffix of its parent module
   - This is to differentiate the subfolders which would otherwise all have the same name across Modules
-![Folder Suffix](Screenshot_FolderSuffix.png)
+![Folder Suffix](Screenshots/Screenshot_FolderSuffix.png)
 
 ## Two Types of Modules
 - Standard
@@ -60,7 +60,7 @@ graph LR
   - Not versioned
   - Typically displays errors to the user
   - Only called by buttons on layouts
-    ![Buttons](Screenshot_Buttons.png)
+    ![Buttons](Screenshots/Screenshot_Buttons.png)
 
 - Procedures
   - Do not contain logic
@@ -69,7 +69,7 @@ graph LR
   - Typically displays errors to the user
   - Only called from Scripts Menu
     - Should be human-readable and clearly named 
-    ![Scripts Menu](Screenshot_Procedures.png)
+    ![Scripts Menu](Screenshots/Screenshot_Procedures.png)
 
 - Triggers
   - Can contain logic
@@ -124,8 +124,8 @@ graph LR
     - One of the few subfolders that can contain Modules
   - Can be modified by consumers (not just original developer)
   - Can contain simple scripts that only return a JSONObject of hardcoded values
-  ![Config Hardcoded Setup](Screenshot_Config1.png)
-  ![Config Hardcoded Results](Screenshot_Config2.png)
+  ![Config Hardcoded Setup](Screenshots/Screenshot_Config1.png)
+  ![Config Hardcoded Results](Screenshots/Screenshot_Config2.png)
 
 
 - Templates

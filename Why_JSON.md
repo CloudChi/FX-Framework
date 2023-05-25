@@ -4,7 +4,7 @@
 ## JSON
 - JSON setting, getting, and typing are all natively supported in FileMaker
   - Previously to this, no consistently supported options
-   ![JSON_Functionst](Screenshot_JSON_Functions.png)
+   ![JSON_Functionst](Screenshots/Screenshot_JSON_Functions.png)
 - JSON is default standard for web APIs
   - Broader range of developers are familiar
   - Easier to call and receive data from APIs external to FileMaker
@@ -44,19 +44,19 @@
   - Unless strict naming convention, origin might be unclear
     - $$Type is unclear
     - $$Type_Customer is more clear 
-![Global Variables](Screenshot_GlobalVariables.png)
+![Global Variables](Screenshots/Screenshot_GlobalVariables.png)
 
 ## Let function
 - Slightly complex coding, but could be wrapped in Custom Function
-![Let Setup](Screenshot_Let_Setup.png)
-![Let Running](Screenshot_Let_Running.png)
+![Let Setup](Screenshots/Screenshot_Let_Setup.png)
+![Let Running](Screenshots/Screenshot_Let_Running.png)
 
 ## Global Fields
 - ALL the disadvantages of Global Variables with additional negatives
 - Data fields get intermingled with business function fields
 - Only useful as relationship starting points or simple data entry start screens
 - No native way to represent data structures without duplicating data fields with global fields
-![Global Fields](Screenshot_GlobalFields.png)
+![Global Fields](Screenshots/Screenshot_GlobalFields.png)
 
 [Back](Custom_Functions.md) - Next
 
