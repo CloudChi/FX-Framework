@@ -1,6 +1,22 @@
 # Versions and Updating
 
-## Common
+## The Concept
+
+Software development is always evolving and software developers are always finding ways of improving, centralizing and tightening up previously written code. As part of this process, the developer knows it is better to replace old code with a newer more capable code, but the fear of breaking something stops him. If upgrading and rolling back was simple, fast, comprehensive and reliable, then developers would be much more inclined to do so and might even relish experimenting.
+
+A particular script or function can be called multiple times.
+
+What do you need to do if you come out with a new version of your function?
+
+It would be good if you could go back and repoint all the previous calls to the function and instantly replace it with the new function. 
+
+What happens if you discover a bug in your new function? You then have to go back and repoint all the instances you spent all that time pointing in the first place. 
+
+Because of the overall headache of this and fear of breaking code, it is often easier just to leave all the old calls in place and just point any new scripts at the new function. 
+
+This ends up producing a kind of stratified, archeological mess of code. 
+
+## Without Frameworks
 
 - There is no concept of a Private script, so any script can be called from anywhere
 - Developers have to update every location a script is called from
@@ -23,7 +39,7 @@ graph LR
   B[Script 2] -. Transition To .-> G 
   C[Script 3] -. Transition To .-> G 
 ```
-## Frameworks
+## With Frameworks
 
 - Private scripts exist and can be versioned
 - Private scripts are only ever called by one other script (either Public or Private)

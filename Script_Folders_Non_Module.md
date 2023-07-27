@@ -1,4 +1,8 @@
 # Script Folders - Non-Module
+- Non-Module script folders exist on the File level and not within Modules
+- They perform file specific tasks
+- There is one Non-Module folder type per file
+- Non-Module folders are not designed to be movable to another file 
 
 - ## Schedules
   - Called by the Script Scheduler within FileMaker Server which has no way to filter or sort scripts.

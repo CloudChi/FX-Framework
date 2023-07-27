@@ -1,6 +1,7 @@
 # Script Folders - Module
-- Modules are script folders
-- Modules can contain subfolders and/or Sub-Modules
+- ALL script are contained within script folders
+- Modules are script folders that can contain subfolders and/or Sub-Modules
+- There can be multiple Modules per file
 - Modules present certain tools to the developer
 - Each subfolder type serves a specific purpose
 - Each subfolder has a suffix which matches the suffix of its parent module
