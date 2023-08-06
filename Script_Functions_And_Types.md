@@ -15,6 +15,7 @@
         - For example, placing an order for a Customer on Credit Hold, Salesperson can decide to let this one order go through
     - Accept parameters in JSON format
     - Return results or errors in JSON format
+    - >Do we mention here that subscripts contain MOST of the logic in the Framework module???
     - Types:
       - Public
       - Protected

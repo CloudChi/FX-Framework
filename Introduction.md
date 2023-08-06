@@ -63,6 +63,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
     - Report a meaningful error about the missing module
     - Continue to function with the missing module, even in a limited way 
       - For example, if a jet plane loses an engine, the pilot is alerted to the situation, but more importantly the plane can continue to fly, albeit in a limited and temporary way.
+        > What happens if the Error-handling module is missing?
 
 
 ## Philosophies / Principles
@@ -75,17 +76,17 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
   - [Error Trapping and Returning](Error_Trapping_Returning.md)
 
 ### Version / Updating
-  - Standard code very hard to update and experiment with versioning
-  - If you can update code without breaking things, you can iterate over and over
+  - Standard code very hard to version and update
+  - If you can update code without breaking things, you can iterate over and over with multiple versions
   - Coding with any Framework is a balance between freedom and advantages
-    - What do you give up versus what do you get
+    - What do you give up — versus — what do you get
     - For example, if you have to provide parameters in JSON, that is a limitation, but the advantage is a subscript might have a JSON parsing routine to parse out parameters easily
   - [Versions and Updating](Versions_Updating.md)
 
 ### Dependencies
-  - Managing Dependencies
-  - Predictable
-  - Scalable
+  - Managing Dependencies must be
+    - Predictable
+    - Scalable
   - Concept of exponential growth of dependencies
     - How quickly dependencies grow
     - Identify then fix

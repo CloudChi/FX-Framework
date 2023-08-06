@@ -4,7 +4,7 @@
 
 - Subscript has an error
 - Error is **NOT** passed to calling script
-- Calling scripts proceed normally
+- Calling scripts then proceed normally
   - This can have unintended consequences
 
 ```mermaid
@@ -23,19 +23,38 @@ graph LR
 - Subscript has an error
 - Error passed to calling script as JSONObject error package
 - Calling scripts short circuit
-- Top script displays human-readable and actionable error text
+- Human-readalbe error is displayed in one of two ways:
+
+#### Top script — lets user know task did not complete
+
+---
 
 ```mermaid
 graph LR
-    A[/User Action/] -- Calls --> B[Subscript 1] 
+    A[/User Action/] -- Calls --> B[Top script 1] 
     B -- Calls --> C[Subscript 2] 
     C -- Calls --> D[Subscript 3] 
     D -- Throws --> E{{Error}}
     E -- Returns Error --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
-    B -- Short Circuits --> A
-    A --> H(Displays Error)    
+    B --> H(Displays Error)    
+```
+#### Subscript — allows user to correct error so function can complete
+
+---
+
+```mermaid
+graph LR
+    A[/User Action/] -- Calls --> B[Top script 1] 
+    B -- Calls --> C[Subscript 2] 
+    C -- Calls --> D[Subscript 3] 
+    D -- Throws --> E{{Error}}
+    E -- Returns Error --> D
+    D -- Short Circuits --> C
+    C -- Short Circuits --> B
+    C --> H(Displays Error)  
+    H --User corrects error--> C  
 ```
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
