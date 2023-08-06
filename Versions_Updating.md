@@ -2,7 +2,7 @@
 
 ## The Concept
 
-Software development is always evolving and software developers are always finding ways of improving, centralizing and tightening up previously written code. As part of this process, the developer knows it is better to replace old code with a newer more capable code, but the fear of breaking something stops him. If upgrading and rolling back was simple, fast, comprehensive and reliable, then developers would be much more inclined to do so and might even relish experimenting.
+Software development is always evolving to find ways of improving, centralizing and tightening up previously written code. As part of this process, the developer knows it is better to replace old code with a newer more capable code, but the fear of breaking something stops him. If upgrading and rolling back was simple, fast, comprehensive and reliable, then developers would be much more inclined to do so and might even relish experimenting.
 
 A particular script or function can be called multiple times.
 
@@ -14,7 +14,7 @@ What happens if you discover a bug in your new function? You then have to go bac
 
 Because of the overall headache of this and fear of breaking code, it is often easier just to leave all the old calls in place and just point any new scripts at the new function. 
 
-This ends up producing a kind of stratified, archeological mess of code. 
+This ends up producing a kind of stratified, archeological mess of code. In other words you can determing when something was written by seeing which subscripts it is calling or what techniques are used.
 
 ## Without Frameworks
 

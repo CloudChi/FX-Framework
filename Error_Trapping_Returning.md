@@ -1,6 +1,6 @@
 # Error Trapping and Returning
 
-## Common
+## Without Framework
 
 - Subscript has an error
 - Error is **NOT** passed to calling script
@@ -18,7 +18,7 @@ graph LR
     C -- Returns --> B
     B -- Returns --> A
 ```
-## Frameworks
+## With Frameworks
 
 - Subscript has an error
 - Error passed to calling script as JSONObject error package
