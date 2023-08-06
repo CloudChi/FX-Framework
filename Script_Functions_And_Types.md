@@ -33,6 +33,7 @@
     - Often display any returned errors
     - Accept parameters in JSON format
     - Within a given Type they are often copies of each other
+    - > Should include screenshot example of this???
     - Types:
       - Schedule
       - Export

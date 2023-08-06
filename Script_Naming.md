@@ -1,5 +1,12 @@
 # Script Naming
 
+- Scripts often have 3 letter suffix in parentheses to avoid name collisions across modules
+  - For example there may be more than one Go To Layout script
+    - Go To Layout (fxp) (json)[json]
+      - In Framework module
+    - Go To Layout (lay) (json)[json]
+      - In Layout module
+
 - Script names start with a 3-letter prefix which determines **HOW** they should be called:
   - sched > Schedule
     - Called by FileMaker server
