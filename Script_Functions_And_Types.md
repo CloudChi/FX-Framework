@@ -15,7 +15,7 @@
         - For example, placing an order for a Customer on Credit Hold, Salesperson can decide to let this one order go through
     - Accept parameters in JSON format
     - Return results or errors in JSON format
-    - >Do we mention here that subscripts contain MOST of the logic in the Framework module???
+    - Subscripts contain MOST of the logic in the Framework module
     - Types:
       - Public
       - Protected
@@ -26,14 +26,13 @@
       - Mode (Browse, Find, etc)
       - Layout / Tables / Fields
       - Either:
-        - Handles being called from any Context
-        - Returns error if not in right Context  
+        - Handles being called from any context
+        - Returns error if not in right context  
          
   - ## Non-Subscripts 
     - Often display any returned errors
     - Accept parameters in JSON format
     - Within a given Type they are often copies of each other
-    - > Should include screenshot example of this???
     - Types:
       - Schedule
       - Export

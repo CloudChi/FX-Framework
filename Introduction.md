@@ -63,7 +63,6 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
     - Report a meaningful error about the missing module
     - Continue to function with the missing module, even in a limited way 
       - For example, if a jet plane loses an engine, the pilot is alerted to the situation, but more importantly the plane can continue to fly, albeit in a limited and temporary way.
-        > What happens if the Error-handling module is missing?
 
 
 ## Philosophies / Principles

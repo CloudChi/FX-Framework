@@ -4,14 +4,15 @@
 
 - Subscript has an error
 - Error is **NOT** passed to calling script
+  - Or error is passed to calling script, but calling script does not check for it and does not handle it
 - Calling scripts then proceed normally
   - This can have unintended consequences
 
 ```mermaid
 graph LR
-    A[/User Action/] -- Calls --> B[Subscript 1] 
+    A[/User Action/] -- Calls --> B[Top script] 
     B -- Calls --> C[Subscript 2] 
-    C -- Calls --> D[Subscript 3] 
+    C -- Calls --> D[Subscript 2] 
     D -- Throws --> E{{Error}}
     E -.Fails to return error.-> D
     D -- Returns --> C
@@ -21,40 +22,21 @@ graph LR
 ## With Frameworks
 
 - Subscript has an error
-- Error passed to calling script as JSONObject error package
-- Calling scripts short circuit
-- Human-readalbe error is displayed in one of two ways:
-
-#### Top script — lets user know task did not complete
-
----
+- Error passed up to calling script as JSONObject error package
+- Error short circuits calling script with two possible options:
+  - Display error to user (sometimes with option to correct and continue)
+  - Or just pass the error up to its calling script
 
 ```mermaid
 graph LR
-    A[/User Action/] -- Calls --> B[Top script 1] 
-    B -- Calls --> C[Subscript 2] 
-    C -- Calls --> D[Subscript 3] 
+    A[/User Action/] -- Calls --> B[Top script] 
+    B -- Calls --> C[Subscript 1] 
+    C -- Calls --> D[Subscript 2] 
     D -- Throws --> E{{Error}}
     E -- Returns Error --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
     B --> H(Displays Error)    
-```
-#### Subscript — allows user to correct error so function can complete
-
----
-
-```mermaid
-graph LR
-    A[/User Action/] -- Calls --> B[Top script 1] 
-    B -- Calls --> C[Subscript 2] 
-    C -- Calls --> D[Subscript 3] 
-    D -- Throws --> E{{Error}}
-    E -- Returns Error --> D
-    D -- Short Circuits --> C
-    C -- Short Circuits --> B
-    C --> H(Displays Error)  
-    H --User corrects error--> C  
 ```
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
