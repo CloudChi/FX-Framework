@@ -56,6 +56,8 @@ graph LR
 >- If _n_ = 10 then whole change process is 30 calls
 >- If _n_ = 50 then whole change process is 150 calls
 
+![Calls No Frameworks](Screenshots/Screenshot_Calls_No_Frameworks.png)
+
 ## With Frameworks
 
 - Private scripts exist and can be versioned
@@ -98,6 +100,11 @@ graph LR
 >- If _n_ = 10 then whole change process is 13 calls
 >- If _n_ = 50 then whole change process is 53 calls
 
+![Calls with Frameworks](Screenshots/Screenshot_Calls_Frameworks.png)
+
+When you see the graph with both lines combined, it is obvious how much the Frameworks module reduces the number of calls.
+
+![Calls Both](Screenshots/Screenshot_Calls_Both.png)
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
