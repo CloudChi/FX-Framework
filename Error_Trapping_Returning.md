@@ -36,7 +36,8 @@ graph LR
     E -- Returns Error --> D
     D -- Short Circuits --> C
     C -- Short Circuits --> B
-    B --> H(Displays Error)    
+    B -.-> H(Displays Error)
+    D -.-> G(Displays Error with Choice)
 ```
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)

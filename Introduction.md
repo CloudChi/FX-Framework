@@ -69,13 +69,13 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
 
 ### Modular Code
 > Does this go here?
-  - In most FileMaker Custom software, the developer is not encouraged to write modular software.
-  - Modular software requires:
-    - consistent method of passing parameters and reporting errors
-    - options for handling context
-      - does the module report missing context?
-      - does the module specify the context before proceeding?
-    - reduced/controlled dependencies that are easily repaired if broken while moving
+>  - In most FileMaker Custom software, the developer is not encouraged to write modular software.
+>  - Modular software requires:
+>    - consistent method of passing parameters and reporting errors
+>    - options for handling context
+>      - does the module report missing context?
+>      - does the module specify the context before proceeding?
+>    - reduced/controlled dependencies that are easily repointed
 
 ### Error-Handling
   - If Errors are consistent and informative, it leads to better code, because users can avoid common mistakes
