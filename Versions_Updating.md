@@ -2,7 +2,7 @@
 
 ## The Concept
 
-Software development is always evolving to find ways of improving, centralizing and tightening up previously written code. As part of this process, the developer knows it is better to replace old code with a newer more capable code, but the fear of breaking something stops him. If upgrading and rolling back was simple, fast, comprehensive and reliable, then developers would be much more inclined to do so and might even relish experimenting.
+Software development is always evolving to find ways of improving, centralizing and tightening up previously written code. As part of this process, the developer knows it is better to replace old code with newer more capable code, but the fear of breaking something stops them. If upgrading and rolling back was simple, fast, comprehensive and reliable, then developers would be much more inclined to do so and might even relish experimenting.
 
 A particular script or function can be called from multiple places (other scripts, buttons, menus, script triggers, etc).
 
