@@ -33,9 +33,30 @@ graph LR
   C[Script n] -- Calls --> F
 ```
 
+#### Point to new version (_n_ number of repoints)
 
-![Calls No Frameworks](Screenshots/Calls_Without.png)
+```mermaid
+graph LR
+  A[Script 1] -. Point To .-> G[Subscript V2] 
+  B[Script 2] -. Point To .-> G 
+  C[Script n] -. Point To .-> G 
+```
 
+#### Revert to original version (_n_ number reverted)
+
+```mermaid
+graph LR
+  A[Script 1] -. Revert To .-> G[Subscript V1] 
+  B[Script 2] -. Revert To .-> G 
+  C[Script n] -. Revert To .-> G 
+```
+
+> Each call to the subscript has to be repointed **EVERY** time
+>- If _n_ = 3 then whole change process is 9 calls
+>- If _n_ = 10 then whole change process is 30 calls
+>- If _n_ = 50 then whole change process is 150 calls
+
+![Calls No Frameworks](Screenshots/Screenshot_Calls_No_Frameworks.png)
 
 ## With Frameworks
 
@@ -57,17 +78,33 @@ graph LR
     C[Script n] -- Calls --> F
 ```
 
-![Calls with Frameworks](Screenshots/Calls_With.png)
+#### Point to new version (One repoint to Private)
 
-- When you see the graph with both lines combined, it is obvious how much the Frameworks module reduces the number of calls.
+```mermaid
+graph LR
+  A[Script 1] -- Calls --> F[Public/Protected script] -. Point To .-> G[Private script V2]
+  B[Script 2] -- Calls --> F
+  C[Script n] -- Calls --> F
+```
+#### Revert to original version (One revert to original Private)
 
-- This difference gets more noticable the more you call a script.
-  - If you call a script 5 times the difference is not too bad, if you call it 50 times it is much worse.
-  - Also, if you point to a new script, then need to repoint (due to an error), it doubles the difference.
-    - Without Framework 20 calls needing repointing become 40 calls
-    - With Framework 20 calls needing repointing becomes 2 calls
+```mermaid
+graph LR
+  A[Script 1] -- Calls --> F[Public/Protected script] -. Revert To .-> G[Private script V2]
+  B[Script 2] -- Calls --> F
+  C[Script n] -- Calls --> F
+```
 
-![Calls Both](Screenshots/Calls_Both.png)
+> All the initial calls to the Public/Protected script have to be set up the first time, but any subsequent Private script versions are only called **ONCE**
+>- If _n_ = 3 then whole change process is 6 calls
+>- If _n_ = 10 then whole change process is 13 calls
+>- If _n_ = 50 then whole change process is 53 calls
+
+![Calls with Frameworks](Screenshots/Screenshot_Calls_Frameworks.png)
+
+When you see the graph with both lines combined, it is obvious how much the Frameworks module reduces the number of calls.
+
+![Calls Both](Screenshots/Screenshot_Calls_Both.png)
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 

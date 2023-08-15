@@ -34,10 +34,9 @@ graph LR
     C -- Calls --> D[Subscript 2] 
     D -- Throws --> E{{Error}}
     E -- Returns Error --> D
-    D -- Short Circuits --> C
-    C -- Short Circuits --> B
-    B -.-> H(Displays Error)
-    D -.-> G(Displays Error with Choice)
+    D -- Short Circuits - passes error up --> C
+    C -- Short Circuits - passes error up --> B
+    B -.-> H(Displays Error - maybe option to correct)
 ```
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
