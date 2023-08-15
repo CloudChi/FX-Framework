@@ -17,7 +17,7 @@ This ends up producing a kind of stratified, archeological mess of code. In othe
 ## Without Frameworks
 
 - Any script can be called from anywhere
-- Developers have to update every location a script is called from
+- Developers have to update __EVERY__ location a script is called from
   - If they miss a location, the system might behave differently there
   - If they need to roll back after a bug was discovered they have to reverse the process correctly 
 - As files grow in size and complexity and as a script gets used more and more, this gets more and more difficult
