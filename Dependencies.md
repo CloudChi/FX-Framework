@@ -2,21 +2,27 @@
 
 ## The Concept
 
-Coding is always a balance between: 
-- The desire to:
-    - Modularize code
-- The fear of:
-    - Having references into and out of the module can be brittle
+Coding is always a balance between the desire to modularize code versus the fear of effectively managing references to the module.
+
+To explore how FX Framework solves this conundrum, lets use an example.
+
+The developer is refactoring their code and wants to move the Order_Items Module from the OrderItems file to the Orders file. Inside the Order_Items Module, there are 30 scripts that are dependent on scripts within the Set_Fields module (also inside the OrderItems file). Here is how that move plays out with FX Frameworks versus without...
 
 ## Without Framework
 
-- File A Module A references File A Module B
+- Order_Items file with both modules
 
 ```mermaid
 graph LR
-A[File A - Module A] -- Calls --> E[File A - Module B] 
+A[OrderItems file]  --> B[Order_Items Module]
+B --> C[Script 1]
+B --> D[Script 2]
+B --> E[Script n]
+C -- Calls --> F[Set_Fields Module]
+D -- Calls --> F 
+E -- Calls --> F 
 ```
-- If Module A is moved from File A to File B, references to Module B break
+- If Order_Items Module is moved from OrderItems File to Orders File, references to the SetFields Module in the Order_Items file break
 
 ## With Frameworks
 

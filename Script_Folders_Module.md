@@ -6,6 +6,8 @@
 - Each subfolder type serves a specific purpose
 - Each subfolder has a suffix which matches the suffix of its parent module
   - This is to differentiate the subfolders which would otherwise all have the same name across Modules
+>  The screenshot below is missing the dependencies directory, needs to be replaced
+
 ![Folder Suffix](Screenshots/Screenshot_FolderSuffix.png)
 
 ## Two Types of Modules
