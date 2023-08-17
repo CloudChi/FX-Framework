@@ -10,30 +10,102 @@ The developer is refactoring their code and wants to move the Order_Items Module
 
 ## Without Framework
 
-- Order_Items file with both modules
+- Original_File with both modules
+    - Multiple scripts in Module_Items call Script A in Module_SetFields
 
 ```mermaid
 graph LR
-A[OrderItems file]  --> B[Order_Items Module]
-B --> C[Script 1]
-B --> D[Script 2]
-B --> E[Script n]
-C -- Calls --> F[Set_Fields Module]
-D -- Calls --> F 
-E -- Calls --> F 
+    subgraph Original_File
+        direction LR
+        subgraph Module_Items
+            direction TB
+            A[Script 1]
+            B[Script 2]
+            C[Script n]
+        end
+        subgraph Module_SetFields
+            D[Script A]
+        end
+        A --Calls--> D
+        B --Calls--> D
+        C --Calls--> D
+    end
 ```
-- If Order_Items Module is moved from OrderItems File to Orders File, references to the SetFields Module in the Order_Items file break
+- Module_Items moved to New_File
+
+```mermaid
+graph LR
+    subgraph New_File
+        direction LR
+        subgraph Module_Items
+            direction TB
+            A[Script 1]
+            B[Script 2]
+            C[Script n]
+        end
+        subgraph Module_SetFields
+            D[Script A]
+        end
+        A --Repoint--> D
+        B --Repoint--> D
+        C --Repoint--> D
+    end
+```
+
+- If Module_Items is moved from Original_File to New_File, **ALL** references to the Module_SetFields in the Original_File  break and have to be repointed.
 
 ## With Frameworks
 
-- References to File A - Module B can **ONLY** be found in the Dependencies folder in Module A
+- References to Original_File - Module_SetFields > Script A can **ONLY** be found in the Dependencies folder in Module_Items
 - If Module A is moved only this reference has to be repointed
+
+- Original_File with both modules
+    - Multiple scripts in Module_Items call Script A in Module_SetFields
 
 ```mermaid
 graph LR
-A[File A - Module A] -- Calls --> F[File A Module A - Dependencies] -- Calls --> G[File A Module B]
-B[File B Module A] -- Calls --> F[File B Module B]
+    subgraph Original_File
+        direction LR
+        subgraph Module_Items
+            direction TB
+            A[Script 1]
+            B[Script 2]
+            C[Script n]
+            subgraph Dependencies
+                D[Start]
+            end
+        end
+        subgraph Module_SetFields
+               D[Script A]
+        end
+        A --Calls--> D
+        B --Calls--> D
+        C --Calls--> D
+    end
 ```
+- Module - Items moved to New_File
+
+```mermaid
+graph LR
+    subgraph New_File
+        direction LR
+        subgraph Module_Items
+            direction TB
+            A[Script 1]
+            B[Script 2]
+            C[Script n]
+        end
+        subgraph Module_SetFields
+            D[Script A]
+        end
+        A --Repoint--> D
+        B --Repoint--> D
+        C --Repoint--> D
+    end
+```
+
+- If Module_Items is moved from Original_File to New_File, **ALL** references to the Module_SetFields in the Original_File  break and have to be repointed.
+
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
