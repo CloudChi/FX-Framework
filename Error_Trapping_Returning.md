@@ -36,8 +36,11 @@ graph LR
     E -- Returns Error --> D
     D -- Short Circuits - passes error up --> C
     C -- Short Circuits - passes error up --> B
-    B -.-> H(Displays Error - maybe option to correct)
+    B -.-> H[Handles Error - Displaying is most common option]
 ```
+## Summary
+
+- In Frameworks, Errors are captured in subscripts, passed up subscript stack, and are handled by stopping normal execution and displaying error to user if appropriate.
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 

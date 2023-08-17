@@ -67,6 +67,10 @@ graph LR
     - Without Framework 20 calls needing repointing become 40 calls
     - With Framework 20 calls needing repointing becomes 2 calls
 
+## Summary
+
+- Versioning in Frameworks allows quick, dependable, comprehensive version updating, testing and rolling back.
+
 ![Calls Both](Screenshots/Calls_Both.png)
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
