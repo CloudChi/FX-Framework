@@ -7,7 +7,7 @@ Coding is always a balance between the desire to modularize code versus the fear
 To explore how FX Framework solves this conundrum, lets use an example...
 
 - The developer is refactoring their code and wants to move the Module_Items from the Original_File to the New_File. 
-- Inside Module_Items, there are 30 scripts that are dependent on Script A within the Original_File Module_SetFields module.
+- Inside Module_Items, there are *n* number of scripts that are dependent on Script A within the Original_File Module_SetFields module.
 - Here is how that move plays out with FX Frameworks versus without...
 
 ## Without Framework

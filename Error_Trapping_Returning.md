@@ -2,7 +2,9 @@
 
 ## The Concept
 
-XX 
+- In most coding languages, error trapping, error handling and error throwing are an integral part of programming. 
+- FileMaker has a basic error framework (minus the error throwing), which is often not used comprehensively.
+- The FX Frameworks error methodology solves these issues and provides consistent and reliable error handing capabilities.
 
 ## Without Framework
 
