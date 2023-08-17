@@ -1,5 +1,9 @@
 # Error Trapping and Returning
 
+## The Concept
+
+XX 
+
 ## Without Framework
 
 - Subscript has an error
@@ -40,7 +44,7 @@ graph LR
 ```
 ## Summary
 
-- In Frameworks, Errors are captured in subscripts, passed up subscript stack, and are handled by stopping normal execution and displaying error to user if appropriate.
+- In Frameworks, Errors are captured in subscripts, passed up subscript stack, and are handled by stopping normal execution and displaying error to user (if appropriate).
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 

@@ -33,10 +33,6 @@ graph LR
   C[Script n] -- Calls --> F
 ```
 
-
-![Calls No Frameworks](Screenshots/Calls_Without.png)
-
-
 ## With Frameworks
 
 - Private scripts exist and can be versioned
@@ -57,8 +53,6 @@ graph LR
     C[Script n] -- Calls --> F
 ```
 
-![Calls with Frameworks](Screenshots/Calls_With.png)
-
 - When you see the graph with both lines combined, it is obvious how much the Frameworks module reduces the number of calls.
 
 - This difference gets more noticable the more you call a script.
@@ -67,11 +61,11 @@ graph LR
     - Without Framework 20 calls needing repointing become 40 calls
     - With Framework 20 calls needing repointing becomes 2 calls
 
+![Calls Both](Screenshots/Calls_Both.png)
+
 ## Summary
 
 - Versioning in Frameworks allows quick, dependable, comprehensive version updating, testing and rolling back.
-
-![Calls Both](Screenshots/Calls_Both.png)
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
