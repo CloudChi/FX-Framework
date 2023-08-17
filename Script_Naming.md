@@ -41,6 +41,9 @@
       - Private
       - Config
       - Dependencies
+
+> This list duplicates what is in [Script_Functions_And_Types](Script_Functions_And_Types.md)
+
   - dpr > Deprecated
     - Should not be called by any NEW scripts
     - May still be called by EXISTING scripts

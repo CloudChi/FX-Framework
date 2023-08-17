@@ -39,7 +39,7 @@
       - Fx.Framework.ErrorHandle.Parameter
       - Fx.Framework.ErrorHandle.Result
   - When moving a module from one file to another
-    - Move any Custom Funtion that starts with "Fx.Module..."
+    - Move any Custom Functions that starts with "Fx.ThatModulesName..."
     - For example if moving the "Framework" Module to a new file
       - Move the Custom Functions that start with "Fx.Framework..." to the new file as well
        ![CF_Modules](Screenshots/Screenshot_CF_Modules.png)

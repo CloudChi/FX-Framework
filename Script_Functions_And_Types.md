@@ -28,7 +28,9 @@
       - Either:
         - Handles being called from any context
         - Returns error if not in right context  
-         
+
+> Can we change Subscripts to say they never display errors to user, only top user-facing scripts do?
+
   - ## Non-Subscripts 
     - Often display any returned errors
     - Accept parameters in JSON format

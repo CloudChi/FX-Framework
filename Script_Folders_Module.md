@@ -94,7 +94,7 @@ graph LR
   - Contain logic for versions
   - Not versioned
   - Call versioned scripts in Private subfolder
-  - Callable from inside or outside the Module
+  - Callable from inside or outside the Module, but **not** outside the file
 
 - Protected
   - Contain logic for versions
@@ -127,6 +127,9 @@ graph LR
     - One of the few subfolders that can contain Modules
   - Can be modified by consumers (not just original developer)
   - Can contain simple scripts that only return a JSONObject of hardcoded values
+
+  > NOTE need to change Street1, to Street2, Street 3 in screenshot
+
   ![Config Hardcoded Setup](Screenshots/Screenshot_Config1.png)
   ![Config Hardcoded Results](Screenshots/Screenshot_Config2.png)
 
