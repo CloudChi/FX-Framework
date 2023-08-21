@@ -1,9 +1,12 @@
 # Script Functions and Types
 
 - All scripts are responsible for capturing and returning:
+
   - Any errors they encounter
   - Any results they generate
+
 - All Scripts use JSONObjects to:
+
   - Accept parameters
   - Return results, or any errors
     - Except Trigger scripts – which return True or False (to Proceed with or Cancel calling trigger, respectively)

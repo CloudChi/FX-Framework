@@ -1,5 +1,11 @@
 # Why use JSON for Parameters, Results, and Data Structures
 
+## The Concept
+
+- Every programming language needs methods for setting and getting parameters, variables, constants and results.
+- For many years, FileMaker did not have a robust method for doing this and only had proxies for this.
+- Recently, FileMaker introduced and eventually strengthened the ability to use JSON.
+- FX Frameworks uses JSON exclusively which is explained by comparing all the methods, including the historical ones.
 
 ## JSON
 - JSON setting, getting, and typing are all natively supported in FileMaker

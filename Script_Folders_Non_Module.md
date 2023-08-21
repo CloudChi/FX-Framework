@@ -35,7 +35,7 @@
   - Often diplays errors
   - Returns True or False, so Script Trigger can proceed or is cancelled
 
-  > For File Triggers, which module subfolderss do they call scripts in, Public?
+  > For File Triggers, which module subfolders do they call scripts in, Public?
 
 [Back](Script_Functions_And_Types.md) - [Next](Script_Folders_Module.md)
 

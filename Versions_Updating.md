@@ -65,7 +65,7 @@ graph LR
 
 ## Summary
 
-- Versioning in Frameworks allows quick, dependable, comprehensive version updating, testing and rolling back.
+- Frameworks allows quick, dependable, comprehensive version updating, testing and rolling back.
 
 [Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
 
