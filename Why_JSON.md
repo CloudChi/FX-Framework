@@ -2,10 +2,13 @@
 
 ## The Concept
 
-- Every programming language needs methods for setting and getting parameters, variables, constants and results.
-- For many years, FileMaker did not have a robust method for doing this and only had proxies for this.
-- Recently, FileMaker introduced and eventually strengthened the ability to use JSON.
-- FX Frameworks uses JSON exclusively which is explained by comparing all the methods, including the historical ones.
+- In every programming language there needs to be a method for setting parameters and returning results.
+- For many years, FileMaker only had text for this purpose.
+  - This is fine if you have one parameter, but if you have multiple, named parameters this quickly becomes problematic.
+- FileMaker 16 began supporting JSON as a method for setting parameters and returning results.
+  - JSON is the most common data interchange language on the Web
+- FX Frameworks uses JSON exclusively for setting parameters and returning results.
+- Which is explained by comparing all the methods, including the historical ones.
 
 ## JSON
 - JSON setting, getting, and typing are all natively supported in FileMaker
