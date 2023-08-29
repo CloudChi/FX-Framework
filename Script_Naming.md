@@ -35,14 +35,7 @@
     - Returns results or errors in JSON format
     - May not display errors
     - Found in various Module subfolders (unlike other prefixes)
-      - Export
-      - Protected
-      - Public
-      - Private
-      - Config
-      - Dependencies
-
-> This list duplicates what is in [Script_Functions_And_Types](Script_Functions_And_Types.md)
+      - As shown in [Script_Functions_And_Types](Script_Functions_And_Types.md)
 
   - dpr > Deprecated
     - Should not be called by any NEW scripts

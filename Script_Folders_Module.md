@@ -6,7 +6,7 @@
 - Each subfolder type serves a specific purpose
 - Each subfolder has a suffix which matches the suffix of its parent module
   - This is to differentiate the subfolders which would otherwise all have the same name across Modules
->  The screenshot below is missing the dependencies directory, needs to be replaced
+>  The screenshot below needs to be replaced to show dependencies folder in a different module
 
 ![Folder Suffix](Screenshots/Screenshot_FolderSuffix.png)
 
@@ -119,6 +119,7 @@ graph LR
   - Not versioned
   - Call scripts in another Module's Public subfolder
     - Modules copied to another file only need to repoint these scripts
+  - FX Module has no Dependencies folder, because it doesn't depend on any other Modules, just on Custom Functions
 
 - Config
   - Can contain logic
