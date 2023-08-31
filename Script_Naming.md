@@ -7,7 +7,7 @@
     - Go To Layout (lay) (json)[json]
       - In Layout module
 
-- Script names start with a 3-letter prefix which determines **HOW** they should be called:
+- Script names start with a (3-letter or more) prefix which determines **HOW** they should be called:
   - sched > Schedule
     - Called by FileMaker server
     - Compatible with running on Server 
