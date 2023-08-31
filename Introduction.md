@@ -73,6 +73,7 @@ The overall goal of the FX Framework is to build on FileMaker's strengths and le
     - consistent method of passing parameters and reporting errors
     - context independent code
     - reduced/controlled dependencies that are easily repointed
+     - [Modular Code](Modular_Code.md)
 
 ### Error-Handling
   - If Errors are consistent and informative, it leads to better code, because users can avoid common mistakes

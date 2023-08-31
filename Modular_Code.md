@@ -6,8 +6,9 @@ Software
 
 ## Without Frameworks
 
+## With Frameworks
 
-## Summary
+## Takeaways
 
 - ???
 
