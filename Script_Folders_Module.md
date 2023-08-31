@@ -6,9 +6,9 @@
 - Each subfolder type serves a specific purpose
 - Each subfolder has a suffix which matches the suffix of its parent module
   - This is to differentiate the subfolders which would otherwise all have the same name across Modules
->  The screenshot below needs to be replaced to show dependencies folder in a different module
 
-![Folder Suffix](Screenshots/Screenshot_FolderSuffix.png)
+#### Example of CRM & ERP Modules
+![Folder Suffix](Screenshots/Screenshot_Modules.png)
 
 ## Two Types of Modules
 - Standard
@@ -77,10 +77,10 @@ graph LR
 - Triggers
   - Can contain logic
   - Call scripts in Public, Protected, or Dependencies subfolders
-  - Typically displays errors to the user
+  - Commonly display errors to the user
   - Only called by Object and Layout Script Triggers
-    - Not File Script Triggers 
-  - Can be versioned
+    - **NOT** File Script Triggers 
+  - One Trigger script per Object **NOT** shared with other Objects
   - Return "False" if an error occurs
   - Return "True" if they succeed
 
@@ -129,11 +129,9 @@ graph LR
   - Can be modified by consumers (not just original developer)
   - Can contain simple scripts that only return a JSONObject of hardcoded values
 
-  > NOTE need to change Street1, to Street2, Street 3 in screenshot
+#### Config - Hardcoded return example
 
-  ![Config Hardcoded Setup](Screenshots/Screenshot_Config1.png)
-  ![Config Hardcoded Results](Screenshots/Screenshot_Config2.png)
-
+  ![Config Hardcoded Setup](Screenshots/Screenshot_Config.png)
 
 - Templates
   - Specific to this module
