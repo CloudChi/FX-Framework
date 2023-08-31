@@ -44,6 +44,4 @@
       - Move the Custom Functions that start with "Fx.Framework..." to the new file as well
        ![CF_Modules](Screenshots/Screenshot_CF_Modules.png)
        
-[Back](Script_Naming.md) - [Next](Why_JSON.md)
-
 [TOC](TOC.md)

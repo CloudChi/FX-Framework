@@ -13,6 +13,4 @@
   - [Custom Functions](Custom_Functions.md)
   - [Why use JSON?](Why_JSON.md)
 
-Back - [Next](Introduction.md)
-
 TOC

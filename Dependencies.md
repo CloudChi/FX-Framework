@@ -93,6 +93,4 @@ graph LR
 - Moving Modules between files in Frameworks, **ONLY** requires reference repointing in the Dependencies subfolder, which allows for true modularity. 
 - True Modularity is impossible without this feature
 
-[Back](Introduction.md) - [Next](Script_Functions_And_Types.md)
-
 [TOC](TOC.md)

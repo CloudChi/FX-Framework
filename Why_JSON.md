@@ -73,6 +73,4 @@ JSON (64 characters)
   - Easier to call and receive data from APIs external to FileMaker
 - JSON more human readable and fewer characters (64 characters)
 
-[Back](Custom_Functions.md) - Next
-
 [TOC](TOC.md)

@@ -50,6 +50,4 @@
     - Typically displays errors
     - Accepts parameters in JSON format
 
-[Back](Script_Folders_Module.md) - [Next](Custom_Functions.md)
-
 [TOC](TOC.md)

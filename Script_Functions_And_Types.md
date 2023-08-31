@@ -40,7 +40,5 @@
       - Trigger
       - Procedures
       - Template (sometimes)
-  
-[Back](Introduction.md) - [Next](Script_Folders_Non_Module.md)
 
 [TOC](TOC.md)

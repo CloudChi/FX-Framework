@@ -37,6 +37,4 @@
 
   > For File Triggers, which module subfolders do they call scripts in, Public?
 
-[Back](Script_Functions_And_Types.md) - [Next](Script_Folders_Module.md)
-
 [TOC](TOC.md)
