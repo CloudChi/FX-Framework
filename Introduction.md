@@ -2,7 +2,7 @@
 
 ## Genesis
 
-### FileMaker is a programming language that incorporates
+### FileMaker is a platform that incorporates
   - Data layer back end
   - Business logic mid layer
   - UI/UX front end
