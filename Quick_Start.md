@@ -15,7 +15,7 @@ FX Framework has many advantages over common FileMaker scripting methodologies:
 	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
 - Scripts are easily versioned and can also be rolled back if testing proves the new version is not working as expected.
 
-#### How do I use it?
+#### How to install it?
 
 The FX Framework can be added to any new or existing FileMaker file as an Add-on, which will install some clearly labeled tables and relationships, layouts, custom functions and scripting.
 
@@ -29,7 +29,10 @@ Instructions:
 ![](Screenshots/Add_on_Layout.png)
 - Click the "+" button
 	- > Is there a reason why the FX Framework Add-on does not have a descripttion or section?
-	
+
 ![](Screenshots/Add_on_Choose.png)
 - Then confirm that it worked
 ![](Screenshots/Add_on_Added.png)
+
+#### How to use it?
+
