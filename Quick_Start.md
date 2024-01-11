@@ -15,9 +15,26 @@ FX Framework has many advantages over common FileMaker scripting methodologies:
 	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
 - Scripts are easily versioned and can also be rolled back if testing proves the new version is not working as expected.
 
-#### How to install it?
+#### What will it install?
 
-The FX Framework can be added to any new or existing FileMaker file as an Add-on, which will install some clearly labeled tables and relationships, layouts, custom functions and scripting.
+The FX Framework can be added to any new or existing FileMaker file as an Add-on. 
+
+- FX Framework will install:
+	- Tables
+	- Relationships
+	- Layouts
+	- Custom Functions
+	- Sripting
+
+- FX Framework will NOT install:
+	- Security
+	- Value Lists
+	- External Data Sources
+	- Containers or a Container directory structure
+	- Custom Menus
+	- Themes
+
+#### How to install it?
 
 Instructions:
 - Open the FX Framework file and run the Make Add-on script which will ask from which window to create the app (type for example, "Fx Library v3")
@@ -26,13 +43,29 @@ Instructions:
 - Open the destination file
 - Enter Layout Mode
 	- Enable the left pane and click the Add-ons tab
+
 ![](Screenshots/Add_on_Layout.png)
+
 - Click the "+" button
-	- > Is there a reason why the FX Framework Add-on does not have a descripttion or section?
+
+> Is there a reason why the FX Framework Add-on does not have a descripttion or section?
 
 ![](Screenshots/Add_on_Choose.png)
+
 - Then confirm that it worked
+
 ![](Screenshots/Add_on_Added.png)
+
+- The most obvious sign that FX Framework was installed successfully will be the extensive folder structure under the FX folder in the Manage Scripts Menu.
+
+![](Screenshots/Script_Folders.png)
 
 #### How to use it?
 
+First thing to note is that the Framework is fully self-documenting and the documentation of any script can be obtained by calling that script with this JSON call:
+
+	JSONSetElement ( "{}" ; "f_options" ; True ; JSONBoolean ) 1
+
+Which will produce a documentation JSONObject:
+
+	
