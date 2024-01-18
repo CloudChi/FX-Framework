@@ -1,18 +1,11 @@
 
-## FX Framework
-
-### TOC
-- [What is it?](#what)
-- [Why use it?](#why)
-- [How is it installed?](#how)
-- [RTFM!](#rtfm)
-- [Incorporate](#incorporate)
+## FX Framework Add-on
 
 #### What is it? 
 
 FX Framework is a FileMaker Add-on scripting structure and methodology which is transactional, extensible, and fully error-trapped. 
 
-It contains a library of commonly-needed functions which allow the developer to concentrate on building out their business logic, instead of repeatedly rewriting an error-trapping field setter for each file (for example).
+It contains a library of commonly-needed functions which allow the developer to concentrate on building out their business logic, instead of (for example) repeatedly rewriting an error-trapping field setter for each file.
 
 - FX Framework will install:
 	- Tables
@@ -39,35 +32,15 @@ FX Framework has many advantages over common FileMaker scripting methodologies:
 	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
 - Scripts are easily versioned and can also be rolled back if testing proves the new version is not working as expected.
 
-#### How is it installed?
+#### Was the Add-on installed?
 
-Instructions:
-- Open the FX Framework file and run the Make Add-on script which will ask from which window to create the app (type for example, "Fx Library v3")
-![](Screenshots/Add_on_Make.png)
-- Choose to replace UUID, and confirm it. %% (Is this correct Kaz?) %%
-- Open the destination file
-- Enter Layout Mode
-	- Enable the left pane and click the Add-ons tab
-
-![](Screenshots/Add_on_Layout.png)
-
-- Click the "+" button
-
-> Is there a reason why the FX Framework Add-on does not have a descripttion or section?
-
-![](Screenshots/Add_on_Choose.png)
-
-- Then confirm that it worked
-
-![](Screenshots/Add_on_Added.png)
-
-- The most obvious sign that FX Framework was installed successfully will be the extensive folder structure under the FX folder in the Manage Scripts Menu.
+In the Script Workspace, look for an FX folder with many subfolders to confirm that the Add-on was installed successfully.
 
 ![](Screenshots/Script_Folders.png)
 
 #### RTFM!
 
-First thing to note is that the Framework is fully self-documenting and the documentation of any script can be obtained by calling that script with this JSON call:
+The scripts in the FX Framework are fully self-documenting by calling any of them with this parameter:
 
 ```
 JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean ) 

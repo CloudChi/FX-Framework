@@ -88,6 +88,9 @@ graph LR
         D --Repoint--> E
 ```
 
+![Dependencies Missing](Screenshots/Dependencies_Missing.png)
+![Dependencies Linking](Screenshots/Dependencies_Linking.png)
+
 ## Takeaways
 
 - Moving Modules between files in Frameworks, **ONLY** requires reference repointing in the Dependencies subfolder, which allows for true modularity. 
