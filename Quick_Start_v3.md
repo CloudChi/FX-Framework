@@ -1,30 +1,24 @@
 
 ## FX Framework Add-on
 
-#### What is it? 
+#### Overview 
+The FX Framework is a FileMaker Add-on which provides developers with a scripting structure that supports the following critical functions for any coding environment:
 
-FX Framework is a FileMaker Add-on scripting structure and methodology which is transactional, extensible, and fully error-trapped. 
+- stacked transactions
+- script version testing and simple 
+- full error trapping / returning
 
-It contains a library of commonly-needed functions which allow the developer to concentrate on building out their business logic, instead of (for example) repeatedly rewriting an error-trapping field setter for each file.
+These strengths enable developers to focus on their business logic, rather than constantly having to rebuilding common scripts. The Framework Add-on only installs:
 
-- FX Framework will install:
-	- Tables
-	- Relationships
-	- Layouts
-	- Custom Functions
-	- Sripting
+- Tables
+- Relationships
+- Layouts
+- Custom Functions
+- Scripting
 
-- FX Framework will NOT install:
-	- Security
-	- Value Lists
-	- External Data Sources
-	- Containers or a Container directory structure
-	- Custom Menus
-	- Themes
+#### Benefits
 
-#### Why use it? 
-
-FX Framework has many advantages over common FileMaker scripting methodologies:
+FX Framework has many advantages over common FileMaker scripting structures and methodologies:
 - The FX Framework is installed as an Add-on for every file in a new or existing solution.
 - Data editing functions are fully transactional and able to be rolled back if they encounter any errors
 - Results are returned in a predictable JSONObject format.
