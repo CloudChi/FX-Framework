@@ -25,7 +25,7 @@ It contains a library of commonly-needed functions which allow the developer to 
 #### Why use it? 
 
 FX Framework has many advantages over common FileMaker scripting methodologies:
-- The FX Framework can be installed as an Add-on for every file in a new or existing solution.
+- The FX Framework is installed as an Add-on for every file in a new or existing solution.
 - Data editing functions are fully transactional and able to be rolled back if they encounter any errors
 - Results are returned in a predictable JSONObject format.
 - Errors are consistently trapped and returned in a predictable JSONObject format.
