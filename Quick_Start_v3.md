@@ -91,5 +91,7 @@ Which will return the documentation as a JSONObject:
 }
 ```
 
+NOTE >> the script uses the documentation for its parameters, so they will always be in sync.
+
 ### How to incorporate the Framework
 
