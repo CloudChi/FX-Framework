@@ -1,54 +1,39 @@
 
-## FX Framework Add-on
+## FX Framework Quick Start Guide
 
+### Introduction 
+The FX Framework elevates the development experience with the following critical functions:
 
+- Easy installation into any number of FileMaker files as an Add-on
+- Fully documented code that is ALWAYS in sync with functionality and easily called via parameters
+- Predictable JSONObjects & JSONArrays for parameters, results, and returned errors to simplify data parsing and error handling
+- Fully transactional data manipulation which can be rolled back if errors are encountered
+	- If Order Items error out while entering a new Order for example, the whole transaction can be rolled back
+- Errors returned with full call stack — from the subscript that encounted the error, up to the initial calling script
+- Foolproof script version management with effortless deployment and rollbacks
 
-### Overview 
-The FX Framework is a FileMaker Add-on which provides developers with a scripting structure that supports the following critical functions for any coding environment:
+These functions enable developers to focus more on developing the business logic, instead of having to rebuild commonly-needed scripts. The Framework provides (*in descending order of frequency*):
 
-- stacked transactions
-- foolproof script version deploying and rollbacks
-- full error trapping, returning and displaying when desired
-
-These strengths enable developers to focus on their business logic, rather than constantly having to rebuilding common scripts. The Framework Add-on only installs:
-
-- Tables
-- Relationships
-- Layouts
-- Custom Functions
 - Scripting
+- Custom functions
+- Tables & Relationships
+- Layouts
 
-### Benefits
-
-FX Framework has many advantages over common FileMaker scripting structures and methodologies:
-- The FX Framework is installed as an Add-on for every file in a new or existing solution.
-- Data manipulation is fully transactional and therefore able to be rolled back if any errors are encountered
-- Results are returned in a predictable JSONObject format.
-- Errors are consistently trapped and returned in a predictable JSONObject format.
-	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
-- Scripts are easily versioned and can also be rolled back if testing proves the new version is not working as expected.
-
-### Installation Confirmation
+### Installation Verification
 
 To confirm the Add-on was installed correctly, check for the FX folder structure in the Script Workspace.
 
 ![](Screenshots/Script_Folders.png)
 
-### RTFM!
+### Documentation Access
 
-The scripts in the FX Framework are fully self-documenting by calling any of them with this parameter:
-
-```
-JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean ) 
-```
-
-For example:
+Documentation for **any** FX Framework script can be called with the parameter shown below:
 
 ```
 Perform Script [Specified: From list; "sub: set all fields (fxp)" ; Parameter: JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean ) ]
 ```
 
-Which will produce a documentation JSONObject:
+Which will return the documentation as a JSONObject:
 
 ```
 {
