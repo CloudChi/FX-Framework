@@ -1,7 +1,9 @@
 
 ## FX Framework Add-on
 
-#### Overview 
+
+
+### Overview 
 The FX Framework is a FileMaker Add-on which provides developers with a scripting structure that supports the following critical functions for any coding environment:
 
 - stacked transactions
@@ -16,7 +18,7 @@ These strengths enable developers to focus on their business logic, rather than 
 - Custom Functions
 - Scripting
 
-#### Benefits
+### Benefits
 
 FX Framework has many advantages over common FileMaker scripting structures and methodologies:
 - The FX Framework is installed as an Add-on for every file in a new or existing solution.
@@ -26,13 +28,13 @@ FX Framework has many advantages over common FileMaker scripting structures and 
 	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
 - Scripts are easily versioned and can also be rolled back if testing proves the new version is not working as expected.
 
-#### Was the Add-on installed?
+### Was the Add-on installed?
 
 In the Script Workspace, look for an FX folder with many subfolders to confirm that the Add-on was installed successfully.
 
 ![](Screenshots/Script_Folders.png)
 
-#### RTFM!
+### RTFM!
 
 The scripts in the FX Framework are fully self-documenting by calling any of them with this parameter:
 
@@ -104,5 +106,5 @@ Which will produce a documentation JSONObject:
 }
 ```
 
-#### How to incorporate the Framework
+### How to incorporate the Framework
 
