@@ -28,9 +28,9 @@ FX Framework has many advantages over common FileMaker scripting structures and 
 	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
 - Scripts are easily versioned and can also be rolled back if testing proves the new version is not working as expected.
 
-### Was the Add-on installed?
+### Installation Confirmation
 
-In the Script Workspace, look for an FX folder with many subfolders to confirm that the Add-on was installed successfully.
+To confirm the Add-on was installed correctly, check for the FX folder structure in the Script Workspace.
 
 ![](Screenshots/Script_Folders.png)
 
