@@ -5,8 +5,8 @@
 The FX Framework is a FileMaker Add-on which provides developers with a scripting structure that supports the following critical functions for any coding environment:
 
 - stacked transactions
-- script version testing and simple 
-- full error trapping / returning
+- foolproof script version deploying and rollbacks
+- full error trapping, returning and displaying when desired
 
 These strengths enable developers to focus on their business logic, rather than constantly having to rebuilding common scripts. The Framework Add-on only installs:
 
@@ -20,7 +20,7 @@ These strengths enable developers to focus on their business logic, rather than 
 
 FX Framework has many advantages over common FileMaker scripting structures and methodologies:
 - The FX Framework is installed as an Add-on for every file in a new or existing solution.
-- Data editing functions are fully transactional and able to be rolled back if they encounter any errors
+- Data manipulation is fully transactional and therefore able to be rolled back if any errors are encountered
 - Results are returned in a predictable JSONObject format.
 - Errors are consistently trapped and returned in a predictable JSONObject format.
 	- Any trapped errors include the full error stack — from the calling script all the way down to the subscript that encountered the error.
@@ -43,14 +43,18 @@ JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean )
 For example:
 
 ```
-Perform Script [Specified: From list; "sub: simple email (fxp)" ; Parameter: JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean ) ]
+Perform Script [Specified: From list; "sub: set all fields (fxp)" ; Parameter: JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean ) ]
 ```
 
 Which will produce a documentation JSONObject:
 
 ```
 {
-	"begin" : {},
+	"begin" : 
+	{
+		"allow_abort" : false,
+		"capture_errors" : true
+	},
 	"end" : {},
 	"error_handling" : 
 	{
@@ -61,70 +65,41 @@ Which will produce a documentation JSONObject:
 	{
 		"paths" : 
 		{
-			"attachment_path" : 
+			"fields" : 
 			{
-				"description" : "path to the item to attach",
-				"save_to_variable" : "$attachment_path",
+				"description" : "Object of local fields to set.",
+				"save_to_variable" : "$fields",
+				"type" : "JSONObject",
+				"variable_type" : "text"
+			},
+			"portal_name" : 
+			{
+				"description" : "name of the active portal we're setting fields in, using internally for recursion.",
+				"save_to_variable" : "$portal_name",
 				"type" : "JSONString",
 				"variable_type" : "text"
 			},
-			"bcc" : 
+			"portals" : 
 			{
-				"description" : "blind carbon copy recipients. can be array of strings",
-				"save_to_variable" : "$bcc",
-				"type" : [ "JSONString", "JSONArray" ],
-				"variable_type" : "text"
-			},
-			"cc" : 
-			{
-				"description" : "carbon copy recipients. can be array of strings",
-				"save_to_variable" : "$cc",
-				"type" : [ "JSONString", "JSONArray" ],
-				"variable_type" : "text"
-			},
-			"message" : 
-			{
-				"description" : "text of the message to email.",
-				"save_to_variable" : "$message",
-				"type" : "JSONString",
-				"variable_type" : "text"
-			},
-			"smtp_settings" : 
-			{
-				"custom_type" : "{{$smtp_definition}}",
-				"description" : "smtp settings",
-				"save_to_variable" : "$smtp_settings",
-				"type" : [ "JSONString", "JSONObject" ],
-				"variable_type" : "text"
-			},
-			"subject" : 
-			{
-				"description" : "message subject.",
-				"save_to_variable" : "$subject",
-				"type" : "JSONString",
-				"variable_type" : "text"
-			},
-			"to" : 
-			{
-				"description" : "recipients. can be array of strings",
-				"save_to_variable" : "$to",
-				"type" : [ "JSONString", "JSONArray" ],
+				"description" : "Array of portal objects to set.",
+				"save_to_variable" : "$portals",
+				"type" : "JSONArray",
 				"variable_type" : "text"
 			}
 		},
-		"required_paths" : [ "message", "subject", "to" ]
+		"required_paths" : []
 	},
 	"script" : 
 	{
-		"description" : "simple email sending script. sends text over smtp. cannot send HTML emails.",
-		"id" : "59",
-		"name" : "sub: simple email (fxp) v1",
+		"description" : "Script to transactionally set fields. will also update related records in portals. capable of matching related rows based upon an id.",
+		"id" : "63",
+		"name" : "sub: set all fields (fxp) v1",
 		"type" : "subscript"
 	},
 	"updates" : 
 	[
-		"created on 2022-12-28 By Kaz",
-		"updated 2022-12-27 updated to use self-documenting framework."
+		"created on 2022-12-28 by Kaz",
+		"updated YYYY-MM-DD by DEVELOPER NAME: changed x, y, and z."
 	]
 }
 ```
