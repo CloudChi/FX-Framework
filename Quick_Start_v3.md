@@ -97,4 +97,4 @@ It is important to note that the script uses the documentation for its parameter
 
 - Decide which module to call the Framework from
 - Create Dependencies folder in the non-FX module
-	- Create dep:
+	- Create dep: script which only
