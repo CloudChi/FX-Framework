@@ -21,7 +21,7 @@ These functions enable developers to focus more on developing the business logic
 
 ### Installation Verification
 
-To confirm the Add-on was installed correctly, check for the FX folder structure in the Script Workspace.
+To confirm the Add-on was installed correctly, check for the FX folder/subfolder structure in the Script Workspace.
 
 ![](Screenshots/Script_Folders.png)
 
@@ -33,7 +33,7 @@ Documentation for **any** FX Framework script can be called with the parameter s
 Perform Script [Specified: From list; "sub: set all fields (fxp)" ; Parameter: JSONSetElement ( "{}" ; "fx_options" ; True ; JSONBoolean ) ]
 ```
 
-Which will return the documentation as a JSONObject:
+Which will return the documentation for that script as a JSONObject:
 
 ```
 {
@@ -91,7 +91,10 @@ Which will return the documentation as a JSONObject:
 }
 ```
 
-NOTE >> the script uses the documentation for its parameters, so they will always be in sync.
+It is important to note that the script uses the documentation for its parameters, so they will always be in sync.
 
 ### How to incorporate the Framework
 
+- Decide which module to call the Framework from
+- Create Dependencies folder in the non-FX module
+	- Create dep:
